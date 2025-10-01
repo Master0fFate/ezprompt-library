@@ -1,0 +1,21 @@
+{
+    "id": 21,
+    "title": "Full Functional Dashboard with Tablet Design",
+    "description": "Create a complete, responsive dashboard with intuitive menu navigation optimized for tablet devices",
+    "category": "UI/UX Design",
+    "prompt": "Create a full functional dashboard with tablet-optimized design:\n\n**Target Device:**\n- Primary: Tablet (iPad, Android tablets)\n- Secondary: Desktop and mobile responsive\n\n**Dashboard Requirements:**\n1. **Layout & Structure:**\n   - Intuitive navigation menu (sidebar or top bar)\n   - Responsive grid system for widgets/cards\n   - Collapsible menu for space optimization\n   - Touch-friendly interface elements\n   - Optimized for landscape and portrait orientations\n\n2. **Menu Navigation:**\n   - Clear visual hierarchy\n   - Icon + text labels for clarity\n   - Active state indicators\n   - Smooth transitions and animations\n   - Breadcrumb navigation (if multi-level)\n   - Quick access shortcuts\n\n3. **Dashboard Features:**\n   - [LIST YOUR SPECIFIC FEATURES: e.g., Analytics cards, User management, Reports, Settings]\n   - Data visualization (charts, graphs, metrics)\n   - Real-time updates capability\n   - Search functionality\n   - Filter and sort options\n   - User profile/settings access\n\n4. **Technical Stack:**\n   - Framework: [React/Vue/Angular/Vanilla JS]\n   - Styling: [Tailwind/Bootstrap/Material-UI/Custom CSS]\n   - Charts: [Chart.js/Recharts/D3.js]\n   - State Management: [Context/Redux/Vuex]\n\n5. **Design Requirements:**\n   - Clean, modern aesthetic\n   - Consistent color scheme and typography\n   - Proper spacing and alignment\n   - Loading states and skeleton screens\n   - Empty states with helpful messages\n   - Error handling and user feedback\n\n6. **Tablet Optimization:**\n   - Touch targets minimum 44x44px\n   - Swipe gestures support\n   - Optimized for 768px-1024px width\n   - Pinch-to-zoom considerations\n   - No hover-dependent interactions\n\n7. **Performance:**\n   - Lazy loading for heavy components\n   - Efficient rendering\n   - Smooth animations (60fps)\n   - Optimized images and assets\n\n8. **Accessibility:**\n   - ARIA labels and roles\n   - Keyboard navigation support\n   - High contrast mode compatibility\n   - Screen reader friendly\n\n**Deliverables:**\n1. Complete HTML/JSX structure\n2. Fully styled CSS/component styles\n3. JavaScript functionality and interactivity\n4. Sample data and API integration structure\n5. Responsive breakpoints configuration\n6. Documentation for components and usage\n\n**Additional Options:**\n- Dark mode toggle\n- Multi-language support\n- Customizable themes\n- Export/print functionality\n- Notification system\n- User preferences persistence",
+    "example": "Create a tablet dashboard for an e-commerce admin panel using React and Tailwind CSS, with a collapsible sidebar menu showing: Orders, Products, Customers, Analytics, and Settings sections. Include sales charts, recent orders table, and quick stats cards.",
+    "tags": [
+        "dashboard",
+        "tablet",
+        "ui-design",
+        "responsive",
+        "navigation",
+        "menu",
+        "admin-panel",
+        "frontend",
+        "touch-interface"
+    ],
+    "favorite": false,
+    "custom": false
+}
