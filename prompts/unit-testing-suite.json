@@ -1,0 +1,18 @@
+{
+    "id": 5,
+    "title": "Unit Testing Suite",
+    "description": "Generate complete unit tests with mocking and edge cases",
+    "category": "Testing",
+    "prompt": "Generate a comprehensive unit testing suite:\n\n[PASTE CODE HERE]\n\nTesting Requirements:\n1. Test Framework: [SPECIFY]\n2. Coverage: All methods, happy paths, edge cases (90%+ target)\n3. Structure: AAA pattern, setup/teardown\n4. Mocking: External dependencies, API calls, database\n5. Edge Cases: Null inputs, empty collections, large datasets\n6. Documentation: Test descriptions and setup instructions\n\nProvide complete, runnable test code.",
+    "example": "Generate tests for a user authentication service",
+    "tags": [
+        "testing",
+        "unit-tests",
+        "tdd",
+        "mocking",
+        "jest",
+        "quality-assurance"
+    ],
+    "favorite": false,
+    "custom": false
+}

@@ -1,0 +1,17 @@
+{
+    "id": 19,
+    "title": "Serverless Functions",
+    "description": "Build serverless functions",
+    "category": "Code Generation",
+    "prompt": "Create serverless functions for [USE CASE]:\n\nPlatform: [AWS Lambda/Google Cloud Functions/Azure]\n\nRequirements:\n1. Function implementation with validation\n2. Triggers (HTTP, scheduled, database, queue)\n3. Configuration (runtime, memory, timeout)\n4. Dependencies and cold start optimization\n5. Integration with cloud services\n6. Performance optimization\n7. Security (IAM, authentication)\n8. Monitoring and logging\n9. Testing (unit, integration, local)\n10. Deployment (IaC, CI/CD)\n\nProvide function code and infrastructure templates.",
+    "example": "Create image processing function for uploads",
+    "tags": [
+        "serverless",
+        "lambda",
+        "cloud",
+        "faas",
+        "aws"
+    ],
+    "favorite": false,
+    "custom": false
+}

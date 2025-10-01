@@ -1,0 +1,17 @@
+{
+    "id": 11,
+    "title": "React Component",
+    "description": "Build scalable React components with hooks",
+    "category": "Code Generation",
+    "prompt": "Create a production-ready React component for [DESCRIPTION]:\n\nRequirements:\n1. Functional component with Hooks\n2. TypeScript interfaces\n3. State management approach\n4. Styling: [CSS Modules/Styled Components/Tailwind]\n5. Features: [LIST FEATURES]\n6. Performance optimization\n7. Accessibility (ARIA, keyboard navigation)\n8. Testing with React Testing Library\n9. Documentation\n\nProvide complete TypeScript code.",
+    "example": "Create a data table with sorting and pagination",
+    "tags": [
+        "react",
+        "components",
+        "hooks",
+        "typescript",
+        "frontend"
+    ],
+    "favorite": false,
+    "custom": false
+}

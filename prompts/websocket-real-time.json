@@ -1,0 +1,17 @@
+{
+    "id": 18,
+    "title": "WebSocket Real-Time",
+    "description": "Implement real-time features with WebSocket",
+    "category": "Code Generation",
+    "prompt": "Implement real-time communication for [USE CASE]:\n\nRequirements:\n1. WebSocket server setup (Socket.io/ws)\n2. Client connection with reconnection logic\n3. Event system and broadcasting\n4. Features: messaging, presence, typing indicators\n5. Scalability (Redis adapter, load balancing)\n6. Security (authentication, validation)\n7. Performance (compression, heartbeat)\n8. Error handling\n9. Testing and monitoring\n\nProvide complete server and client code.",
+    "example": "Implement real-time chat with typing indicators",
+    "tags": [
+        "websocket",
+        "real-time",
+        "socket-io",
+        "chat",
+        "messaging"
+    ],
+    "favorite": false,
+    "custom": false
+}

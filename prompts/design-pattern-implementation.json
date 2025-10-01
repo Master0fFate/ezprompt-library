@@ -1,0 +1,16 @@
+{
+    "id": 10,
+    "title": "Design Pattern Implementation",
+    "description": "Implement design patterns with real-world examples",
+    "category": "Architecture",
+    "prompt": "Implement the [PATTERN NAME] design pattern:\n\nUse Case: [DESCRIBE USE CASE]\nContext: [PROVIDE CONTEXT]\n\nRequirements:\n1. Complete implementation with all components\n2. UML diagram (text/ASCII)\n3. Component roles and relationships\n4. Usage examples\n5. Benefits analysis\n6. Trade-offs\n7. Alternative patterns\n8. Best practices\n\nPopular patterns: Singleton, Factory, Builder, Observer, Strategy",
+    "example": "Implement Strategy pattern for payment processing",
+    "tags": [
+        "design-patterns",
+        "architecture",
+        "oop",
+        "solid"
+    ],
+    "favorite": false,
+    "custom": false
+}

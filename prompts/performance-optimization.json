@@ -1,0 +1,16 @@
+{
+    "id": 15,
+    "title": "Performance Optimization",
+    "description": "Comprehensive performance analysis",
+    "category": "Optimization",
+    "prompt": "Perform comprehensive performance optimization:\n\n[PASTE CODE HERE]\n\nAnalysis:\n1. Performance profiling and bottlenecks\n2. Code-level optimization\n3. Memory optimization\n4. I/O optimization (database, caching)\n5. Network optimization\n6. Frontend optimization (bundle size, lazy loading)\n7. Backend optimization (indexing, caching)\n8. Benchmarking (before/after metrics)\n\nProvide detailed report and optimized code.",
+    "example": "Optimize slow API endpoint processing large datasets",
+    "tags": [
+        "performance",
+        "optimization",
+        "profiling",
+        "benchmarking"
+    ],
+    "favorite": false,
+    "custom": false
+}

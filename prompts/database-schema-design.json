@@ -1,0 +1,18 @@
+{
+    "id": 4,
+    "title": "Database Schema Design",
+    "description": "Design normalized, scalable database schemas with indexing strategy",
+    "category": "Architecture",
+    "prompt": "Design a comprehensive database schema for [DESCRIPTION]:\n\nRequirements:\n[LIST YOUR REQUIREMENTS]\n\nPlease Provide:\n1. Entity-Relationship Diagram\n2. Complete CREATE TABLE statements\n3. Primary and foreign keys\n4. Indexing strategy with rationale\n5. Normalization analysis\n6. Sample queries\n7. Scalability considerations\n8. Migration strategy",
+    "example": "Design a database schema for an e-commerce platform",
+    "tags": [
+        "database",
+        "schema",
+        "sql",
+        "design",
+        "normalization",
+        "indexing"
+    ],
+    "favorite": false,
+    "custom": false
+}

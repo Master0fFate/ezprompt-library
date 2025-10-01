@@ -1,0 +1,17 @@
+{
+    "id": 20,
+    "title": "Data Pipeline ETL",
+    "description": "Build robust data pipelines",
+    "category": "Code Generation",
+    "prompt": "Design and implement data pipeline for [TASK]:\n\nRequirements:\n1. Data sources and extraction\n2. Transformation logic (cleaning, validation, enrichment)\n3. Loading to target system\n4. Orchestration (Airflow/Prefect)\n5. Data quality checks\n6. Error handling and retry logic\n7. Performance optimization\n8. Monitoring and alerting\n9. Testing suite\n\nTechnology Stack:\n- Orchestration: [Airflow/Prefect]\n- Processing: [Pandas/Spark]\n- Storage: [PostgreSQL/BigQuery/S3]\n\nProvide complete pipeline code and configuration.",
+    "example": "Build ETL pipeline for customer data analytics",
+    "tags": [
+        "etl",
+        "data-pipeline",
+        "airflow",
+        "data-engineering",
+        "analytics"
+    ],
+    "favorite": false,
+    "custom": false
+}

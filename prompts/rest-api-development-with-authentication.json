@@ -1,0 +1,19 @@
+{
+    "id": 1,
+    "title": "REST API Development with Authentication",
+    "description": "Generate a complete REST API with JWT authentication and best practices",
+    "category": "API Design",
+    "prompt": "Create a REST API for [RESOURCE] with the following requirements:\n\nTechnical Stack:\n- Language/Framework: [SPECIFY]\n- Database: [SPECIFY]\n\nCore Features:\n- Complete CRUD operations\n- JWT-based authentication\n- Role-based access control\n- Input validation and sanitization\n- Comprehensive error handling\n- Rate limiting\n- Request logging\n- API versioning\n\nSecurity Requirements:\n- Password hashing\n- SQL injection prevention\n- XSS protection\n- CORS configuration\n\nPlease follow REST best practices and use proper HTTP status codes.",
+    "example": "Create a REST API for a blog system using Node.js, Express, and MongoDB with JWT authentication",
+    "tags": [
+        "api",
+        "rest",
+        "authentication",
+        "jwt",
+        "backend",
+        "crud",
+        "security"
+    ],
+    "favorite": false,
+    "custom": false
+}

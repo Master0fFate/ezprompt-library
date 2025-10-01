@@ -1,0 +1,18 @@
+{
+    "id": 3,
+    "title": "Comprehensive Code Review",
+    "description": "Professional code review with SOLID principles and design patterns",
+    "category": "Code Review",
+    "prompt": "Please conduct a comprehensive code review:\n\n[PASTE CODE HERE]\n\nReview Focus Areas:\n1. Code Quality: Readability, maintainability, naming conventions\n2. SOLID Principles: Evaluate adherence to all five principles\n3. Design Patterns: Current patterns and suggested improvements\n4. Security: Input validation, authentication, data exposure\n5. Performance: Bottlenecks, memory leaks, inefficient operations\n6. Testing: Testability assessment and coverage gaps\n7. Refactoring: Provide specific examples with explanations\n\nPrioritize improvements as critical, important, or nice-to-have.",
+    "example": "Review a React component with state management and API calls",
+    "tags": [
+        "code-review",
+        "solid",
+        "design-patterns",
+        "refactoring",
+        "best-practices",
+        "clean-code"
+    ],
+    "favorite": true,
+    "custom": false
+}

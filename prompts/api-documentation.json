@@ -1,0 +1,17 @@
+{
+    "id": 7,
+    "title": "API Documentation",
+    "description": "Generate comprehensive API documentation with examples",
+    "category": "Documentation",
+    "prompt": "Generate comprehensive API documentation:\n\n[PASTE CODE HERE]\n\nFormat: [OpenAPI/Swagger/Markdown]\n\nRequired Sections:\n1. Overview: Purpose, base URL, version, authentication\n2. Endpoints: Method, path, parameters, responses, examples\n3. Data Models: Object definitions, field descriptions\n4. Authentication: Flow, token format, headers\n5. Error Handling: Error codes and troubleshooting\n6. Code Examples: Multiple languages\n7. Changelog: Version history, breaking changes",
+    "example": "Document a RESTful API for a task management system",
+    "tags": [
+        "documentation",
+        "api",
+        "swagger",
+        "openapi",
+        "technical-writing"
+    ],
+    "favorite": false,
+    "custom": false
+}

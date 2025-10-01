@@ -1,0 +1,17 @@
+{
+    "id": 16,
+    "title": "React Native Mobile App",
+    "description": "Build cross-platform mobile apps",
+    "category": "Code Generation",
+    "prompt": "Create a React Native app for [DESCRIPTION]:\n\nRequirements:\n1. Platform: iOS/Android/Both\n2. Navigation and state management\n3. Features: [LIST FEATURES]\n4. Native features (camera, geolocation, notifications)\n5. Performance optimization\n6. Offline support\n7. Testing (unit, E2E with Detox)\n8. Deployment configuration\n\nUse TypeScript and provide complete project structure.",
+    "example": "Create fitness tracking app with workout logging",
+    "tags": [
+        "react-native",
+        "mobile",
+        "ios",
+        "android",
+        "cross-platform"
+    ],
+    "favorite": false,
+    "custom": false
+}

@@ -1,0 +1,16 @@
+{
+    "id": 8,
+    "title": "Debugging Assistant",
+    "description": "Systematic debugging with root cause analysis",
+    "category": "Debugging",
+    "prompt": "Help debug this issue systematically:\n\nCode:\n[PASTE CODE HERE]\n\nError/Issue:\n[DESCRIBE ERROR OR BEHAVIOR]\n\nExpected Behavior:\n[DESCRIBE EXPECTED BEHAVIOR]\n\nEnvironment:\n- Language/Framework: [SPECIFY]\n- Version: [SPECIFY]\n\nPlease Provide:\n1. Root Cause Analysis\n2. Step-by-Step Debugging Process\n3. The Fix with explanations\n4. Prevention Strategies\n5. Test cases to verify\n6. Alternative Solutions\n7. Recommended debugging tools",
+    "example": "Debug a React component causing infinite re-renders",
+    "tags": [
+        "debugging",
+        "troubleshooting",
+        "error-handling",
+        "root-cause-analysis"
+    ],
+    "favorite": false,
+    "custom": false
+}

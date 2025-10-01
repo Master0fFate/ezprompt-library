@@ -1,0 +1,17 @@
+{
+    "id": 6,
+    "title": "Security Audit",
+    "description": "Comprehensive security analysis with OWASP Top 10 coverage",
+    "category": "Security",
+    "prompt": "Perform a comprehensive security audit:\n\n[PASTE CODE HERE]\n\nSecurity Assessment:\n1. OWASP Top 10: Check all categories\n2. Input Validation: Sanitization, type checking\n3. Authentication & Authorization: Password storage, session management\n4. Data Protection: Encryption, sensitive data exposure\n5. API Security: Rate limiting, CORS\n6. Dependencies: Outdated packages, CVEs\n7. Code Issues: Hardcoded secrets, race conditions\n\nProvide severity ratings and detailed fixes with code examples.",
+    "example": "Audit a Node.js Express API with authentication",
+    "tags": [
+        "security",
+        "audit",
+        "vulnerabilities",
+        "owasp",
+        "penetration-testing"
+    ],
+    "favorite": true,
+    "custom": false
+}

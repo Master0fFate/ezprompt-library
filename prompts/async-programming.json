@@ -1,0 +1,17 @@
+{
+    "id": 9,
+    "title": "Async Programming",
+    "description": "Implement robust async patterns with error handling",
+    "category": "Code Generation",
+    "prompt": "Implement a robust asynchronous solution for [TASK]:\n\nRequirements:\n1. Language: [SPECIFY]\n2. Handle concurrent operations\n3. Proper error handling\n4. Timeout handling\n5. Cancellation support\n6. Retry logic with exponential backoff\n7. Circuit breaker pattern\n8. Performance optimization\n9. Monitoring and logging\n\nProvide production-ready code with detailed comments.",
+    "example": "Implement parallel API calls with retry logic",
+    "tags": [
+        "async",
+        "concurrent",
+        "promises",
+        "parallel",
+        "performance"
+    ],
+    "favorite": false,
+    "custom": false
+}

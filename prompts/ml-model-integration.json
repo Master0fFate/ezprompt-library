@@ -1,0 +1,17 @@
+{
+    "id": 17,
+    "title": "ML Model Integration",
+    "description": "Integrate ML models into applications",
+    "category": "Code Generation",
+    "prompt": "Integrate ML model into [APPLICATION]:\n\nModel Details:\n- Type: [Classification/Regression/NLP/Vision]\n- Framework: [TensorFlow/PyTorch]\n\nRequirements:\n1. Model serving infrastructure\n2. API design for inference\n3. Preprocessing pipeline\n4. Postprocessing and formatting\n5. Performance optimization\n6. Monitoring and drift detection\n7. Error handling and fallbacks\n8. Scalability (load balancing, GPU)\n9. Security\n10. Documentation\n\nProvide complete integration code and deployment guide.",
+    "example": "Integrate sentiment analysis into feedback system",
+    "tags": [
+        "machine-learning",
+        "ai",
+        "model-deployment",
+        "tensorflow",
+        "api"
+    ],
+    "favorite": false,
+    "custom": false
+}

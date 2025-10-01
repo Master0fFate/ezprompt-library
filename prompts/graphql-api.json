@@ -1,0 +1,17 @@
+{
+    "id": 13,
+    "title": "GraphQL API",
+    "description": "Build complete GraphQL API with resolvers",
+    "category": "API Design",
+    "prompt": "Create a complete GraphQL API for [DOMAIN]:\n\nRequirements:\n1. Schema design (types, interfaces, enums)\n2. Queries with pagination, filtering, sorting\n3. Mutations (create, update, delete)\n4. Subscriptions for real-time updates\n5. Resolvers with DataLoader\n6. Performance optimization\n7. Security (authentication, authorization)\n8. Testing suite\n9. Documentation\n\nTechnology: [Apollo Server/etc.]\nProvide production-ready code.",
+    "example": "Create GraphQL API for social media platform",
+    "tags": [
+        "graphql",
+        "api",
+        "apollo",
+        "subscriptions",
+        "backend"
+    ],
+    "favorite": false,
+    "custom": false
+}

@@ -1,0 +1,17 @@
+{
+    "id": 14,
+    "title": "CI/CD Pipeline",
+    "description": "Set up complete CI/CD pipeline",
+    "category": "DevOps",
+    "prompt": "Create a CI/CD pipeline for [PROJECT TYPE]:\n\nDetails:\n- Repository: [GitHub/GitLab]\n- Platform: [GitHub Actions/GitLab CI]\n- Deployment: [AWS/GCP/Azure]\n\nPipeline Stages:\n1. Build: Dependencies, artifacts, Docker image\n2. Test: Linting, unit tests, integration tests, coverage\n3. Quality Gates: Coverage threshold, security scanning\n4. Deployment: Dev, staging, production\n5. Post-Deployment: Smoke tests, monitoring\n\nProvide complete configuration files and documentation.",
+    "example": "CI/CD for Node.js API with AWS deployment",
+    "tags": [
+        "cicd",
+        "devops",
+        "automation",
+        "docker",
+        "deployment"
+    ],
+    "favorite": false,
+    "custom": false
+}

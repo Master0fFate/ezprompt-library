@@ -1,0 +1,17 @@
+{
+    "id": 2,
+    "title": "Advanced Algorithm Optimization",
+    "description": "Comprehensive algorithm analysis and optimization with complexity analysis",
+    "category": "Optimization",
+    "prompt": "Analyze and optimize the following algorithm:\n\n[PASTE CODE HERE]\n\nAnalysis Requirements:\n1. Current State Analysis: Time complexity, space complexity, bottlenecks\n2. Optimization Strategy: Algorithmic improvements, data structure alternatives\n3. Optimized Implementation: Provide fully optimized code with comments\n4. Complexity Comparison: Before and after analysis\n5. Benchmarking: Test cases and performance comparison\n\nExplain all trade-offs and improvements made.",
+    "example": "Optimize a nested loop algorithm for finding duplicate elements in an array",
+    "tags": [
+        "algorithm",
+        "optimization",
+        "complexity",
+        "performance",
+        "data-structures"
+    ],
+    "favorite": false,
+    "custom": false
+}

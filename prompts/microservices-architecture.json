@@ -1,0 +1,16 @@
+{
+    "id": 12,
+    "title": "Microservices Architecture",
+    "description": "Design scalable microservices",
+    "category": "Architecture",
+    "prompt": "Design a microservices architecture for [SYSTEM]:\n\nRequirements: [LIST REQUIREMENTS]\n\nProvide:\n1. Service decomposition and boundaries\n2. Architecture diagram\n3. Communication patterns (REST, gRPC, messaging)\n4. Data management strategy\n5. Service discovery and load balancing\n6. Resilience patterns (circuit breaker, retry)\n7. Security (OAuth2, JWT)\n8. Observability (tracing, logging, metrics)\n9. Deployment (Docker, Kubernetes)\n10. Scalability strategy\n11. Technology stack recommendations",
+    "example": "Design microservices for e-commerce platform",
+    "tags": [
+        "microservices",
+        "architecture",
+        "distributed-systems",
+        "scalability"
+    ],
+    "favorite": true,
+    "custom": false
+}
