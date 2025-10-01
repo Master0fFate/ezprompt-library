@@ -1,6 +1,6 @@
 # EZPrompt Library - Prompts Collection
 
-This folder contains individual prompt JSON files that are ready to be uploaded to the [ezprompt-library](https://github.com/Master0fFate/ezprompt-library) repository.
+This repo contains individual prompt JSON files that are ready to be used on [EZPrompt website](https://fate.rf.gd/).
 
 ## Structure
 
