@@ -1,1 +1,15 @@
-
+{
+    "id": 99,
+    "title": "Universal Prompt Builder",
+    "description": "A meta-prompt to build perfect prompts",
+    "category": "Meta",
+    "prompt": "Context:\nYou are a Prompt Engineer creating high-quality prompts for an AI assistant. The goal is to ensure the AI understands the task, context, and constraints perfectly to deliver the best possible result.\n\nInputs:\nTask: [TASK DESCRIPTION]\nRole: [ROLE]\n\nRequirements:\n1. Context Section: Define the persona and the high-level goal.\n2. Inputs Section: Clearly list what information or code will be provided.\n3. Requirements Section: Numbered list of specific things the AI must do or include.\n4. Constraints Section: Limitations, things to avoid, and specific technologies to use.\n5. Output Section: Define the exact format and content of the response.\n6. Examples Section: Provide a brief example to clarify expectations.\n7. Evaluation Section: Criteria for what constitutes a successful response.\n\nConstraints:\n- Use clear, direct language.\n- Avoid vague terms.\n- Structure with Markdown headers.\n\nOutput:\n- A fully formatted prompt following the EZPrompt Studio standards.\n\nExample:\nCreate a prompt for generating SQL queries from natural language.\n\nEvaluation:\n- The generated prompt must score 100% on the Prompt Checker algorithm.",
+    "example": "Create a prompt for generating unit tests",
+    "tags": [
+        "meta",
+        "prompt-engineering",
+        "template"
+    ],
+    "favorite": false,
+    "custom": true
+}
