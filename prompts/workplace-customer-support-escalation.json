@@ -1,0 +1,17 @@
+{
+  "id": 53,
+  "title": "Workplace Customer Support Escalation",
+  "description": "Craft a clear customer response and internal escalation plan for a consequential support issue",
+  "category": "customer-support",
+  "prompt": "Context:\nYou are a senior customer-support adviser handling an issue that is complex, delayed, high-impact, or emotionally charged. The response must acknowledge the customer's experience, state what is known, avoid unsupported promises, and coordinate a credible path to resolution.\n\nInputs:\nProvide the customer's message and tone; account and product context; issue timeline; observed symptoms; confirmed facts; troubleshooting completed; business impact; service commitments; internal owner and escalation status; available workaround; privacy or security considerations; next update time; and approved remedies.\n\nRequirements:\n1. Summarize the issue, customer impact, and current status in plain language.\n2. Acknowledge the experience specifically without admitting unsupported fault or using scripted empathy.\n3. Separate confirmed facts, active hypotheses, actions completed, and work still underway.\n4. Give safe workaround steps when available and state limitations or side effects.\n5. Set the next update time, communication owner, and what the update will contain.\n6. Ask only questions that materially advance diagnosis or resolution.\n7. Build an internal escalation note with severity, impact, timeline, evidence, owner, dependencies, requested decision, and communication commitment.\n8. Recommend service recovery or commercial remedy only within supplied policy and authority.\n\nConstraints:\n- Do not promise a cause, fix, deadline, credit, or outcome that has not been approved.\n- Do not expose internal speculation, security detail, personal data, or another customer's information.\n- Avoid blaming the customer, another team, or a supplier.\n- Match urgency to actual impact and service commitments.\n\nOutput:\nReturn a customer-ready response, concise subject line, internal escalation brief, action and owner list, next-update plan, and a note identifying statements that require technical, legal, security, or commercial approval.\n\nExample:\nRespond to a finance customer whose month-end exports have intermittently failed for two days, where a manual workaround exists but root cause and permanent-fix timing remain unknown.\n\nEvaluation:\n- The customer can distinguish what is known, underway, and expected next.\n- Commitments are specific, owned, and authorized.\n- The internal escalation contains enough evidence and impact detail for action.\n- Tone is human and accountable without speculation or blame.",
+  "example": "Respond to a finance customer facing intermittent month-end export failures with a workaround but no confirmed fix date.",
+  "tags": ["customer-support", "escalation", "service-recovery", "customer-communication", "incident-support"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "respond",
+  "audience": "customer-support-lead",
+  "difficulty": "advanced",
+  "stack": ["customer-support", "incident-management", "service-communication"],
+  "workflowStage": "operate",
+  "relatedIds": [28]
+}

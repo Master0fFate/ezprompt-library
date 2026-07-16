@@ -1,0 +1,17 @@
+{
+  "id": 51,
+  "title": "Workplace Sales Account Plan",
+  "description": "Build an evidence-based account plan around customer outcomes, stakeholders, opportunity quality, and next actions",
+  "category": "sales",
+  "prompt": "Context:\nYou are a strategic account adviser helping a sales team plan how to create value with a target customer. The account plan should improve discovery and coordination without turning assumptions into facts or relying on generic relationship activity.\n\nInputs:\nProvide the customer's business model, priorities, financial or operating context, relevant initiatives, current products and contracts, usage and service history, known needs, stakeholder map, competitive position, open opportunities, past interactions, commercial constraints, evidence sources, and planning horizon.\n\nRequirements:\n1. Summarize the customer's likely priorities and distinguish confirmed evidence from hypotheses requiring discovery.\n2. Map stakeholders by role, influence, interest, relationship strength, concerns, and access path.\n3. Identify customer outcomes where the seller can plausibly contribute and the evidence needed to quantify value.\n4. Assess current relationship health, whitespace, active opportunities, renewal exposure, competitor position, and delivery dependencies.\n5. Qualify each opportunity by problem importance, sponsor, decision process, success criteria, budget, timing, competition, and risk.\n6. Create a coordinated engagement plan with useful customer interactions, owners, dates, and desired learning or commitment.\n7. Define mutual-action milestones, internal support needed, commercial guardrails, and exit criteria for weak opportunities.\n8. Establish account indicators for value delivered, relationship depth, pipeline quality, adoption, retention, and risk.\n\nConstraints:\n- Do not invent customer priorities, budgets, relationships, or commitments.\n- Avoid manipulative tactics, false urgency, and activity that provides no customer value.\n- Respect confidentiality, consent, procurement rules, and competition law.\n- Keep forecasts separate from unqualified potential.\n\nOutput:\nReturn an account brief, evidence-and-hypothesis table, stakeholder map, customer-value themes, opportunity qualification, relationship and risk assessment, ninety-day engagement plan, mutual-action milestones, internal asks, and account health measures.\n\nExample:\nCreate an account plan for expanding a data platform within a retailer where one division has strong adoption, security review is pending, the economic buyer is unconfirmed, and a competitor holds the analytics contract.\n\nEvaluation:\n- Customer claims are traceable to evidence or labeled as discovery hypotheses.\n- Opportunities have clear qualification gaps and exit criteria.\n- Planned interactions create customer value or resolve a decision uncertainty.\n- Ownership, timing, dependencies, and account risks are explicit.",
+  "example": "Create a retailer account plan for expanding a data platform amid strong adoption, pending security review, and competition.",
+  "tags": ["sales", "account-planning", "stakeholder-mapping", "opportunity-qualification", "customer-value"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "account-executive",
+  "difficulty": "advanced",
+  "stack": ["crm", "consultative-selling", "account-management"],
+  "workflowStage": "plan",
+  "relatedIds": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": 38,
+  "title": "Enterprise Organization Design Blueprint",
+  "description": "Design accountable structures, decision rights, and interfaces around strategic work",
+  "category": "human-resources",
+  "prompt": "Context:\nYou are an organization-design adviser reshaping a function or business unit to execute strategy more effectively. The design should improve accountability and coordination without assuming that changing reporting lines alone will solve workflow, capability, or governance problems.\n\nInputs:\nProvide the strategic mandate; customer or stakeholder outcomes; current structure and headcount; major value streams and workflows; decision bottlenecks; role and skill data; geographic model; cost targets; leadership constraints; employee feedback; and applicable consultation requirements.\n\nRequirements:\n1. Diagnose the current model across strategy, work, structure, capabilities, governance, incentives, and interfaces.\n2. Define design principles tied to the outcomes the organization needs to produce.\n3. Map critical work and decisions before proposing reporting relationships.\n4. Develop at least three viable organization options, including a minimal-change option.\n5. Compare options by accountability, customer proximity, speed, control, cost, scalability, talent impact, and implementation risk.\n6. Specify decision rights, role charters, spans and layers, forums, handoffs, and shared-service interfaces for the recommended design.\n7. Identify leadership appointments, capability gaps, role changes, transition dependencies, and employee impacts.\n8. Provide a phased implementation and stabilization plan with measures of design effectiveness.\n\nConstraints:\n- Do not invent named individuals or make selection decisions without defined criteria.\n- Avoid using span-of-control benchmarks as universal rules; account for work complexity and managerial load.\n- Separate structural problems from process, system, skill, or behavior problems.\n- Respect labor, consultation, privacy, and equal-opportunity obligations.\n\nOutput:\nReturn a diagnosis, design principles, option set, comparison matrix, recommended blueprint, decision-rights matrix, key role charters, interface model, people-impact assessment, transition roadmap, and effectiveness measures.\n\nExample:\nRedesign a global customer-operations function that has duplicated regional teams, unclear product ownership, slow escalations, and a requirement to reduce management layers without weakening local accountability.\n\nEvaluation:\n- The recommended structure follows the work and decisions required by strategy.\n- Options show genuine trade-offs rather than cosmetic variants.\n- Accountabilities and cross-boundary interfaces are explicit.\n- Transition risks and employee obligations are actionable.",
+  "example": "Redesign a global customer-operations function with duplicated regional teams and unclear product ownership.",
+  "tags": ["organization-design", "decision-rights", "operating-structure", "role-design", "change-management"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "design",
+  "audience": "organization-design-lead",
+  "difficulty": "expert",
+  "stack": ["organization-design", "raci", "change-management"],
+  "workflowStage": "design",
+  "relatedIds": [37]
+}

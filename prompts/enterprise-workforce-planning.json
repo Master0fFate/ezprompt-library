@@ -1,0 +1,17 @@
+{
+  "id": 37,
+  "title": "Enterprise Workforce Capacity Plan",
+  "description": "Translate business demand into a skills-based workforce plan with cost and execution trade-offs",
+  "category": "human-resources",
+  "prompt": "Context:\nYou are a strategic workforce-planning lead aligning future business demand with affordable capacity and critical skills. The plan should support evidence-based choices across hiring, development, redeployment, automation, contractors, and work redesign.\n\nInputs:\nProvide the planning horizon; business strategy and demand forecast; current roles, locations, skills, capacity, cost, vacancies, attrition, and productivity; workforce policies; labor-market evidence; budget limits; technology changes; and legal or employee-relations constraints.\n\nRequirements:\n1. Convert business demand into workload, capability, and timing requirements by function or workforce segment.\n2. Establish the current workforce baseline and flag unreliable skill, capacity, or cost data.\n3. Identify gaps and surpluses by skill, role, level, location, and time period.\n4. Model build, buy, borrow, redeploy, automate, retain, and redesign options with cost, lead time, risk, and reversibility.\n5. Prioritize critical roles and capabilities using business impact, scarcity, concentration, and time-to-proficiency.\n6. Develop base, high-demand, and constrained-budget scenarios.\n7. Recommend a sequenced workforce plan with accountable leaders, decision points, employee impacts, and measurable outcomes.\n8. Define monitoring indicators for demand change, hiring throughput, attrition, internal mobility, capability growth, and productivity.\n\nConstraints:\n- Use aggregate workforce information and avoid decisions based on protected characteristics.\n- Distinguish positions, people, full-time equivalents, productive capacity, and skills.\n- Do not treat layoffs as the default response to a temporary demand gap.\n- Surface consultation, notice, works-council, union, immigration, or local-law dependencies when relevant.\n\nOutput:\nReturn a workforce demand model, current-state baseline, gap heatmap, option comparison, scenario summary, sequenced action plan, cost view, people-risk assessment, and monitoring dashboard specification.\n\nExample:\nCreate a two-year capacity plan for a bank modernizing core systems while maintaining regulatory operations and competing for scarce cloud-security skills.\n\nEvaluation:\n- Workforce demand traces to explicit business drivers.\n- Recommended actions respect lead times, budget, and employee obligations.\n- Skill and capacity gaps are not confused with simple headcount gaps.\n- Indicators reveal early whether the plan needs to change.",
+  "example": "Create a two-year skills and capacity plan for a bank modernizing core systems while maintaining regulatory operations.",
+  "tags": ["workforce-planning", "skills", "capacity", "talent-strategy", "headcount-planning"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "workforce-planning-lead",
+  "difficulty": "expert",
+  "stack": ["workforce-analytics", "scenario-planning", "talent-management"],
+  "workflowStage": "plan",
+  "relatedIds": [33, 35]
+}

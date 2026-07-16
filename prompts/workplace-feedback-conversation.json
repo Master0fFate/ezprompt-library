@@ -1,0 +1,17 @@
+{
+  "id": 56,
+  "title": "Workplace Feedback Conversation Plan",
+  "description": "Prepare a fair, specific feedback conversation with clear expectations and follow-through",
+  "category": "workplace-communication",
+  "prompt": "Context:\nYou are a people manager preparing a feedback conversation about performance, behavior, collaboration, or development. The conversation should be respectful and evidence-based, make the impact clear, invite the employee's perspective, and establish practical next steps.\n\nInputs:\nProvide the purpose of the conversation; relationship and role context; specific observed events; dates and sources; expected standard; impact on work, customers, or colleagues; prior feedback; employee strengths; possible contributing context; desired outcome; available support; relevant policy; and follow-up timing.\n\nRequirements:\n1. Clarify whether the conversation is recognition, coaching, corrective feedback, expectation setting, or formal performance management.\n2. Separate observable behavior and results from assumptions about intent, personality, or motivation.\n3. Draft an opening that states purpose, respect, and the manager's responsibility.\n4. Describe specific examples, expected standard, and impact using neutral language.\n5. Prepare open questions that invite context, disagreement, and the employee's proposed solution.\n6. Identify where the manager should listen, pause, clarify, or acknowledge new information.\n7. Define mutually understood expectations, support, measures, owner, and review date.\n8. Draft a factual follow-up note and escalation path if serious new information emerges.\n\nConstraints:\n- Do not diagnose health conditions, assign motives, or speculate about protected characteristics.\n- Avoid vague labels, surprise allegations, public criticism, and threats.\n- Follow applicable policy and seek qualified HR guidance for formal, legal, safety, discrimination, harassment, or retaliation concerns.\n- Keep examples relevant, proportionate, and verifiable.\n\nOutput:\nReturn a conversation objective, evidence summary, opening script, key feedback points, questions, likely response scenarios, support options, agreed-action template, follow-up note, and manager preparation checklist.\n\nExample:\nPrepare a coaching conversation with a technically strong team lead whose repeated late handoffs and dismissive responses are creating rework and reducing trust across teams.\n\nEvaluation:\n- Feedback relies on specific observations and an understood standard.\n- The employee has a genuine opportunity to provide context and challenge facts.\n- Expectations, support, measures, and follow-up timing are explicit.\n- The plan avoids discriminatory, retaliatory, or unsupported conclusions.",
+  "example": "Prepare coaching feedback for a strong team lead whose late handoffs and dismissive responses are creating rework.",
+  "tags": ["feedback", "manager-communication", "coaching", "performance", "difficult-conversations"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "people-manager",
+  "difficulty": "advanced",
+  "stack": ["people-management", "coaching", "workplace-communication"],
+  "workflowStage": "communicate",
+  "relatedIds": []
+}

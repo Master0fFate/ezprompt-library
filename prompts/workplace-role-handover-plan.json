@@ -1,0 +1,17 @@
+{
+  "id": 55,
+  "title": "Workplace Role Handover Plan",
+  "description": "Create a practical handover that transfers responsibilities, context, access, relationships, and open work",
+  "category": "workplace-productivity",
+  "prompt": "Context:\nYou are a transition coordinator preparing a handover for leave, role change, departure, or ownership transfer. The plan should allow the receiving person to operate safely without relying on undocumented memory or indiscriminate information dumping.\n\nInputs:\nProvide the transition dates; outgoing and incoming owners; role purpose; recurring responsibilities; current priorities; open tasks and decisions; key stakeholders; systems and access; files and records; deadlines; risks; delegated authorities; escalation paths; sensitive information; and available overlap time.\n\nRequirements:\n1. Define the role outcomes, decision rights, boundaries, and critical obligations.\n2. Inventory recurring work by frequency, trigger, deadline, inputs, output, stakeholder, and failure consequence.\n3. Summarize open work with current state, next action, owner, due date, dependency, and evidence location.\n4. Map key relationships, communication cadence, expectations, sensitivities, and introduction needs.\n5. List required systems, access, records, templates, and approval authorities with transfer status.\n6. Identify tacit knowledge that needs walkthroughs, shadowing, scenarios, or practice rather than documents alone.\n7. Sequence knowledge-transfer sessions and define what the incoming owner should demonstrate afterward.\n8. Create continuity, escalation, and post-transition support arrangements.\n\nConstraints:\n- Do not share passwords, personal data, privileged material, or restricted information in the handover document.\n- Avoid copying entire folders without explaining relevance and source of truth.\n- Do not mark knowledge transferred solely because a document was sent.\n- Preserve clear ownership during the overlap and after the effective date.\n\nOutput:\nReturn a handover overview, responsibility calendar, open-work register, stakeholder map, access checklist, knowledge-transfer schedule, document index, risk and continuity plan, acceptance checklist, and first-thirty-days priorities.\n\nExample:\nPrepare a four-week handover for a procurement manager leaving before three supplier renewals, an audit response, monthly reporting, and a new sourcing event are complete.\n\nEvaluation:\n- Critical responsibilities, deadlines, ownership, and source records are explicit.\n- Knowledge transfer includes demonstration or verification where needed.\n- Access and authority changes are controlled and traceable.\n- The receiving owner can identify immediate priorities and escalation routes.",
+  "example": "Prepare a four-week procurement-manager handover covering renewals, audit response, reporting, and a sourcing event.",
+  "tags": ["handover", "knowledge-transfer", "business-continuity", "onboarding", "role-transition"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "team-lead",
+  "difficulty": "intermediate",
+  "stack": ["knowledge-management", "transition-planning", "task-management"],
+  "workflowStage": "plan",
+  "relatedIds": []
+}

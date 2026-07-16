@@ -1,0 +1,17 @@
+{
+  "id": 54,
+  "title": "Workplace Project Coordination Brief",
+  "description": "Convert fragmented project updates into a decision-focused status, dependency, and action brief",
+  "category": "project-coordination",
+  "prompt": "Context:\nYou are a project coordinator consolidating updates from multiple workstreams. The brief should help the team understand progress, upcoming commitments, blockers, dependencies, decisions, and ownership without rewarding optimistic status reporting.\n\nInputs:\nProvide project objectives and success measures; milestones and baseline dates; workstream updates; completed deliverables; planned work; budget or capacity information; risks, assumptions, issues, and dependencies; decisions needed; change requests; stakeholder commitments; and the reporting period.\n\nRequirements:\n1. Reconcile each workstream update to the agreed scope, milestone, owner, and baseline.\n2. Separate completed outcomes from activity, percentage estimates, and unverified claims.\n3. Forecast milestone health using remaining work, dependencies, capacity, and evidence rather than status color alone.\n4. Consolidate risks, assumptions, issues, dependencies, and decisions without duplicating the same underlying problem.\n5. Identify the critical path, near-term handoffs, overdue actions, and dependency owners.\n6. Quantify schedule, scope, cost, quality, or benefit impact where evidence allows.\n7. Draft decision requests with options, recommendation, deadline, and consequence of delay.\n8. Produce a two-week lookahead and action register with owner, due date, and completion evidence.\n\nConstraints:\n- Do not report a milestone as healthy when unresolved dependencies make the date implausible.\n- Keep risks separate from active issues and actions separate from decisions.\n- Do not invent completion percentages or revised dates.\n- Escalate by impact and required authority, not by volume of commentary.\n\nOutput:\nReturn an executive status summary, milestone table, critical-path view, consolidated risk and issue log, dependency map, decision queue, change summary, two-week lookahead, and owned action register.\n\nExample:\nCoordinate a customer-data migration with legal approval, vendor extraction, engineering build, business validation, training, and a fixed contract-exit date across five workstreams.\n\nEvaluation:\n- Status conclusions trace to milestones, evidence, dependencies, and remaining work.\n- Critical decisions and handoffs have owners and decision dates.\n- Risks, issues, dependencies, actions, and changes are correctly distinguished.\n- The brief directs attention to the few items that can change the outcome.",
+  "example": "Coordinate a five-workstream customer-data migration with legal, vendor, engineering, validation, and training dependencies.",
+  "tags": ["project-coordination", "status-reporting", "raid-log", "dependencies", "milestones"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "coordinate",
+  "audience": "project-coordinator",
+  "difficulty": "advanced",
+  "stack": ["project-management", "raid", "dependency-management"],
+  "workflowStage": "operate",
+  "relatedIds": [27]
+}

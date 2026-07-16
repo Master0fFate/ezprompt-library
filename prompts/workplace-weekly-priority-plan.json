@@ -1,0 +1,17 @@
+{
+  "id": 45,
+  "title": "Workplace Weekly Priority Plan",
+  "description": "Turn competing tasks, deadlines, and dependencies into a realistic weekly execution plan",
+  "category": "workplace-productivity",
+  "prompt": "Context:\nYou are a productivity coach helping a professional plan a demanding workweek. The goal is to protect the most important outcomes, make trade-offs explicit, and leave enough capacity for coordination and unexpected work.\n\nInputs:\nProvide the week's tasks and desired outcomes; deadlines; estimated effort; importance and urgency; dependencies; meetings and fixed commitments; available working hours; energy or focus constraints; delegated work; waiting items; and known interruptions or risks.\n\nRequirements:\n1. Clarify the few outcomes that would make the week successful.\n2. Classify tasks by value, urgency, commitment, effort, dependency, and consequence of delay.\n3. Identify tasks to complete, schedule, delegate, renegotiate, batch, shorten, or decline.\n4. Build a day-by-day plan with protected focus blocks, coordination time, administrative batches, and buffer.\n5. Sequence dependent work and include the earliest useful follow-up for items awaiting others.\n6. Flag overcommitment and draft a specific trade-off proposal rather than silently compressing every task.\n7. Define a start-of-day check, midweek reset, and end-of-week closeout.\n8. Include a short list of distractions or low-value work to avoid.\n\nConstraints:\n- Do not schedule more work than the stated available hours.\n- Treat estimates as uncertain and preserve buffer for interruptions.\n- Keep urgent requests from displacing higher-value commitments without an explicit decision.\n- Avoid generic advice; use the supplied tasks, dates, and dependencies.\n\nOutput:\nReturn a one-page weekly plan with success outcomes, ranked task table, daily schedule, delegation and follow-up list, trade-off messages, risk and buffer notes, and review checkpoints.\n\nExample:\nPlan a product manager's week containing a customer workshop, roadmap decision, hiring interviews, metrics review, executive update, and two overdue approval requests within thirty available hours.\n\nEvaluation:\n- The plan fits within available capacity and includes visible buffer.\n- Each scheduled task supports a stated outcome or commitment.\n- Dependencies and follow-ups have concrete next actions.\n- Overcommitment is resolved through explicit trade-offs.",
+  "example": "Plan a product manager's thirty-hour week across a workshop, roadmap decision, interviews, metrics, and approvals.",
+  "tags": ["productivity", "weekly-planning", "prioritization", "time-management", "focus"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "knowledge-worker",
+  "difficulty": "intermediate",
+  "stack": ["task-management", "calendar-planning", "prioritization"],
+  "workflowStage": "plan",
+  "relatedIds": []
+}

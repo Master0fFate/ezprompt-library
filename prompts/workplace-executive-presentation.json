@@ -1,0 +1,17 @@
+{
+  "id": 48,
+  "title": "Workplace Executive Presentation Storyline",
+  "description": "Shape evidence into a concise executive presentation with a clear decision and narrative",
+  "category": "workplace-presentations",
+  "prompt": "Context:\nYou are an executive communications adviser turning analysis into a presentation for senior leaders. The deck should lead with the decision or implication, use evidence selectively, and make trade-offs easy to understand.\n\nInputs:\nProvide the audience and meeting purpose; decision or outcome sought; key message; supporting evidence; options; risks; stakeholder positions; time available; expected questions; organizational style; and any required appendix material.\n\nRequirements:\n1. Define the audience's starting point, likely concerns, and the action needed at the end.\n2. Write a one-sentence governing message that states the conclusion and consequence.\n3. Build a narrative arc from situation and complication to insight, options, recommendation, and next step.\n4. Create slide titles that communicate conclusions rather than topics.\n5. Specify the minimum evidence, comparison, or visual needed on each slide.\n6. Make assumptions, uncertainty, downside, and alternative options visible.\n7. Prepare speaker notes, transitions, and a concise opening and close.\n8. Anticipate difficult questions and provide evidence-based answers or honest limits.\n9. Move supporting detail to a purposeful appendix linked to likely questions.\n\nConstraints:\n- Do not overload slides with paragraphs, decorative graphics, or every available metric.\n- Avoid claims stronger than the supplied evidence.\n- Keep the core presentation within the stated speaking time.\n- Use plain business language and define unavoidable specialist terms.\n\nOutput:\nReturn a slide-by-slide storyline with conclusion-led titles, content and visual guidance, speaker notes, timing, opening, close, anticipated questions, and appendix plan.\n\nExample:\nCreate a ten-minute leadership deck recommending a phased return-to-office policy using employee, customer, productivity, cost, and attrition evidence while acknowledging uncertainty and role differences.\n\nEvaluation:\n- The requested decision or action is clear by the opening slides.\n- Each slide advances one necessary part of the argument.\n- Evidence, uncertainty, alternatives, and trade-offs are visible.\n- The full storyline fits the available presentation time.",
+  "example": "Create a ten-minute leadership deck recommending a phased return-to-office policy from mixed evidence.",
+  "tags": ["presentations", "executive-storytelling", "slide-design", "speaker-notes", "decision-support"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "write",
+  "audience": "executive-presenter",
+  "difficulty": "advanced",
+  "stack": ["presentation-design", "business-storytelling", "executive-communication"],
+  "workflowStage": "communicate",
+  "relatedIds": []
+}

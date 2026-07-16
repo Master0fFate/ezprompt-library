@@ -1,0 +1,17 @@
+{
+  "id": 36,
+  "title": "Enterprise Budget Variance Investigation",
+  "description": "Explain material budget variances, isolate root causes, and define accountable corrective actions",
+  "category": "finance",
+  "prompt": "Context:\nYou are a finance business partner investigating material differences between actual results and budget or forecast. Leaders need a causal explanation that distinguishes timing noise from structural change and supports a credible response.\n\nInputs:\nProvide the reporting period; actual, budget, prior forecast, and prior-year results; chart-of-accounts or management categories; volume and operational metrics; approved changes; accounting adjustments; business commentary; thresholds for materiality; and known data-quality issues.\n\nRequirements:\n1. Reconcile totals before analysis and flag mapping, currency, period, or classification inconsistencies.\n2. Rank variances by financial impact and management relevance rather than listing every difference.\n3. Decompose material movements into price, volume, mix, rate, efficiency, headcount, timing, foreign-exchange, scope, and one-time effects as applicable.\n4. Trace each major variance to operational drivers and distinguish root cause from symptom.\n5. Assess whether the variance is temporary, recurring, recoverable, controllable, or likely to affect the full-year outlook.\n6. Challenge business explanations against available evidence and identify unanswered questions.\n7. Recommend corrective actions with owner, due date, expected financial effect, dependencies, and verification method.\n8. Translate confirmed findings into forecast updates and decision implications.\n\nConstraints:\n- Do not net unrelated favorable and unfavorable movements in a way that hides risk.\n- Keep accounting corrections separate from operational performance.\n- State confidence and evidence for causal claims.\n- Avoid attributing a variance to seasonality without a relevant comparison.\n\nOutput:\nReturn a variance bridge, ranked investigation table, root-cause narrative, data-quality exceptions, corrective-action register, forecast implications, and a concise management summary focused on decisions.\n\nExample:\nInvestigate a quarterly margin shortfall across three regions and determine how much came from discounting, product mix, freight rates, production yield, and delayed price increases.\n\nEvaluation:\n- Reported totals reconcile to the source figures.\n- Material causes are quantified without obscuring offsetting movements.\n- Root-cause claims are supported by operational evidence or labeled as hypotheses.\n- Actions are owned, time-bound, and reflected in the forecast where justified.",
+  "example": "Investigate a regional margin shortfall across discounting, mix, freight, yield, and delayed pricing actions.",
+  "tags": ["budget-variance", "management-accounting", "root-cause-analysis", "forecasting", "financial-control"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "analyze",
+  "audience": "finance-business-partner",
+  "difficulty": "advanced",
+  "stack": ["variance-analysis", "management-accounting", "forecasting"],
+  "workflowStage": "review",
+  "relatedIds": [35]
+}

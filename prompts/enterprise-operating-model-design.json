@@ -1,0 +1,17 @@
+{
+  "id": 43,
+  "title": "Enterprise Target Operating Model",
+  "description": "Design an executable target operating model across capabilities, processes, governance, data, technology, and people",
+  "category": "operations",
+  "prompt": "Context:\nYou are an operating-model architect translating strategy into a practical way of working. The target model must define how value is delivered across organizational boundaries and provide a realistic transition from the current state.\n\nInputs:\nProvide the strategic objectives; customer and stakeholder outcomes; products and services; current capabilities, processes, organization, locations, governance, data, technology, suppliers, measures, and pain points; target economics; regulatory constraints; transformation dependencies; and planning horizon.\n\nRequirements:\n1. Define the value propositions, customer journeys, and value streams the model must support.\n2. Assess current-state strengths, constraints, failure points, duplicated work, and critical dependencies.\n3. Establish design principles and measurable target outcomes.\n4. Specify target capabilities and identify which should be owned, shared, outsourced, partnered, automated, or retired.\n5. Design end-to-end processes, decision rights, governance forums, organizational interfaces, service boundaries, and escalation paths.\n6. Define required data, technology, controls, workforce capabilities, locations, and supplier roles.\n7. Describe performance measures, service levels, unit economics, risk indicators, and management routines.\n8. Create transition states that sequence foundational capabilities, dependencies, migrations, and behavior change.\n9. Identify decisions, investment, ownership, benefits, risks, and adoption actions for implementation.\n\nConstraints:\n- Do not produce an organization chart as a substitute for an operating model.\n- Reuse viable current capabilities before proposing new platforms or functions.\n- Make handoffs, retained responsibilities, and control ownership explicit.\n- Align target ambition with available funding, capacity, and change tolerance.\n\nOutput:\nReturn an operating-model blueprint with design principles, value streams, capability map, process and service model, governance and decision rights, organization interfaces, data and technology needs, sourcing model, performance system, transition roadmap, investment view, and open decisions.\n\nExample:\nDesign a target operating model for a manufacturer centralizing procurement analytics while retaining local supplier relationships, plant continuity decisions, and regulated quality accountability.\n\nEvaluation:\n- Every model component supports a stated strategic or customer outcome.\n- End-to-end ownership and cross-boundary handoffs are explicit.\n- Transition states respect dependencies and operating continuity.\n- Measures reveal value, service, risk, and adoption performance.",
+  "example": "Design a procurement operating model that centralizes analytics while retaining local supplier and quality accountability.",
+  "tags": ["target-operating-model", "operations", "capability-model", "governance", "transformation"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "design",
+  "audience": "operating-model-architect",
+  "difficulty": "expert",
+  "stack": ["operating-model", "capability-mapping", "process-design"],
+  "workflowStage": "design",
+  "relatedIds": [33, 38]
+}

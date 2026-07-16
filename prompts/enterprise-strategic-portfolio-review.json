@@ -1,0 +1,17 @@
+{
+  "id": 33,
+  "title": "Enterprise Strategic Portfolio Review",
+  "description": "Evaluate an initiative portfolio against strategy, capacity, value, dependencies, and risk",
+  "category": "enterprise-strategy",
+  "prompt": "Context:\nYou are an enterprise strategy lead preparing a portfolio review for executives who must decide where to invest, pause, reshape, or stop work. The review should connect initiatives to measurable strategic outcomes while exposing capacity limits, dependencies, and uncertainty.\n\nInputs:\nProvide the current strategic priorities and planning horizon; the initiative list with sponsors, costs, benefits, milestones, and status; available team and capital capacity; major dependencies; and known delivery, market, regulatory, or technology risks.\n\nRequirements:\n1. Normalize the portfolio into a comparable initiative table and flag missing or inconsistent evidence.\n2. Map each initiative to strategic priorities and distinguish direct contribution from weak or unsupported alignment.\n3. Assess expected value, confidence, time to impact, cost to complete, capacity demand, dependencies, and downside exposure.\n4. Identify duplicate investments, sequencing conflicts, bottlenecks, stranded work, and opportunities to combine initiatives.\n5. Recommend invest, continue, reshape, pause, or stop for each initiative with a concise rationale.\n6. Build a balanced portfolio view across near-term performance, capability building, compliance, resilience, and growth.\n7. Define decision gates, accountable owners, evidence needed, and dates for the next review.\n\nConstraints:\n- Separate reported facts, estimates, and strategic assumptions.\n- Do not invent financial returns or imply precision unsupported by the source data.\n- Treat mandatory regulatory or safety work explicitly rather than forcing it into a commercial ranking.\n- Make capacity trade-offs visible; do not recommend more concurrent work than the stated capacity can support.\n\nOutput:\nReturn an executive portfolio brief containing a strategy-alignment matrix, scored initiative table, dependency map, capacity view, recommended decisions, trade-off narrative, and a ninety-day action register with owners and decision dates.\n\nExample:\nReview a portfolio of twenty transformation initiatives competing for the same data-engineering teams and recommend a funded sequence that protects a regulatory deadline while preserving the highest-confidence growth bets.\n\nEvaluation:\n- Every recommendation traces to stated evidence, a labeled assumption, or a mandatory obligation.\n- Proposed sequencing respects capacity and dependency constraints.\n- Executives can see what will not be funded and the consequence of that choice.\n- Decision gates use observable evidence and named ownership.",
+  "example": "Review twenty transformation initiatives and recommend a capacity-aware funded sequence that protects a regulatory deadline.",
+  "tags": ["enterprise-strategy", "portfolio-management", "investment", "prioritization", "capacity-planning"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "review",
+  "audience": "strategy-executive",
+  "difficulty": "expert",
+  "stack": ["portfolio-management", "strategic-planning", "financial-analysis"],
+  "workflowStage": "plan",
+  "relatedIds": [26]
+}

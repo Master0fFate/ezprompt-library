@@ -1,0 +1,17 @@
+{
+  "id": 47,
+  "title": "Workplace Decision Meeting Pack",
+  "description": "Design a focused meeting that produces a decision, clear record, and owned follow-through",
+  "category": "workplace-meetings",
+  "prompt": "Context:\nYou are a meeting facilitator preparing a working session where participants must make a decision or resolve a defined issue. The meeting should use live time for judgment and discussion rather than information transfer that could happen asynchronously.\n\nInputs:\nProvide the decision or problem; sponsor and decision owner; participants and roles; available time; relevant facts and pre-read; options; decision criteria; known disagreements; constraints; prior decisions; and the date by which follow-through is needed.\n\nRequirements:\n1. Confirm the decision statement, authority, and outcome required from the meeting.\n2. Decide who must attend, who can contribute asynchronously, and who only needs the record.\n3. Create a concise pre-read containing facts, options, criteria, open questions, and preparation requests.\n4. Build a timed agenda that reserves most of the session for option testing and decision-making.\n5. Define facilitation questions that surface assumptions, dissent, dependencies, and consequences.\n6. Specify how the decision will be made when consensus is absent.\n7. Provide a live decision-record template with rationale, conditions, dissent, owner, actions, and due dates.\n8. Draft the follow-up message and identify unresolved items that require another forum.\n\nConstraints:\n- Do not invite participants solely for status visibility.\n- Avoid reopening settled decisions unless new evidence or changed conditions are stated.\n- Keep agenda scope achievable within the available time.\n- Distinguish a decision from an action, recommendation, discussion, or information item.\n\nOutput:\nReturn the meeting objective, attendee plan, pre-read outline, timed agenda, facilitator script, decision method, decision-and-action record, parking-lot rules, and follow-up message.\n\nExample:\nPrepare a forty-five-minute meeting to choose between delaying a feature, reducing scope, or adding temporary capacity before a contractual launch milestone.\n\nEvaluation:\n- Decision authority and criteria are explicit before the meeting.\n- The agenda protects enough time for the consequential discussion.\n- The record captures rationale, conditions, ownership, and dates.\n- Participants know what to prepare and what happens after the session.",
+  "example": "Prepare a forty-five-minute meeting to choose between delay, reduced scope, or temporary capacity before launch.",
+  "tags": ["meetings", "decision-making", "facilitation", "agenda", "meeting-notes"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "meeting-facilitator",
+  "difficulty": "advanced",
+  "stack": ["facilitation", "decision-making", "meeting-management"],
+  "workflowStage": "plan",
+  "relatedIds": []
+}

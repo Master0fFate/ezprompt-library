@@ -1,0 +1,17 @@
+{
+  "id": 41,
+  "title": "Enterprise Regulatory Obligation Register",
+  "description": "Convert regulatory source material into an owned, traceable, and monitorable obligation register",
+  "category": "compliance",
+  "prompt": "Context:\nYou are a compliance program lead translating laws, regulations, licenses, regulatory guidance, and binding commitments into operational obligations. The register must help accountable owners understand what is required, where it applies, how compliance is evidenced, and when change is needed.\n\nInputs:\nProvide authoritative source material; jurisdictions and legal entities; products, services, processes, and customer segments in scope; effective dates; regulator correspondence; existing policies and controls; ownership data; prior legal interpretations; and known remediation work.\n\nRequirements:\n1. Identify discrete obligations and preserve traceability to the exact source citation and version.\n2. Record applicability by jurisdiction, entity, product, process, customer, and effective date.\n3. Translate each obligation into plain operational language without changing its legal meaning.\n4. Classify the obligation as conduct, prudential, reporting, disclosure, recordkeeping, governance, licensing, training, monitoring, or another relevant type.\n5. Map accountable executives, operational owners, policies, controls, evidence, systems, reporting, and assurance.\n6. Flag interpretation questions, overlaps, conflicts, control gaps, and obligations affected by planned change.\n7. Prioritize gaps using impact, likelihood, regulatory attention, customer harm, and remediation urgency.\n8. Define review cadence, change triggers, attestation needs, and evidence-retention expectations.\n\nConstraints:\n- Do not present operational paraphrasing as legal advice.\n- Preserve source wording for defined terms, thresholds, exceptions, and deadlines.\n- Do not mark an obligation compliant solely because a policy exists.\n- Restrict sensitive regulatory correspondence and legal advice to authorized audiences.\n\nOutput:\nReturn an obligation register with source citation, applicability, operational requirement, owner, mapped controls, evidence, status, gaps, actions, due dates, assurance method, and review trigger, followed by an executive gap summary.\n\nExample:\nCreate an obligation register for a new consumer-duty regime spanning product design, communications, pricing, support, monitoring, board oversight, and customer-outcome evidence.\n\nEvaluation:\n- Every obligation is traceable to an authoritative source and version.\n- Applicability and ownership are explicit enough for operational use.\n- Compliance status is supported by control and evidence, not policy presence alone.\n- Interpretation uncertainty and remediation priorities remain visible.",
+  "example": "Create an owned obligation register for a consumer-duty regime covering product design through board oversight.",
+  "tags": ["regulatory-compliance", "obligation-register", "controls", "governance", "regulatory-change"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "extract",
+  "audience": "compliance-program-lead",
+  "difficulty": "expert",
+  "stack": ["regulatory-compliance", "control-mapping", "legal-operations"],
+  "workflowStage": "implement",
+  "relatedIds": [24]
+}

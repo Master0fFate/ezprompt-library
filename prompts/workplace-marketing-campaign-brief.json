@@ -1,0 +1,17 @@
+{
+  "id": 52,
+  "title": "Workplace Marketing Campaign Brief",
+  "description": "Create a focused campaign brief linking audience insight, message, channels, measurement, and execution",
+  "category": "marketing",
+  "prompt": "Context:\nYou are a marketing strategist preparing a campaign brief that aligns creative, channel, sales, product, and analytics teams. The brief should define the customer behavior to influence and how the organization will know whether the campaign worked.\n\nInputs:\nProvide the business objective; product or offer; target market and audience evidence; customer problem; positioning; competitive context; campaign period; budget; channels; geographic and legal constraints; brand guidance; available assets; conversion journey; historical performance; and stakeholders.\n\nRequirements:\n1. Translate the business objective into a specific audience behavior and measurable campaign outcome.\n2. Define priority segments using relevant needs, context, barriers, and evidence rather than broad demographics alone.\n3. Articulate the value proposition, reasons to believe, message hierarchy, desired tone, and claims requiring substantiation.\n4. Map the customer journey from exposure through response, conversion, onboarding, and follow-up.\n5. Assign channel roles, audience, content, call to action, timing, budget logic, and handoffs.\n6. Specify creative deliverables, variants, approvals, production dependencies, and reuse opportunities.\n7. Design measurement across reach, quality, engagement, conversion, incremental impact, cost, and downstream value.\n8. Define test hypotheses, comparison approach, decision thresholds, reporting cadence, and optimization rules.\n9. Identify brand, privacy, accessibility, legal, operational, and sales-readiness risks.\n\nConstraints:\n- Do not invent audience insight or performance benchmarks.\n- Avoid unsupported, misleading, discriminatory, or privacy-invasive targeting and claims.\n- Distinguish attributed results from proven incremental impact.\n- Keep deliverables and channel scope within the stated budget and timeline.\n\nOutput:\nReturn a campaign brief with objective, audience, insight, proposition, message framework, journey, channel plan, creative deliverables, schedule, budget allocation logic, measurement plan, experiment design, governance, and risk checklist.\n\nExample:\nBrief a six-week campaign for a cybersecurity service aimed at mid-market operations leaders, combining partner webinars, email nurture, paid search, sales follow-up, and a measurable trial conversion goal.\n\nEvaluation:\n- Audience, message, channel, and desired behavior form a coherent chain.\n- Measures distinguish activity, conversion, efficiency, and business outcome.\n- Claims and targeting have clear evidence and approval requirements.\n- The plan is executable within budget, timing, and operational capacity.",
+  "example": "Brief a six-week cybersecurity campaign combining webinars, nurture, search, and sales follow-up for trial conversion.",
+  "tags": ["marketing", "campaign-brief", "positioning", "channel-planning", "measurement"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "marketing-manager",
+  "difficulty": "advanced",
+  "stack": ["campaign-management", "marketing-analytics", "content-strategy"],
+  "workflowStage": "plan",
+  "relatedIds": []
+}

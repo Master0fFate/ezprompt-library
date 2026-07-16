@@ -1,0 +1,17 @@
+{
+  "id": 35,
+  "title": "Enterprise Financial Scenario Plan",
+  "description": "Build decision-ready financial scenarios with explicit drivers, triggers, and management actions",
+  "category": "finance",
+  "prompt": "Context:\nYou are an FP&A leader developing a scenario plan for a business facing uncertain demand, pricing, costs, funding, or macroeconomic conditions. The analysis should help management act before outcomes are known rather than present a single-point forecast.\n\nInputs:\nProvide the baseline forecast period; historical actuals; revenue and cost drivers; cash, covenant, and liquidity limits; business-unit assumptions; planned investments; known commitments; external sensitivities; and the decisions management can realistically change.\n\nRequirements:\n1. Reconcile the baseline to the supplied actuals and identify the small set of drivers that explain most financial movement.\n2. Define base, upside, downside, and severe-but-plausible scenarios with internally consistent assumptions.\n3. Model effects on revenue, gross margin, operating expense, EBITDA or equivalent measure, cash flow, liquidity headroom, and relevant covenants.\n4. Separate volume, price, mix, productivity, timing, foreign-exchange, and one-time effects where data permits.\n5. Design management actions for each scenario, including lead time, owner, expected benefit, cost, reversibility, and operational consequence.\n6. Establish early-warning indicators and numeric trigger points for activating or retiring actions.\n7. Run sensitivities on the most consequential assumptions and identify break-even conditions.\n\nConstraints:\n- Label management assumptions and external assumptions separately.\n- Do not fabricate missing financial data; show the calculation needed and the decision affected.\n- Avoid false precision and state material model limitations.\n- Preserve committed safety, legal, and regulatory spending unless an authorized alternative is provided.\n\nOutput:\nReturn a scenario-planning pack with driver tree, assumption table, scenario financial summary, cash and covenant view, sensitivity analysis, trigger dashboard, management-action ladder, and a short executive recommendation.\n\nExample:\nBuild four scenarios for a subscription business exposed to lower renewals and higher cloud costs, including liquidity triggers and staged actions that protect customer retention.\n\nEvaluation:\n- Scenario assumptions are consistent, traceable, and financially reconciled.\n- Triggers provide enough lead time for the proposed actions.\n- Management actions include operational consequences, not only savings estimates.\n- The analysis clearly identifies which assumptions can change the decision.",
+  "example": "Build four scenarios for a subscription business facing lower renewals and higher cloud costs.",
+  "tags": ["financial-planning", "scenario-analysis", "fp-and-a", "cash-flow", "management-actions"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "analyze",
+  "audience": "finance-leader",
+  "difficulty": "expert",
+  "stack": ["financial-modeling", "scenario-planning", "management-reporting"],
+  "workflowStage": "plan",
+  "relatedIds": [33]
+}

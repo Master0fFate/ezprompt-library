@@ -1,0 +1,17 @@
+{
+  "id": 39,
+  "title": "Enterprise Supplier Selection Case",
+  "description": "Run a defensible supplier selection using weighted evidence, total cost, risk, and implementation fit",
+  "category": "procurement",
+  "prompt": "Context:\nYou are a strategic sourcing lead preparing a supplier recommendation for a material purchase or outsourced service. The process must be fair, evidence-based, commercially sound, and auditable from requirements through award.\n\nInputs:\nProvide the business need; scope and service levels; mandatory requirements; evaluation criteria; bidder responses; pricing and commercial terms; due-diligence findings; implementation constraints; incumbent performance if relevant; stakeholder feedback; budget; and procurement-policy requirements.\n\nRequirements:\n1. Confirm scope, demand assumptions, mandatory criteria, and evaluation governance before scoring.\n2. Normalize supplier responses so equivalent claims, exclusions, dependencies, and pricing units can be compared.\n3. Separate pass-or-fail requirements from weighted criteria and document the scoring rubric.\n4. Evaluate functional fit, delivery model, implementation readiness, service quality, security, resilience, financial health, sustainability, legal terms, and reference evidence.\n5. Calculate total cost of ownership, including transition, integration, consumption, support, indexation, exit, and retained costs.\n6. Test sensitivity to weightings, demand assumptions, and disputed scores.\n7. Identify negotiation priorities, conditions precedent, residual risks, and fallback options.\n8. Recommend an award, split award, further clarification, or no award with an auditable rationale.\n\nConstraints:\n- Apply the same published criteria to all bidders.\n- Do not convert unsupported marketing claims into scored evidence.\n- Disclose conflicts of interest and evaluator disagreements.\n- Keep commercially sensitive bidder information restricted to authorized participants.\n\nOutput:\nReturn a sourcing decision pack with compliance screen, normalized comparison, weighted scorecard, total-cost model, due-diligence summary, sensitivity analysis, negotiation plan, risk register, recommendation, and approval record.\n\nExample:\nSelect a managed payroll provider across four countries where the lowest-price bidder has weak migration evidence and the incumbent offers lower transition risk but unfavorable indexation terms.\n\nEvaluation:\n- The recommendation can be reproduced from the documented evidence and rubric.\n- Total cost includes transition and exit economics, not only quoted fees.\n- Sensitivity testing shows whether reasonable scoring changes alter the outcome.\n- Award conditions address material unresolved risks.",
+  "example": "Select a multi-country payroll provider using a reproducible scorecard, total-cost model, and transition-risk assessment.",
+  "tags": ["procurement", "supplier-selection", "strategic-sourcing", "total-cost", "due-diligence"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "evaluate",
+  "audience": "strategic-sourcing-lead",
+  "difficulty": "expert",
+  "stack": ["strategic-sourcing", "supplier-risk", "commercial-analysis"],
+  "workflowStage": "review",
+  "relatedIds": []
+}

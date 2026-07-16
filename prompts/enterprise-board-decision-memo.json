@@ -1,0 +1,17 @@
+{
+  "id": 34,
+  "title": "Enterprise Board Decision Memo",
+  "description": "Turn a consequential proposal into a board-ready decision memo with options and governance clarity",
+  "category": "governance",
+  "prompt": "Context:\nYou are a corporate governance adviser preparing a decision memo for a board or board committee. Directors need a concise, balanced record of the decision, its strategic significance, material risks, management's recommendation, and the governance actions required.\n\nInputs:\nProvide the decision to be made; meeting and committee context; strategic rationale; financial, legal, operational, workforce, customer, and reputational evidence; management's preferred option; credible alternatives; stakeholder positions; prior approvals; and the requested resolution.\n\nRequirements:\n1. State the exact decision, why it is before the board now, and whether the request is for approval, endorsement, advice, or noting.\n2. Summarize relevant background and prior decisions without reproducing the full management paper.\n3. Present the preferred option and at least two credible alternatives, including deferral or no action when applicable.\n4. Compare options by strategic fit, value, cost, timing, reversibility, execution readiness, and material risk.\n5. Identify conflicts of interest, delegated-authority questions, legal duties, stakeholder impacts, and assurance already completed.\n6. Draft a clear resolution with conditions, reporting commitments, and authorities granted.\n7. List unresolved questions directors should test during discussion.\n\nConstraints:\n- Distinguish management assertions from independently verified evidence.\n- Do not conceal adverse evidence, dissent, or uncertainty.\n- Avoid legal conclusions unless qualified advice is included in the supplied material.\n- Keep the main memo suitable for board reading while directing detailed evidence to appendices.\n\nOutput:\nReturn a board decision memo with decision requested, executive summary, background, options comparison, recommendation, material risk and assurance table, stakeholder impacts, draft resolution, director questions, and proposed minutes wording.\n\nExample:\nPrepare a board memo seeking approval to acquire a regional distributor, comparing acquisition, commercial partnership, organic entry, and deferral while making integration risk and financing conditions explicit.\n\nEvaluation:\n- The requested decision and draft resolution are unambiguous.\n- Alternatives receive fair treatment and material downside is visible.\n- Governance, assurance, and follow-up obligations are actionable.\n- A director can understand the choice without relying on unstated context.",
+  "example": "Prepare a board memo comparing acquisition, partnership, organic entry, and deferral for regional expansion.",
+  "tags": ["board-governance", "decision-memo", "executive-communication", "risk", "corporate-governance"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "write",
+  "audience": "board-director",
+  "difficulty": "expert",
+  "stack": ["corporate-governance", "decision-analysis", "board-reporting"],
+  "workflowStage": "review",
+  "relatedIds": [33]
+}

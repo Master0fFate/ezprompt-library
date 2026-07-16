@@ -938,6 +938,685 @@
       ]
     },
     {
+      "id": 33,
+      "title": "Enterprise Strategic Portfolio Review",
+      "description": "Evaluate an initiative portfolio against strategy, capacity, value, dependencies, and risk",
+      "category": "enterprise-strategy",
+      "prompt": "Context:\nYou are an enterprise strategy lead preparing a portfolio review for executives who must decide where to invest, pause, reshape, or stop work. The review should connect initiatives to measurable strategic outcomes while exposing capacity limits, dependencies, and uncertainty.\n\nInputs:\nProvide the current strategic priorities and planning horizon; the initiative list with sponsors, costs, benefits, milestones, and status; available team and capital capacity; major dependencies; and known delivery, market, regulatory, or technology risks.\n\nRequirements:\n1. Normalize the portfolio into a comparable initiative table and flag missing or inconsistent evidence.\n2. Map each initiative to strategic priorities and distinguish direct contribution from weak or unsupported alignment.\n3. Assess expected value, confidence, time to impact, cost to complete, capacity demand, dependencies, and downside exposure.\n4. Identify duplicate investments, sequencing conflicts, bottlenecks, stranded work, and opportunities to combine initiatives.\n5. Recommend invest, continue, reshape, pause, or stop for each initiative with a concise rationale.\n6. Build a balanced portfolio view across near-term performance, capability building, compliance, resilience, and growth.\n7. Define decision gates, accountable owners, evidence needed, and dates for the next review.\n\nConstraints:\n- Separate reported facts, estimates, and strategic assumptions.\n- Do not invent financial returns or imply precision unsupported by the source data.\n- Treat mandatory regulatory or safety work explicitly rather than forcing it into a commercial ranking.\n- Make capacity trade-offs visible; do not recommend more concurrent work than the stated capacity can support.\n\nOutput:\nReturn an executive portfolio brief containing a strategy-alignment matrix, scored initiative table, dependency map, capacity view, recommended decisions, trade-off narrative, and a ninety-day action register with owners and decision dates.\n\nExample:\nReview a portfolio of twenty transformation initiatives competing for the same data-engineering teams and recommend a funded sequence that protects a regulatory deadline while preserving the highest-confidence growth bets.\n\nEvaluation:\n- Every recommendation traces to stated evidence, a labeled assumption, or a mandatory obligation.\n- Proposed sequencing respects capacity and dependency constraints.\n- Executives can see what will not be funded and the consequence of that choice.\n- Decision gates use observable evidence and named ownership.",
+      "example": "Review twenty transformation initiatives and recommend a capacity-aware funded sequence that protects a regulatory deadline.",
+      "tags": [
+        "enterprise-strategy",
+        "portfolio-management",
+        "investment",
+        "prioritization",
+        "capacity-planning"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "review",
+      "audience": "strategy-executive",
+      "difficulty": "expert",
+      "stack": [
+        "portfolio-management",
+        "strategic-planning",
+        "financial-analysis"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": [
+        26
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Enterprise Board Decision Memo",
+      "description": "Turn a consequential proposal into a board-ready decision memo with options and governance clarity",
+      "category": "governance",
+      "prompt": "Context:\nYou are a corporate governance adviser preparing a decision memo for a board or board committee. Directors need a concise, balanced record of the decision, its strategic significance, material risks, management's recommendation, and the governance actions required.\n\nInputs:\nProvide the decision to be made; meeting and committee context; strategic rationale; financial, legal, operational, workforce, customer, and reputational evidence; management's preferred option; credible alternatives; stakeholder positions; prior approvals; and the requested resolution.\n\nRequirements:\n1. State the exact decision, why it is before the board now, and whether the request is for approval, endorsement, advice, or noting.\n2. Summarize relevant background and prior decisions without reproducing the full management paper.\n3. Present the preferred option and at least two credible alternatives, including deferral or no action when applicable.\n4. Compare options by strategic fit, value, cost, timing, reversibility, execution readiness, and material risk.\n5. Identify conflicts of interest, delegated-authority questions, legal duties, stakeholder impacts, and assurance already completed.\n6. Draft a clear resolution with conditions, reporting commitments, and authorities granted.\n7. List unresolved questions directors should test during discussion.\n\nConstraints:\n- Distinguish management assertions from independently verified evidence.\n- Do not conceal adverse evidence, dissent, or uncertainty.\n- Avoid legal conclusions unless qualified advice is included in the supplied material.\n- Keep the main memo suitable for board reading while directing detailed evidence to appendices.\n\nOutput:\nReturn a board decision memo with decision requested, executive summary, background, options comparison, recommendation, material risk and assurance table, stakeholder impacts, draft resolution, director questions, and proposed minutes wording.\n\nExample:\nPrepare a board memo seeking approval to acquire a regional distributor, comparing acquisition, commercial partnership, organic entry, and deferral while making integration risk and financing conditions explicit.\n\nEvaluation:\n- The requested decision and draft resolution are unambiguous.\n- Alternatives receive fair treatment and material downside is visible.\n- Governance, assurance, and follow-up obligations are actionable.\n- A director can understand the choice without relying on unstated context.",
+      "example": "Prepare a board memo comparing acquisition, partnership, organic entry, and deferral for regional expansion.",
+      "tags": [
+        "board-governance",
+        "decision-memo",
+        "executive-communication",
+        "risk",
+        "corporate-governance"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "write",
+      "audience": "board-director",
+      "difficulty": "expert",
+      "stack": [
+        "corporate-governance",
+        "decision-analysis",
+        "board-reporting"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        33
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Enterprise Financial Scenario Plan",
+      "description": "Build decision-ready financial scenarios with explicit drivers, triggers, and management actions",
+      "category": "finance",
+      "prompt": "Context:\nYou are an FP&A leader developing a scenario plan for a business facing uncertain demand, pricing, costs, funding, or macroeconomic conditions. The analysis should help management act before outcomes are known rather than present a single-point forecast.\n\nInputs:\nProvide the baseline forecast period; historical actuals; revenue and cost drivers; cash, covenant, and liquidity limits; business-unit assumptions; planned investments; known commitments; external sensitivities; and the decisions management can realistically change.\n\nRequirements:\n1. Reconcile the baseline to the supplied actuals and identify the small set of drivers that explain most financial movement.\n2. Define base, upside, downside, and severe-but-plausible scenarios with internally consistent assumptions.\n3. Model effects on revenue, gross margin, operating expense, EBITDA or equivalent measure, cash flow, liquidity headroom, and relevant covenants.\n4. Separate volume, price, mix, productivity, timing, foreign-exchange, and one-time effects where data permits.\n5. Design management actions for each scenario, including lead time, owner, expected benefit, cost, reversibility, and operational consequence.\n6. Establish early-warning indicators and numeric trigger points for activating or retiring actions.\n7. Run sensitivities on the most consequential assumptions and identify break-even conditions.\n\nConstraints:\n- Label management assumptions and external assumptions separately.\n- Do not fabricate missing financial data; show the calculation needed and the decision affected.\n- Avoid false precision and state material model limitations.\n- Preserve committed safety, legal, and regulatory spending unless an authorized alternative is provided.\n\nOutput:\nReturn a scenario-planning pack with driver tree, assumption table, scenario financial summary, cash and covenant view, sensitivity analysis, trigger dashboard, management-action ladder, and a short executive recommendation.\n\nExample:\nBuild four scenarios for a subscription business exposed to lower renewals and higher cloud costs, including liquidity triggers and staged actions that protect customer retention.\n\nEvaluation:\n- Scenario assumptions are consistent, traceable, and financially reconciled.\n- Triggers provide enough lead time for the proposed actions.\n- Management actions include operational consequences, not only savings estimates.\n- The analysis clearly identifies which assumptions can change the decision.",
+      "example": "Build four scenarios for a subscription business facing lower renewals and higher cloud costs.",
+      "tags": [
+        "financial-planning",
+        "scenario-analysis",
+        "fp-and-a",
+        "cash-flow",
+        "management-actions"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "analyze",
+      "audience": "finance-leader",
+      "difficulty": "expert",
+      "stack": [
+        "financial-modeling",
+        "scenario-planning",
+        "management-reporting"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": [
+        33
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Enterprise Budget Variance Investigation",
+      "description": "Explain material budget variances, isolate root causes, and define accountable corrective actions",
+      "category": "finance",
+      "prompt": "Context:\nYou are a finance business partner investigating material differences between actual results and budget or forecast. Leaders need a causal explanation that distinguishes timing noise from structural change and supports a credible response.\n\nInputs:\nProvide the reporting period; actual, budget, prior forecast, and prior-year results; chart-of-accounts or management categories; volume and operational metrics; approved changes; accounting adjustments; business commentary; thresholds for materiality; and known data-quality issues.\n\nRequirements:\n1. Reconcile totals before analysis and flag mapping, currency, period, or classification inconsistencies.\n2. Rank variances by financial impact and management relevance rather than listing every difference.\n3. Decompose material movements into price, volume, mix, rate, efficiency, headcount, timing, foreign-exchange, scope, and one-time effects as applicable.\n4. Trace each major variance to operational drivers and distinguish root cause from symptom.\n5. Assess whether the variance is temporary, recurring, recoverable, controllable, or likely to affect the full-year outlook.\n6. Challenge business explanations against available evidence and identify unanswered questions.\n7. Recommend corrective actions with owner, due date, expected financial effect, dependencies, and verification method.\n8. Translate confirmed findings into forecast updates and decision implications.\n\nConstraints:\n- Do not net unrelated favorable and unfavorable movements in a way that hides risk.\n- Keep accounting corrections separate from operational performance.\n- State confidence and evidence for causal claims.\n- Avoid attributing a variance to seasonality without a relevant comparison.\n\nOutput:\nReturn a variance bridge, ranked investigation table, root-cause narrative, data-quality exceptions, corrective-action register, forecast implications, and a concise management summary focused on decisions.\n\nExample:\nInvestigate a quarterly margin shortfall across three regions and determine how much came from discounting, product mix, freight rates, production yield, and delayed price increases.\n\nEvaluation:\n- Reported totals reconcile to the source figures.\n- Material causes are quantified without obscuring offsetting movements.\n- Root-cause claims are supported by operational evidence or labeled as hypotheses.\n- Actions are owned, time-bound, and reflected in the forecast where justified.",
+      "example": "Investigate a regional margin shortfall across discounting, mix, freight, yield, and delayed pricing actions.",
+      "tags": [
+        "budget-variance",
+        "management-accounting",
+        "root-cause-analysis",
+        "forecasting",
+        "financial-control"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "analyze",
+      "audience": "finance-business-partner",
+      "difficulty": "advanced",
+      "stack": [
+        "variance-analysis",
+        "management-accounting",
+        "forecasting"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        35
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Enterprise Workforce Capacity Plan",
+      "description": "Translate business demand into a skills-based workforce plan with cost and execution trade-offs",
+      "category": "human-resources",
+      "prompt": "Context:\nYou are a strategic workforce-planning lead aligning future business demand with affordable capacity and critical skills. The plan should support evidence-based choices across hiring, development, redeployment, automation, contractors, and work redesign.\n\nInputs:\nProvide the planning horizon; business strategy and demand forecast; current roles, locations, skills, capacity, cost, vacancies, attrition, and productivity; workforce policies; labor-market evidence; budget limits; technology changes; and legal or employee-relations constraints.\n\nRequirements:\n1. Convert business demand into workload, capability, and timing requirements by function or workforce segment.\n2. Establish the current workforce baseline and flag unreliable skill, capacity, or cost data.\n3. Identify gaps and surpluses by skill, role, level, location, and time period.\n4. Model build, buy, borrow, redeploy, automate, retain, and redesign options with cost, lead time, risk, and reversibility.\n5. Prioritize critical roles and capabilities using business impact, scarcity, concentration, and time-to-proficiency.\n6. Develop base, high-demand, and constrained-budget scenarios.\n7. Recommend a sequenced workforce plan with accountable leaders, decision points, employee impacts, and measurable outcomes.\n8. Define monitoring indicators for demand change, hiring throughput, attrition, internal mobility, capability growth, and productivity.\n\nConstraints:\n- Use aggregate workforce information and avoid decisions based on protected characteristics.\n- Distinguish positions, people, full-time equivalents, productive capacity, and skills.\n- Do not treat layoffs as the default response to a temporary demand gap.\n- Surface consultation, notice, works-council, union, immigration, or local-law dependencies when relevant.\n\nOutput:\nReturn a workforce demand model, current-state baseline, gap heatmap, option comparison, scenario summary, sequenced action plan, cost view, people-risk assessment, and monitoring dashboard specification.\n\nExample:\nCreate a two-year capacity plan for a bank modernizing core systems while maintaining regulatory operations and competing for scarce cloud-security skills.\n\nEvaluation:\n- Workforce demand traces to explicit business drivers.\n- Recommended actions respect lead times, budget, and employee obligations.\n- Skill and capacity gaps are not confused with simple headcount gaps.\n- Indicators reveal early whether the plan needs to change.",
+      "example": "Create a two-year skills and capacity plan for a bank modernizing core systems while maintaining regulatory operations.",
+      "tags": [
+        "workforce-planning",
+        "skills",
+        "capacity",
+        "talent-strategy",
+        "headcount-planning"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "workforce-planning-lead",
+      "difficulty": "expert",
+      "stack": [
+        "workforce-analytics",
+        "scenario-planning",
+        "talent-management"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": [
+        33,
+        35
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Enterprise Organization Design Blueprint",
+      "description": "Design accountable structures, decision rights, and interfaces around strategic work",
+      "category": "human-resources",
+      "prompt": "Context:\nYou are an organization-design adviser reshaping a function or business unit to execute strategy more effectively. The design should improve accountability and coordination without assuming that changing reporting lines alone will solve workflow, capability, or governance problems.\n\nInputs:\nProvide the strategic mandate; customer or stakeholder outcomes; current structure and headcount; major value streams and workflows; decision bottlenecks; role and skill data; geographic model; cost targets; leadership constraints; employee feedback; and applicable consultation requirements.\n\nRequirements:\n1. Diagnose the current model across strategy, work, structure, capabilities, governance, incentives, and interfaces.\n2. Define design principles tied to the outcomes the organization needs to produce.\n3. Map critical work and decisions before proposing reporting relationships.\n4. Develop at least three viable organization options, including a minimal-change option.\n5. Compare options by accountability, customer proximity, speed, control, cost, scalability, talent impact, and implementation risk.\n6. Specify decision rights, role charters, spans and layers, forums, handoffs, and shared-service interfaces for the recommended design.\n7. Identify leadership appointments, capability gaps, role changes, transition dependencies, and employee impacts.\n8. Provide a phased implementation and stabilization plan with measures of design effectiveness.\n\nConstraints:\n- Do not invent named individuals or make selection decisions without defined criteria.\n- Avoid using span-of-control benchmarks as universal rules; account for work complexity and managerial load.\n- Separate structural problems from process, system, skill, or behavior problems.\n- Respect labor, consultation, privacy, and equal-opportunity obligations.\n\nOutput:\nReturn a diagnosis, design principles, option set, comparison matrix, recommended blueprint, decision-rights matrix, key role charters, interface model, people-impact assessment, transition roadmap, and effectiveness measures.\n\nExample:\nRedesign a global customer-operations function that has duplicated regional teams, unclear product ownership, slow escalations, and a requirement to reduce management layers without weakening local accountability.\n\nEvaluation:\n- The recommended structure follows the work and decisions required by strategy.\n- Options show genuine trade-offs rather than cosmetic variants.\n- Accountabilities and cross-boundary interfaces are explicit.\n- Transition risks and employee obligations are actionable.",
+      "example": "Redesign a global customer-operations function with duplicated regional teams and unclear product ownership.",
+      "tags": [
+        "organization-design",
+        "decision-rights",
+        "operating-structure",
+        "role-design",
+        "change-management"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "organization-design-lead",
+      "difficulty": "expert",
+      "stack": [
+        "organization-design",
+        "raci",
+        "change-management"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        37
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Enterprise Supplier Selection Case",
+      "description": "Run a defensible supplier selection using weighted evidence, total cost, risk, and implementation fit",
+      "category": "procurement",
+      "prompt": "Context:\nYou are a strategic sourcing lead preparing a supplier recommendation for a material purchase or outsourced service. The process must be fair, evidence-based, commercially sound, and auditable from requirements through award.\n\nInputs:\nProvide the business need; scope and service levels; mandatory requirements; evaluation criteria; bidder responses; pricing and commercial terms; due-diligence findings; implementation constraints; incumbent performance if relevant; stakeholder feedback; budget; and procurement-policy requirements.\n\nRequirements:\n1. Confirm scope, demand assumptions, mandatory criteria, and evaluation governance before scoring.\n2. Normalize supplier responses so equivalent claims, exclusions, dependencies, and pricing units can be compared.\n3. Separate pass-or-fail requirements from weighted criteria and document the scoring rubric.\n4. Evaluate functional fit, delivery model, implementation readiness, service quality, security, resilience, financial health, sustainability, legal terms, and reference evidence.\n5. Calculate total cost of ownership, including transition, integration, consumption, support, indexation, exit, and retained costs.\n6. Test sensitivity to weightings, demand assumptions, and disputed scores.\n7. Identify negotiation priorities, conditions precedent, residual risks, and fallback options.\n8. Recommend an award, split award, further clarification, or no award with an auditable rationale.\n\nConstraints:\n- Apply the same published criteria to all bidders.\n- Do not convert unsupported marketing claims into scored evidence.\n- Disclose conflicts of interest and evaluator disagreements.\n- Keep commercially sensitive bidder information restricted to authorized participants.\n\nOutput:\nReturn a sourcing decision pack with compliance screen, normalized comparison, weighted scorecard, total-cost model, due-diligence summary, sensitivity analysis, negotiation plan, risk register, recommendation, and approval record.\n\nExample:\nSelect a managed payroll provider across four countries where the lowest-price bidder has weak migration evidence and the incumbent offers lower transition risk but unfavorable indexation terms.\n\nEvaluation:\n- The recommendation can be reproduced from the documented evidence and rubric.\n- Total cost includes transition and exit economics, not only quoted fees.\n- Sensitivity testing shows whether reasonable scoring changes alter the outcome.\n- Award conditions address material unresolved risks.",
+      "example": "Select a multi-country payroll provider using a reproducible scorecard, total-cost model, and transition-risk assessment.",
+      "tags": [
+        "procurement",
+        "supplier-selection",
+        "strategic-sourcing",
+        "total-cost",
+        "due-diligence"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "evaluate",
+      "audience": "strategic-sourcing-lead",
+      "difficulty": "expert",
+      "stack": [
+        "strategic-sourcing",
+        "supplier-risk",
+        "commercial-analysis"
+      ],
+      "workflowStage": "review",
+      "relatedIds": []
+    },
+    {
+      "id": 40,
+      "title": "Enterprise Contract Renewal Strategy",
+      "description": "Prepare a fact-based renewal and negotiation strategy with leverage, walk-away points, and continuity safeguards",
+      "category": "procurement",
+      "prompt": "Context:\nYou are a commercial manager preparing for the renewal of a significant supplier contract. The strategy should preserve service continuity while improving value, correcting weak terms, and maintaining credible alternatives.\n\nInputs:\nProvide the current contract and amendments; renewal and notice dates; spend and consumption history; service performance; incidents and credits; stakeholder needs; forecast demand; benchmark evidence; supplier financial and relationship context; switching constraints; available alternatives; and internal approval limits.\n\nRequirements:\n1. Build a contract fact base covering scope, commitments, pricing, indexation, service levels, liability, data, security, audit, termination, transition, and renewal mechanics.\n2. Compare contracted value with actual demand, realized performance, market evidence, and total retained cost.\n3. Identify value leakage, unused commitments, recurring disputes, concentration risk, and terms that have become misaligned.\n4. Define target, acceptable, and walk-away positions for commercial and noncommercial issues.\n5. Assess leverage for both parties, likely supplier objectives, timing pressure, and best alternatives to a negotiated agreement.\n6. Create a negotiation sequence, issue-trading plan, concession rules, authority levels, and escalation path.\n7. Develop continuity, transition, and interim-extension options if agreement is delayed or rejected.\n8. Specify post-signature controls for benefits tracking and contract governance.\n\nConstraints:\n- Do not bluff about alternatives or approval authority.\n- Keep legal interpretation subject to qualified review.\n- Do not trade security, privacy, resilience, or compliance protections without explicit risk acceptance.\n- Account for switching cost and execution capacity when setting the walk-away position.\n\nOutput:\nReturn a renewal strategy containing contract fact base, performance and value review, benchmark summary, leverage assessment, issue matrix, negotiation plan, approval map, continuity fallback, recommendation, and benefits-tracking measures.\n\nExample:\nPrepare the renewal of a cloud-services agreement with rapid consumption growth, repeated support breaches, limited near-term migration capacity, and a proposed double-digit price increase.\n\nEvaluation:\n- Negotiation positions are supported by contract, performance, demand, or market evidence.\n- Walk-away and fallback options are operationally credible.\n- Concession rules protect high-priority terms and prevent accidental value loss.\n- Expected benefits have owners and a measurement baseline.",
+      "example": "Prepare a cloud-contract renewal strategy addressing rapid consumption growth, support breaches, and a proposed price increase.",
+      "tags": [
+        "contract-renewal",
+        "negotiation",
+        "procurement",
+        "vendor-management",
+        "commercial-strategy"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "commercial-manager",
+      "difficulty": "expert",
+      "stack": [
+        "contract-management",
+        "negotiation",
+        "supplier-management"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": [
+        39
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Enterprise Regulatory Obligation Register",
+      "description": "Convert regulatory source material into an owned, traceable, and monitorable obligation register",
+      "category": "compliance",
+      "prompt": "Context:\nYou are a compliance program lead translating laws, regulations, licenses, regulatory guidance, and binding commitments into operational obligations. The register must help accountable owners understand what is required, where it applies, how compliance is evidenced, and when change is needed.\n\nInputs:\nProvide authoritative source material; jurisdictions and legal entities; products, services, processes, and customer segments in scope; effective dates; regulator correspondence; existing policies and controls; ownership data; prior legal interpretations; and known remediation work.\n\nRequirements:\n1. Identify discrete obligations and preserve traceability to the exact source citation and version.\n2. Record applicability by jurisdiction, entity, product, process, customer, and effective date.\n3. Translate each obligation into plain operational language without changing its legal meaning.\n4. Classify the obligation as conduct, prudential, reporting, disclosure, recordkeeping, governance, licensing, training, monitoring, or another relevant type.\n5. Map accountable executives, operational owners, policies, controls, evidence, systems, reporting, and assurance.\n6. Flag interpretation questions, overlaps, conflicts, control gaps, and obligations affected by planned change.\n7. Prioritize gaps using impact, likelihood, regulatory attention, customer harm, and remediation urgency.\n8. Define review cadence, change triggers, attestation needs, and evidence-retention expectations.\n\nConstraints:\n- Do not present operational paraphrasing as legal advice.\n- Preserve source wording for defined terms, thresholds, exceptions, and deadlines.\n- Do not mark an obligation compliant solely because a policy exists.\n- Restrict sensitive regulatory correspondence and legal advice to authorized audiences.\n\nOutput:\nReturn an obligation register with source citation, applicability, operational requirement, owner, mapped controls, evidence, status, gaps, actions, due dates, assurance method, and review trigger, followed by an executive gap summary.\n\nExample:\nCreate an obligation register for a new consumer-duty regime spanning product design, communications, pricing, support, monitoring, board oversight, and customer-outcome evidence.\n\nEvaluation:\n- Every obligation is traceable to an authoritative source and version.\n- Applicability and ownership are explicit enough for operational use.\n- Compliance status is supported by control and evidence, not policy presence alone.\n- Interpretation uncertainty and remediation priorities remain visible.",
+      "example": "Create an owned obligation register for a consumer-duty regime covering product design through board oversight.",
+      "tags": [
+        "regulatory-compliance",
+        "obligation-register",
+        "controls",
+        "governance",
+        "regulatory-change"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "extract",
+      "audience": "compliance-program-lead",
+      "difficulty": "expert",
+      "stack": [
+        "regulatory-compliance",
+        "control-mapping",
+        "legal-operations"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        24
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Enterprise Policy and Control Assessment",
+      "description": "Test whether policy requirements are translated into well-designed and operating controls",
+      "category": "compliance",
+      "prompt": "Context:\nYou are a risk and controls specialist assessing whether an enterprise policy is complete, implementable, and supported by effective controls. The assessment should distinguish policy-quality issues from control-design and control-operation failures.\n\nInputs:\nProvide the policy and supporting standards; relevant obligations and risk taxonomy; process maps; control inventory; ownership records; procedures; system configurations; samples and evidence; incidents, losses, complaints, exceptions, and audit findings; prior attestations; and the assessment period.\n\nRequirements:\n1. Decompose the policy into mandatory, conditional, and guidance statements.\n2. Map each mandatory requirement to risks, processes, roles, controls, evidence, and assurance activity.\n3. Assess policy clarity, scope, authority, ownership, exceptions, review cycle, and consistency with higher-order requirements.\n4. Evaluate control design for objective, trigger, frequency, performer, reviewer, evidence, population, system dependency, and failure response.\n5. Test operating effectiveness using risk-based samples and record population, period, procedure, result, and limitation.\n6. Identify unmapped requirements, duplicate controls, manual fragility, access conflicts, stale evidence, recurring exceptions, and unsupported attestations.\n7. Rate findings by risk and distinguish immediate containment from sustainable remediation.\n8. Recommend policy, procedure, system, training, governance, and assurance improvements with accountable owners.\n\nConstraints:\n- Do not infer operating effectiveness from design documentation alone.\n- Preserve evidence lineage and avoid collecting personal data beyond the assessment need.\n- Apply the stated rating methodology consistently.\n- Keep management action plans separate from the assessor's finding and evidence.\n\nOutput:\nReturn a requirements-to-controls matrix, policy-quality review, control-design assessment, operating-test results, evidence exceptions, findings register, remediation plan, residual-risk view, and executive assurance conclusion.\n\nExample:\nAssess a third-party risk policy and its onboarding, due-diligence, approval, monitoring, exception, and offboarding controls across a sample of critical suppliers.\n\nEvaluation:\n- Every conclusion identifies the requirement, control, evidence, and test performed.\n- Design and operating-effectiveness conclusions are clearly separated.\n- Findings reflect risk and recurring patterns rather than isolated paperwork defects.\n- Remediation addresses root causes with verifiable completion criteria.",
+      "example": "Assess a third-party risk policy and test onboarding through offboarding controls for critical suppliers.",
+      "tags": [
+        "policy-review",
+        "control-testing",
+        "compliance",
+        "risk-management",
+        "assurance"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "audit",
+      "audience": "risk-controls-specialist",
+      "difficulty": "expert",
+      "stack": [
+        "control-testing",
+        "policy-management",
+        "risk-assurance"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        41
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Enterprise Target Operating Model",
+      "description": "Design an executable target operating model across capabilities, processes, governance, data, technology, and people",
+      "category": "operations",
+      "prompt": "Context:\nYou are an operating-model architect translating strategy into a practical way of working. The target model must define how value is delivered across organizational boundaries and provide a realistic transition from the current state.\n\nInputs:\nProvide the strategic objectives; customer and stakeholder outcomes; products and services; current capabilities, processes, organization, locations, governance, data, technology, suppliers, measures, and pain points; target economics; regulatory constraints; transformation dependencies; and planning horizon.\n\nRequirements:\n1. Define the value propositions, customer journeys, and value streams the model must support.\n2. Assess current-state strengths, constraints, failure points, duplicated work, and critical dependencies.\n3. Establish design principles and measurable target outcomes.\n4. Specify target capabilities and identify which should be owned, shared, outsourced, partnered, automated, or retired.\n5. Design end-to-end processes, decision rights, governance forums, organizational interfaces, service boundaries, and escalation paths.\n6. Define required data, technology, controls, workforce capabilities, locations, and supplier roles.\n7. Describe performance measures, service levels, unit economics, risk indicators, and management routines.\n8. Create transition states that sequence foundational capabilities, dependencies, migrations, and behavior change.\n9. Identify decisions, investment, ownership, benefits, risks, and adoption actions for implementation.\n\nConstraints:\n- Do not produce an organization chart as a substitute for an operating model.\n- Reuse viable current capabilities before proposing new platforms or functions.\n- Make handoffs, retained responsibilities, and control ownership explicit.\n- Align target ambition with available funding, capacity, and change tolerance.\n\nOutput:\nReturn an operating-model blueprint with design principles, value streams, capability map, process and service model, governance and decision rights, organization interfaces, data and technology needs, sourcing model, performance system, transition roadmap, investment view, and open decisions.\n\nExample:\nDesign a target operating model for a manufacturer centralizing procurement analytics while retaining local supplier relationships, plant continuity decisions, and regulated quality accountability.\n\nEvaluation:\n- Every model component supports a stated strategic or customer outcome.\n- End-to-end ownership and cross-boundary handoffs are explicit.\n- Transition states respect dependencies and operating continuity.\n- Measures reveal value, service, risk, and adoption performance.",
+      "example": "Design a procurement operating model that centralizes analytics while retaining local supplier and quality accountability.",
+      "tags": [
+        "target-operating-model",
+        "operations",
+        "capability-model",
+        "governance",
+        "transformation"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "operating-model-architect",
+      "difficulty": "expert",
+      "stack": [
+        "operating-model",
+        "capability-mapping",
+        "process-design"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        33,
+        38
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Enterprise Business Continuity Exercise",
+      "description": "Design and evaluate a realistic continuity exercise that tests decisions, dependencies, and recovery capability",
+      "category": "operations",
+      "prompt": "Context:\nYou are a business resilience lead designing an exercise for a critical business service. The exercise should reveal whether people can make timely decisions, operate workarounds, manage dependencies, communicate, and recover within approved tolerances.\n\nInputs:\nProvide the critical service and customer outcomes; impact tolerances; business-impact analysis; continuity and disaster-recovery plans; process, people, site, technology, data, and supplier dependencies; crisis roles; prior incidents and exercises; regulatory expectations; exercise participants; and available duration.\n\nRequirements:\n1. Define exercise objectives, scope, assumptions, success measures, exclusions, and safety controls.\n2. Create a credible scenario with escalating injects that stress multiple dependencies without requiring actual disruption.\n3. Test detection, activation, command structure, decision rights, communications, manual workarounds, customer protection, supplier coordination, data integrity, recovery prioritization, and return to normal.\n4. Include ambiguity, incomplete information, conflicting priorities, and at least one failed recovery assumption.\n5. Prepare facilitator guidance, participant briefings, inject schedule, expected decision points, observer notes, and evidence capture.\n6. Assess performance against impact tolerances, recovery objectives, plan assumptions, and required escalation times.\n7. Distinguish individual mistakes from systemic weaknesses in plans, training, capacity, technology, contracts, or governance.\n8. Produce corrective actions with priority, owner, due date, dependency, validation method, and retest plan.\n\nConstraints:\n- Do not trigger production changes, public communications, emergency services, or supplier actions during the exercise.\n- Clearly label all exercise messages and protect sensitive operational information.\n- Avoid designing injects that test trivia rather than consequential decisions and capabilities.\n- Preserve psychological safety while maintaining an evidence-based assessment.\n\nOutput:\nReturn an exercise charter, scenario narrative, timed inject pack, participant and observer materials, evaluation rubric, evidence log, hot-debrief guide, after-action report structure, corrective-action register, and retest schedule.\n\nExample:\nRun a tabletop exercise for a payment service facing a cloud-region outage, unavailable identity provider, delayed vendor response, social-media reports, and a growing backlog near the approved impact tolerance.\n\nEvaluation:\n- Injects test stated objectives and critical dependencies.\n- Observations distinguish plan execution from underlying capability gaps.\n- Findings are supported by captured decisions, timings, and outcomes.\n- Corrective actions have measurable closure and retest criteria.",
+      "example": "Run a payment-service tabletop exercise involving a cloud outage, identity failure, vendor delay, and customer backlog.",
+      "tags": [
+        "business-continuity",
+        "resilience",
+        "tabletop-exercise",
+        "crisis-management",
+        "recovery"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "business-resilience-lead",
+      "difficulty": "expert",
+      "stack": [
+        "business-continuity",
+        "crisis-management",
+        "operational-resilience"
+      ],
+      "workflowStage": "operate",
+      "relatedIds": [
+        28,
+        43
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Workplace Weekly Priority Plan",
+      "description": "Turn competing tasks, deadlines, and dependencies into a realistic weekly execution plan",
+      "category": "workplace-productivity",
+      "prompt": "Context:\nYou are a productivity coach helping a professional plan a demanding workweek. The goal is to protect the most important outcomes, make trade-offs explicit, and leave enough capacity for coordination and unexpected work.\n\nInputs:\nProvide the week's tasks and desired outcomes; deadlines; estimated effort; importance and urgency; dependencies; meetings and fixed commitments; available working hours; energy or focus constraints; delegated work; waiting items; and known interruptions or risks.\n\nRequirements:\n1. Clarify the few outcomes that would make the week successful.\n2. Classify tasks by value, urgency, commitment, effort, dependency, and consequence of delay.\n3. Identify tasks to complete, schedule, delegate, renegotiate, batch, shorten, or decline.\n4. Build a day-by-day plan with protected focus blocks, coordination time, administrative batches, and buffer.\n5. Sequence dependent work and include the earliest useful follow-up for items awaiting others.\n6. Flag overcommitment and draft a specific trade-off proposal rather than silently compressing every task.\n7. Define a start-of-day check, midweek reset, and end-of-week closeout.\n8. Include a short list of distractions or low-value work to avoid.\n\nConstraints:\n- Do not schedule more work than the stated available hours.\n- Treat estimates as uncertain and preserve buffer for interruptions.\n- Keep urgent requests from displacing higher-value commitments without an explicit decision.\n- Avoid generic advice; use the supplied tasks, dates, and dependencies.\n\nOutput:\nReturn a one-page weekly plan with success outcomes, ranked task table, daily schedule, delegation and follow-up list, trade-off messages, risk and buffer notes, and review checkpoints.\n\nExample:\nPlan a product manager's week containing a customer workshop, roadmap decision, hiring interviews, metrics review, executive update, and two overdue approval requests within thirty available hours.\n\nEvaluation:\n- The plan fits within available capacity and includes visible buffer.\n- Each scheduled task supports a stated outcome or commitment.\n- Dependencies and follow-ups have concrete next actions.\n- Overcommitment is resolved through explicit trade-offs.",
+      "example": "Plan a product manager's thirty-hour week across a workshop, roadmap decision, interviews, metrics, and approvals.",
+      "tags": [
+        "productivity",
+        "weekly-planning",
+        "prioritization",
+        "time-management",
+        "focus"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "knowledge-worker",
+      "difficulty": "intermediate",
+      "stack": [
+        "task-management",
+        "calendar-planning",
+        "prioritization"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": []
+    },
+    {
+      "id": 46,
+      "title": "Workplace Stakeholder Email",
+      "description": "Draft a concise stakeholder email that makes the situation, decision, and next action clear",
+      "category": "workplace-communication",
+      "prompt": "Context:\nYou are a workplace communications adviser helping someone write a high-stakes email to colleagues, leaders, clients, or partners. The message should be direct, respectful, easy to scan, and calibrated to the relationship and consequence.\n\nInputs:\nProvide the communication goal; audience and relationship; essential facts; relevant dates and decisions; requested action; desired tone; sensitivities or disagreement; supporting links or attachments; sender authority; and any wording or claims that require caution.\n\nRequirements:\n1. Identify the single primary purpose and put it in the subject line and opening.\n2. Give only the context the recipient needs to understand the issue and consequence.\n3. Separate confirmed facts, interpretation, recommendation, and unresolved questions.\n4. State the requested action, owner, and deadline in unmistakable language.\n5. Anticipate the recipient's likely concern and address it without becoming defensive.\n6. Use short paragraphs, informative bullets, and a professional close.\n7. Provide an alternative version when a firmer or more diplomatic tone could materially change the outcome.\n8. Suggest whether email is appropriate or a conversation should happen first.\n\nConstraints:\n- Do not invent commitments, approvals, evidence, or authority.\n- Avoid blame, sarcasm, filler, vague urgency, and unnecessary copying of recipients.\n- Protect confidential, personal, and commercially sensitive information.\n- Keep the email proportionate to the decision and relationship.\n\nOutput:\nReturn a recommended subject line, polished email, optional tone variant, recipient and copy guidance, and a brief note explaining any claim or sensitivity that should be verified before sending.\n\nExample:\nWrite to a senior sponsor explaining that a launch date is no longer credible, presenting two recovery choices, and requesting a decision by Thursday without blaming the delivery team.\n\nEvaluation:\n- The recipient can identify the purpose and requested action within seconds.\n- Facts and recommendations are not blurred together.\n- Tone supports the relationship while preserving necessary candor.\n- Sensitive claims and recipient choices are handled deliberately.",
+      "example": "Explain a no-longer-credible launch date to a senior sponsor and request a choice between two recovery options.",
+      "tags": [
+        "email-writing",
+        "stakeholder-communication",
+        "business-writing",
+        "executive-communication",
+        "tone"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "write",
+      "audience": "business-professional",
+      "difficulty": "intermediate",
+      "stack": [
+        "business-writing",
+        "stakeholder-management",
+        "email"
+      ],
+      "workflowStage": "communicate",
+      "relatedIds": []
+    },
+    {
+      "id": 47,
+      "title": "Workplace Decision Meeting Pack",
+      "description": "Design a focused meeting that produces a decision, clear record, and owned follow-through",
+      "category": "workplace-meetings",
+      "prompt": "Context:\nYou are a meeting facilitator preparing a working session where participants must make a decision or resolve a defined issue. The meeting should use live time for judgment and discussion rather than information transfer that could happen asynchronously.\n\nInputs:\nProvide the decision or problem; sponsor and decision owner; participants and roles; available time; relevant facts and pre-read; options; decision criteria; known disagreements; constraints; prior decisions; and the date by which follow-through is needed.\n\nRequirements:\n1. Confirm the decision statement, authority, and outcome required from the meeting.\n2. Decide who must attend, who can contribute asynchronously, and who only needs the record.\n3. Create a concise pre-read containing facts, options, criteria, open questions, and preparation requests.\n4. Build a timed agenda that reserves most of the session for option testing and decision-making.\n5. Define facilitation questions that surface assumptions, dissent, dependencies, and consequences.\n6. Specify how the decision will be made when consensus is absent.\n7. Provide a live decision-record template with rationale, conditions, dissent, owner, actions, and due dates.\n8. Draft the follow-up message and identify unresolved items that require another forum.\n\nConstraints:\n- Do not invite participants solely for status visibility.\n- Avoid reopening settled decisions unless new evidence or changed conditions are stated.\n- Keep agenda scope achievable within the available time.\n- Distinguish a decision from an action, recommendation, discussion, or information item.\n\nOutput:\nReturn the meeting objective, attendee plan, pre-read outline, timed agenda, facilitator script, decision method, decision-and-action record, parking-lot rules, and follow-up message.\n\nExample:\nPrepare a forty-five-minute meeting to choose between delaying a feature, reducing scope, or adding temporary capacity before a contractual launch milestone.\n\nEvaluation:\n- Decision authority and criteria are explicit before the meeting.\n- The agenda protects enough time for the consequential discussion.\n- The record captures rationale, conditions, ownership, and dates.\n- Participants know what to prepare and what happens after the session.",
+      "example": "Prepare a forty-five-minute meeting to choose between delay, reduced scope, or temporary capacity before launch.",
+      "tags": [
+        "meetings",
+        "decision-making",
+        "facilitation",
+        "agenda",
+        "meeting-notes"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "meeting-facilitator",
+      "difficulty": "advanced",
+      "stack": [
+        "facilitation",
+        "decision-making",
+        "meeting-management"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": []
+    },
+    {
+      "id": 48,
+      "title": "Workplace Executive Presentation Storyline",
+      "description": "Shape evidence into a concise executive presentation with a clear decision and narrative",
+      "category": "workplace-presentations",
+      "prompt": "Context:\nYou are an executive communications adviser turning analysis into a presentation for senior leaders. The deck should lead with the decision or implication, use evidence selectively, and make trade-offs easy to understand.\n\nInputs:\nProvide the audience and meeting purpose; decision or outcome sought; key message; supporting evidence; options; risks; stakeholder positions; time available; expected questions; organizational style; and any required appendix material.\n\nRequirements:\n1. Define the audience's starting point, likely concerns, and the action needed at the end.\n2. Write a one-sentence governing message that states the conclusion and consequence.\n3. Build a narrative arc from situation and complication to insight, options, recommendation, and next step.\n4. Create slide titles that communicate conclusions rather than topics.\n5. Specify the minimum evidence, comparison, or visual needed on each slide.\n6. Make assumptions, uncertainty, downside, and alternative options visible.\n7. Prepare speaker notes, transitions, and a concise opening and close.\n8. Anticipate difficult questions and provide evidence-based answers or honest limits.\n9. Move supporting detail to a purposeful appendix linked to likely questions.\n\nConstraints:\n- Do not overload slides with paragraphs, decorative graphics, or every available metric.\n- Avoid claims stronger than the supplied evidence.\n- Keep the core presentation within the stated speaking time.\n- Use plain business language and define unavoidable specialist terms.\n\nOutput:\nReturn a slide-by-slide storyline with conclusion-led titles, content and visual guidance, speaker notes, timing, opening, close, anticipated questions, and appendix plan.\n\nExample:\nCreate a ten-minute leadership deck recommending a phased return-to-office policy using employee, customer, productivity, cost, and attrition evidence while acknowledging uncertainty and role differences.\n\nEvaluation:\n- The requested decision or action is clear by the opening slides.\n- Each slide advances one necessary part of the argument.\n- Evidence, uncertainty, alternatives, and trade-offs are visible.\n- The full storyline fits the available presentation time.",
+      "example": "Create a ten-minute leadership deck recommending a phased return-to-office policy from mixed evidence.",
+      "tags": [
+        "presentations",
+        "executive-storytelling",
+        "slide-design",
+        "speaker-notes",
+        "decision-support"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "write",
+      "audience": "executive-presenter",
+      "difficulty": "advanced",
+      "stack": [
+        "presentation-design",
+        "business-storytelling",
+        "executive-communication"
+      ],
+      "workflowStage": "communicate",
+      "relatedIds": []
+    },
+    {
+      "id": 49,
+      "title": "Workplace Spreadsheet Model Audit",
+      "description": "Audit a business spreadsheet for formula errors, control gaps, usability, and decision risk",
+      "category": "workplace-spreadsheets",
+      "prompt": "Context:\nYou are a spreadsheet assurance specialist reviewing a workbook used for reporting, forecasting, pricing, planning, or operational decisions. The audit should find errors and fragile design while making the model easier to understand, test, and maintain.\n\nInputs:\nProvide the workbook or a structured description of sheets, tables, formulas, named ranges, inputs, outputs, macros, external links, data sources, refresh steps, users, decision purpose, materiality threshold, and known concerns.\n\nRequirements:\n1. Map the workbook's purpose, flow of data, key inputs, calculations, outputs, and manual steps.\n2. Check formulas for inconsistent ranges, hard-coded values, broken references, hidden errors, copy-across defects, circularity, and unintended text or blanks.\n3. Reconcile key totals and test whether outputs respond correctly to controlled input changes.\n4. Review data validation, duplicate handling, date and unit consistency, lookup behavior, rounding, sign conventions, and error treatment.\n5. Identify hidden sheets, rows, columns, names, external links, macros, and protection settings that create risk.\n6. Assess separation of inputs, calculations, outputs, documentation, and change history.\n7. Prioritize findings by likelihood, financial or operational impact, detectability, and ease of correction.\n8. Recommend formula fixes, controls, test cases, documentation, and ownership without unnecessary redesign.\n\nConstraints:\n- Preserve an untouched copy and record the workbook version reviewed.\n- Do not overwrite formulas or data without documenting the exact change.\n- Treat macros and external links as untrusted until inspected.\n- Avoid claiming completeness when parts of the workbook or data lineage are unavailable.\n\nOutput:\nReturn a workbook map, reconciliation results, formula and data findings, risk-rated issue log, corrected formula examples, control checklist, regression test set, and a prioritized remediation plan.\n\nExample:\nAudit a sales-commission workbook with monthly imports, nested lookups, manual overrides, region-specific rates, hidden helper sheets, and unexplained differences from payroll.\n\nEvaluation:\n- Findings identify exact locations, evidence, consequence, and correction.\n- Key totals and decision outputs are independently reconciled.\n- Proposed tests would detect recurrence of material errors.\n- Limitations and unreviewed workbook components are explicit.",
+      "example": "Audit a sales-commission workbook with imports, nested lookups, overrides, hidden sheets, and payroll differences.",
+      "tags": [
+        "spreadsheets",
+        "excel",
+        "formula-audit",
+        "financial-modeling",
+        "controls"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "audit",
+      "audience": "spreadsheet-owner",
+      "difficulty": "advanced",
+      "stack": [
+        "excel",
+        "spreadsheet-modeling",
+        "quality-assurance"
+      ],
+      "workflowStage": "review",
+      "relatedIds": []
+    },
+    {
+      "id": 50,
+      "title": "Workplace Research Synthesis Brief",
+      "description": "Synthesize mixed business research into traceable findings, implications, and decisions",
+      "category": "workplace-research",
+      "prompt": "Context:\nYou are a business research analyst synthesizing multiple sources for a workplace decision. The brief should distinguish reliable evidence from opinion, reconcile disagreement, and translate findings into practical implications without overstating certainty.\n\nInputs:\nProvide the decision question; intended audience; source documents, notes, interviews, datasets, or links; time period and geography; inclusion criteria; known source limitations; organizational context; deadline; and preferred citation style.\n\nRequirements:\n1. Restate the decision question and define the boundaries of the research.\n2. Inventory sources by type, date, provenance, relevance, and reliability.\n3. Extract findings with traceable citations and separate direct evidence from interpretation.\n4. Group evidence into themes while preserving material differences across sources, populations, or time periods.\n5. Identify convergence, contradiction, missing evidence, bias, and claims that cannot be verified.\n6. Assess how strongly each finding answers the decision question.\n7. Translate findings into implications, options, risks, and questions for decision-makers.\n8. Recommend proportionate next research only where uncertainty could change the decision.\n\nConstraints:\n- Do not fabricate citations, statistics, quotations, or source access.\n- Prefer primary and current evidence when source quality differs.\n- Keep correlation, causation, anecdote, and expert judgment distinct.\n- Protect confidential interviewees and sensitive company information.\n\nOutput:\nReturn an executive research brief with decision question, method, source table, thematic findings, evidence-strength ratings, contradictions and gaps, implications, options, recommendation, next research, and a complete source list.\n\nExample:\nSynthesize customer interviews, win-loss notes, usage data, competitor materials, and market reports to decide whether a software company should introduce a lower-priced team plan.\n\nEvaluation:\n- Material findings are traceable to identifiable sources.\n- Source quality and conflicting evidence affect the strength of conclusions.\n- Recommendations do not extend beyond the evidence.\n- Proposed additional research is tied to a decision-relevant uncertainty.",
+      "example": "Synthesize customer, usage, competitor, and market evidence for a decision on a lower-priced software plan.",
+      "tags": [
+        "research",
+        "synthesis",
+        "evidence",
+        "business-analysis",
+        "citations"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "research",
+      "audience": "business-analyst",
+      "difficulty": "advanced",
+      "stack": [
+        "desk-research",
+        "qualitative-analysis",
+        "evidence-synthesis"
+      ],
+      "workflowStage": "discover",
+      "relatedIds": [
+        26
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Workplace Sales Account Plan",
+      "description": "Build an evidence-based account plan around customer outcomes, stakeholders, opportunity quality, and next actions",
+      "category": "sales",
+      "prompt": "Context:\nYou are a strategic account adviser helping a sales team plan how to create value with a target customer. The account plan should improve discovery and coordination without turning assumptions into facts or relying on generic relationship activity.\n\nInputs:\nProvide the customer's business model, priorities, financial or operating context, relevant initiatives, current products and contracts, usage and service history, known needs, stakeholder map, competitive position, open opportunities, past interactions, commercial constraints, evidence sources, and planning horizon.\n\nRequirements:\n1. Summarize the customer's likely priorities and distinguish confirmed evidence from hypotheses requiring discovery.\n2. Map stakeholders by role, influence, interest, relationship strength, concerns, and access path.\n3. Identify customer outcomes where the seller can plausibly contribute and the evidence needed to quantify value.\n4. Assess current relationship health, whitespace, active opportunities, renewal exposure, competitor position, and delivery dependencies.\n5. Qualify each opportunity by problem importance, sponsor, decision process, success criteria, budget, timing, competition, and risk.\n6. Create a coordinated engagement plan with useful customer interactions, owners, dates, and desired learning or commitment.\n7. Define mutual-action milestones, internal support needed, commercial guardrails, and exit criteria for weak opportunities.\n8. Establish account indicators for value delivered, relationship depth, pipeline quality, adoption, retention, and risk.\n\nConstraints:\n- Do not invent customer priorities, budgets, relationships, or commitments.\n- Avoid manipulative tactics, false urgency, and activity that provides no customer value.\n- Respect confidentiality, consent, procurement rules, and competition law.\n- Keep forecasts separate from unqualified potential.\n\nOutput:\nReturn an account brief, evidence-and-hypothesis table, stakeholder map, customer-value themes, opportunity qualification, relationship and risk assessment, ninety-day engagement plan, mutual-action milestones, internal asks, and account health measures.\n\nExample:\nCreate an account plan for expanding a data platform within a retailer where one division has strong adoption, security review is pending, the economic buyer is unconfirmed, and a competitor holds the analytics contract.\n\nEvaluation:\n- Customer claims are traceable to evidence or labeled as discovery hypotheses.\n- Opportunities have clear qualification gaps and exit criteria.\n- Planned interactions create customer value or resolve a decision uncertainty.\n- Ownership, timing, dependencies, and account risks are explicit.",
+      "example": "Create a retailer account plan for expanding a data platform amid strong adoption, pending security review, and competition.",
+      "tags": [
+        "sales",
+        "account-planning",
+        "stakeholder-mapping",
+        "opportunity-qualification",
+        "customer-value"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "account-executive",
+      "difficulty": "advanced",
+      "stack": [
+        "crm",
+        "consultative-selling",
+        "account-management"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": []
+    },
+    {
+      "id": 52,
+      "title": "Workplace Marketing Campaign Brief",
+      "description": "Create a focused campaign brief linking audience insight, message, channels, measurement, and execution",
+      "category": "marketing",
+      "prompt": "Context:\nYou are a marketing strategist preparing a campaign brief that aligns creative, channel, sales, product, and analytics teams. The brief should define the customer behavior to influence and how the organization will know whether the campaign worked.\n\nInputs:\nProvide the business objective; product or offer; target market and audience evidence; customer problem; positioning; competitive context; campaign period; budget; channels; geographic and legal constraints; brand guidance; available assets; conversion journey; historical performance; and stakeholders.\n\nRequirements:\n1. Translate the business objective into a specific audience behavior and measurable campaign outcome.\n2. Define priority segments using relevant needs, context, barriers, and evidence rather than broad demographics alone.\n3. Articulate the value proposition, reasons to believe, message hierarchy, desired tone, and claims requiring substantiation.\n4. Map the customer journey from exposure through response, conversion, onboarding, and follow-up.\n5. Assign channel roles, audience, content, call to action, timing, budget logic, and handoffs.\n6. Specify creative deliverables, variants, approvals, production dependencies, and reuse opportunities.\n7. Design measurement across reach, quality, engagement, conversion, incremental impact, cost, and downstream value.\n8. Define test hypotheses, comparison approach, decision thresholds, reporting cadence, and optimization rules.\n9. Identify brand, privacy, accessibility, legal, operational, and sales-readiness risks.\n\nConstraints:\n- Do not invent audience insight or performance benchmarks.\n- Avoid unsupported, misleading, discriminatory, or privacy-invasive targeting and claims.\n- Distinguish attributed results from proven incremental impact.\n- Keep deliverables and channel scope within the stated budget and timeline.\n\nOutput:\nReturn a campaign brief with objective, audience, insight, proposition, message framework, journey, channel plan, creative deliverables, schedule, budget allocation logic, measurement plan, experiment design, governance, and risk checklist.\n\nExample:\nBrief a six-week campaign for a cybersecurity service aimed at mid-market operations leaders, combining partner webinars, email nurture, paid search, sales follow-up, and a measurable trial conversion goal.\n\nEvaluation:\n- Audience, message, channel, and desired behavior form a coherent chain.\n- Measures distinguish activity, conversion, efficiency, and business outcome.\n- Claims and targeting have clear evidence and approval requirements.\n- The plan is executable within budget, timing, and operational capacity.",
+      "example": "Brief a six-week cybersecurity campaign combining webinars, nurture, search, and sales follow-up for trial conversion.",
+      "tags": [
+        "marketing",
+        "campaign-brief",
+        "positioning",
+        "channel-planning",
+        "measurement"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "marketing-manager",
+      "difficulty": "advanced",
+      "stack": [
+        "campaign-management",
+        "marketing-analytics",
+        "content-strategy"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": []
+    },
+    {
+      "id": 53,
+      "title": "Workplace Customer Support Escalation",
+      "description": "Craft a clear customer response and internal escalation plan for a consequential support issue",
+      "category": "customer-support",
+      "prompt": "Context:\nYou are a senior customer-support adviser handling an issue that is complex, delayed, high-impact, or emotionally charged. The response must acknowledge the customer's experience, state what is known, avoid unsupported promises, and coordinate a credible path to resolution.\n\nInputs:\nProvide the customer's message and tone; account and product context; issue timeline; observed symptoms; confirmed facts; troubleshooting completed; business impact; service commitments; internal owner and escalation status; available workaround; privacy or security considerations; next update time; and approved remedies.\n\nRequirements:\n1. Summarize the issue, customer impact, and current status in plain language.\n2. Acknowledge the experience specifically without admitting unsupported fault or using scripted empathy.\n3. Separate confirmed facts, active hypotheses, actions completed, and work still underway.\n4. Give safe workaround steps when available and state limitations or side effects.\n5. Set the next update time, communication owner, and what the update will contain.\n6. Ask only questions that materially advance diagnosis or resolution.\n7. Build an internal escalation note with severity, impact, timeline, evidence, owner, dependencies, requested decision, and communication commitment.\n8. Recommend service recovery or commercial remedy only within supplied policy and authority.\n\nConstraints:\n- Do not promise a cause, fix, deadline, credit, or outcome that has not been approved.\n- Do not expose internal speculation, security detail, personal data, or another customer's information.\n- Avoid blaming the customer, another team, or a supplier.\n- Match urgency to actual impact and service commitments.\n\nOutput:\nReturn a customer-ready response, concise subject line, internal escalation brief, action and owner list, next-update plan, and a note identifying statements that require technical, legal, security, or commercial approval.\n\nExample:\nRespond to a finance customer whose month-end exports have intermittently failed for two days, where a manual workaround exists but root cause and permanent-fix timing remain unknown.\n\nEvaluation:\n- The customer can distinguish what is known, underway, and expected next.\n- Commitments are specific, owned, and authorized.\n- The internal escalation contains enough evidence and impact detail for action.\n- Tone is human and accountable without speculation or blame.",
+      "example": "Respond to a finance customer facing intermittent month-end export failures with a workaround but no confirmed fix date.",
+      "tags": [
+        "customer-support",
+        "escalation",
+        "service-recovery",
+        "customer-communication",
+        "incident-support"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "respond",
+      "audience": "customer-support-lead",
+      "difficulty": "advanced",
+      "stack": [
+        "customer-support",
+        "incident-management",
+        "service-communication"
+      ],
+      "workflowStage": "operate",
+      "relatedIds": [
+        28
+      ]
+    },
+    {
+      "id": 54,
+      "title": "Workplace Project Coordination Brief",
+      "description": "Convert fragmented project updates into a decision-focused status, dependency, and action brief",
+      "category": "project-coordination",
+      "prompt": "Context:\nYou are a project coordinator consolidating updates from multiple workstreams. The brief should help the team understand progress, upcoming commitments, blockers, dependencies, decisions, and ownership without rewarding optimistic status reporting.\n\nInputs:\nProvide project objectives and success measures; milestones and baseline dates; workstream updates; completed deliverables; planned work; budget or capacity information; risks, assumptions, issues, and dependencies; decisions needed; change requests; stakeholder commitments; and the reporting period.\n\nRequirements:\n1. Reconcile each workstream update to the agreed scope, milestone, owner, and baseline.\n2. Separate completed outcomes from activity, percentage estimates, and unverified claims.\n3. Forecast milestone health using remaining work, dependencies, capacity, and evidence rather than status color alone.\n4. Consolidate risks, assumptions, issues, dependencies, and decisions without duplicating the same underlying problem.\n5. Identify the critical path, near-term handoffs, overdue actions, and dependency owners.\n6. Quantify schedule, scope, cost, quality, or benefit impact where evidence allows.\n7. Draft decision requests with options, recommendation, deadline, and consequence of delay.\n8. Produce a two-week lookahead and action register with owner, due date, and completion evidence.\n\nConstraints:\n- Do not report a milestone as healthy when unresolved dependencies make the date implausible.\n- Keep risks separate from active issues and actions separate from decisions.\n- Do not invent completion percentages or revised dates.\n- Escalate by impact and required authority, not by volume of commentary.\n\nOutput:\nReturn an executive status summary, milestone table, critical-path view, consolidated risk and issue log, dependency map, decision queue, change summary, two-week lookahead, and owned action register.\n\nExample:\nCoordinate a customer-data migration with legal approval, vendor extraction, engineering build, business validation, training, and a fixed contract-exit date across five workstreams.\n\nEvaluation:\n- Status conclusions trace to milestones, evidence, dependencies, and remaining work.\n- Critical decisions and handoffs have owners and decision dates.\n- Risks, issues, dependencies, actions, and changes are correctly distinguished.\n- The brief directs attention to the few items that can change the outcome.",
+      "example": "Coordinate a five-workstream customer-data migration with legal, vendor, engineering, validation, and training dependencies.",
+      "tags": [
+        "project-coordination",
+        "status-reporting",
+        "raid-log",
+        "dependencies",
+        "milestones"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "coordinate",
+      "audience": "project-coordinator",
+      "difficulty": "advanced",
+      "stack": [
+        "project-management",
+        "raid",
+        "dependency-management"
+      ],
+      "workflowStage": "operate",
+      "relatedIds": [
+        27
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Workplace Role Handover Plan",
+      "description": "Create a practical handover that transfers responsibilities, context, access, relationships, and open work",
+      "category": "workplace-productivity",
+      "prompt": "Context:\nYou are a transition coordinator preparing a handover for leave, role change, departure, or ownership transfer. The plan should allow the receiving person to operate safely without relying on undocumented memory or indiscriminate information dumping.\n\nInputs:\nProvide the transition dates; outgoing and incoming owners; role purpose; recurring responsibilities; current priorities; open tasks and decisions; key stakeholders; systems and access; files and records; deadlines; risks; delegated authorities; escalation paths; sensitive information; and available overlap time.\n\nRequirements:\n1. Define the role outcomes, decision rights, boundaries, and critical obligations.\n2. Inventory recurring work by frequency, trigger, deadline, inputs, output, stakeholder, and failure consequence.\n3. Summarize open work with current state, next action, owner, due date, dependency, and evidence location.\n4. Map key relationships, communication cadence, expectations, sensitivities, and introduction needs.\n5. List required systems, access, records, templates, and approval authorities with transfer status.\n6. Identify tacit knowledge that needs walkthroughs, shadowing, scenarios, or practice rather than documents alone.\n7. Sequence knowledge-transfer sessions and define what the incoming owner should demonstrate afterward.\n8. Create continuity, escalation, and post-transition support arrangements.\n\nConstraints:\n- Do not share passwords, personal data, privileged material, or restricted information in the handover document.\n- Avoid copying entire folders without explaining relevance and source of truth.\n- Do not mark knowledge transferred solely because a document was sent.\n- Preserve clear ownership during the overlap and after the effective date.\n\nOutput:\nReturn a handover overview, responsibility calendar, open-work register, stakeholder map, access checklist, knowledge-transfer schedule, document index, risk and continuity plan, acceptance checklist, and first-thirty-days priorities.\n\nExample:\nPrepare a four-week handover for a procurement manager leaving before three supplier renewals, an audit response, monthly reporting, and a new sourcing event are complete.\n\nEvaluation:\n- Critical responsibilities, deadlines, ownership, and source records are explicit.\n- Knowledge transfer includes demonstration or verification where needed.\n- Access and authority changes are controlled and traceable.\n- The receiving owner can identify immediate priorities and escalation routes.",
+      "example": "Prepare a four-week procurement-manager handover covering renewals, audit response, reporting, and a sourcing event.",
+      "tags": [
+        "handover",
+        "knowledge-transfer",
+        "business-continuity",
+        "onboarding",
+        "role-transition"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "team-lead",
+      "difficulty": "intermediate",
+      "stack": [
+        "knowledge-management",
+        "transition-planning",
+        "task-management"
+      ],
+      "workflowStage": "plan",
+      "relatedIds": []
+    },
+    {
+      "id": 56,
+      "title": "Workplace Feedback Conversation Plan",
+      "description": "Prepare a fair, specific feedback conversation with clear expectations and follow-through",
+      "category": "workplace-communication",
+      "prompt": "Context:\nYou are a people manager preparing a feedback conversation about performance, behavior, collaboration, or development. The conversation should be respectful and evidence-based, make the impact clear, invite the employee's perspective, and establish practical next steps.\n\nInputs:\nProvide the purpose of the conversation; relationship and role context; specific observed events; dates and sources; expected standard; impact on work, customers, or colleagues; prior feedback; employee strengths; possible contributing context; desired outcome; available support; relevant policy; and follow-up timing.\n\nRequirements:\n1. Clarify whether the conversation is recognition, coaching, corrective feedback, expectation setting, or formal performance management.\n2. Separate observable behavior and results from assumptions about intent, personality, or motivation.\n3. Draft an opening that states purpose, respect, and the manager's responsibility.\n4. Describe specific examples, expected standard, and impact using neutral language.\n5. Prepare open questions that invite context, disagreement, and the employee's proposed solution.\n6. Identify where the manager should listen, pause, clarify, or acknowledge new information.\n7. Define mutually understood expectations, support, measures, owner, and review date.\n8. Draft a factual follow-up note and escalation path if serious new information emerges.\n\nConstraints:\n- Do not diagnose health conditions, assign motives, or speculate about protected characteristics.\n- Avoid vague labels, surprise allegations, public criticism, and threats.\n- Follow applicable policy and seek qualified HR guidance for formal, legal, safety, discrimination, harassment, or retaliation concerns.\n- Keep examples relevant, proportionate, and verifiable.\n\nOutput:\nReturn a conversation objective, evidence summary, opening script, key feedback points, questions, likely response scenarios, support options, agreed-action template, follow-up note, and manager preparation checklist.\n\nExample:\nPrepare a coaching conversation with a technically strong team lead whose repeated late handoffs and dismissive responses are creating rework and reducing trust across teams.\n\nEvaluation:\n- Feedback relies on specific observations and an understood standard.\n- The employee has a genuine opportunity to provide context and challenge facts.\n- Expectations, support, measures, and follow-up timing are explicit.\n- The plan avoids discriminatory, retaliatory, or unsupported conclusions.",
+      "example": "Prepare coaching feedback for a strong team lead whose late handoffs and dismissive responses are creating rework.",
+      "tags": [
+        "feedback",
+        "manager-communication",
+        "coaching",
+        "performance",
+        "difficult-conversations"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "people-manager",
+      "difficulty": "advanced",
+      "stack": [
+        "people-management",
+        "coaching",
+        "workplace-communication"
+      ],
+      "workflowStage": "communicate",
+      "relatedIds": []
+    },
+    {
       "id": 99,
       "title": "Universal Prompt Builder",
       "description": "Create a structured prompt from a task, audience, inputs, constraints, and success criteria",

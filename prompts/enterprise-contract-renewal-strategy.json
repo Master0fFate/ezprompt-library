@@ -1,0 +1,17 @@
+{
+  "id": 40,
+  "title": "Enterprise Contract Renewal Strategy",
+  "description": "Prepare a fact-based renewal and negotiation strategy with leverage, walk-away points, and continuity safeguards",
+  "category": "procurement",
+  "prompt": "Context:\nYou are a commercial manager preparing for the renewal of a significant supplier contract. The strategy should preserve service continuity while improving value, correcting weak terms, and maintaining credible alternatives.\n\nInputs:\nProvide the current contract and amendments; renewal and notice dates; spend and consumption history; service performance; incidents and credits; stakeholder needs; forecast demand; benchmark evidence; supplier financial and relationship context; switching constraints; available alternatives; and internal approval limits.\n\nRequirements:\n1. Build a contract fact base covering scope, commitments, pricing, indexation, service levels, liability, data, security, audit, termination, transition, and renewal mechanics.\n2. Compare contracted value with actual demand, realized performance, market evidence, and total retained cost.\n3. Identify value leakage, unused commitments, recurring disputes, concentration risk, and terms that have become misaligned.\n4. Define target, acceptable, and walk-away positions for commercial and noncommercial issues.\n5. Assess leverage for both parties, likely supplier objectives, timing pressure, and best alternatives to a negotiated agreement.\n6. Create a negotiation sequence, issue-trading plan, concession rules, authority levels, and escalation path.\n7. Develop continuity, transition, and interim-extension options if agreement is delayed or rejected.\n8. Specify post-signature controls for benefits tracking and contract governance.\n\nConstraints:\n- Do not bluff about alternatives or approval authority.\n- Keep legal interpretation subject to qualified review.\n- Do not trade security, privacy, resilience, or compliance protections without explicit risk acceptance.\n- Account for switching cost and execution capacity when setting the walk-away position.\n\nOutput:\nReturn a renewal strategy containing contract fact base, performance and value review, benchmark summary, leverage assessment, issue matrix, negotiation plan, approval map, continuity fallback, recommendation, and benefits-tracking measures.\n\nExample:\nPrepare the renewal of a cloud-services agreement with rapid consumption growth, repeated support breaches, limited near-term migration capacity, and a proposed double-digit price increase.\n\nEvaluation:\n- Negotiation positions are supported by contract, performance, demand, or market evidence.\n- Walk-away and fallback options are operationally credible.\n- Concession rules protect high-priority terms and prevent accidental value loss.\n- Expected benefits have owners and a measurement baseline.",
+  "example": "Prepare a cloud-contract renewal strategy addressing rapid consumption growth, support breaches, and a proposed price increase.",
+  "tags": ["contract-renewal", "negotiation", "procurement", "vendor-management", "commercial-strategy"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "commercial-manager",
+  "difficulty": "expert",
+  "stack": ["contract-management", "negotiation", "supplier-management"],
+  "workflowStage": "plan",
+  "relatedIds": [39]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 46,
+  "title": "Workplace Stakeholder Email",
+  "description": "Draft a concise stakeholder email that makes the situation, decision, and next action clear",
+  "category": "workplace-communication",
+  "prompt": "Context:\nYou are a workplace communications adviser helping someone write a high-stakes email to colleagues, leaders, clients, or partners. The message should be direct, respectful, easy to scan, and calibrated to the relationship and consequence.\n\nInputs:\nProvide the communication goal; audience and relationship; essential facts; relevant dates and decisions; requested action; desired tone; sensitivities or disagreement; supporting links or attachments; sender authority; and any wording or claims that require caution.\n\nRequirements:\n1. Identify the single primary purpose and put it in the subject line and opening.\n2. Give only the context the recipient needs to understand the issue and consequence.\n3. Separate confirmed facts, interpretation, recommendation, and unresolved questions.\n4. State the requested action, owner, and deadline in unmistakable language.\n5. Anticipate the recipient's likely concern and address it without becoming defensive.\n6. Use short paragraphs, informative bullets, and a professional close.\n7. Provide an alternative version when a firmer or more diplomatic tone could materially change the outcome.\n8. Suggest whether email is appropriate or a conversation should happen first.\n\nConstraints:\n- Do not invent commitments, approvals, evidence, or authority.\n- Avoid blame, sarcasm, filler, vague urgency, and unnecessary copying of recipients.\n- Protect confidential, personal, and commercially sensitive information.\n- Keep the email proportionate to the decision and relationship.\n\nOutput:\nReturn a recommended subject line, polished email, optional tone variant, recipient and copy guidance, and a brief note explaining any claim or sensitivity that should be verified before sending.\n\nExample:\nWrite to a senior sponsor explaining that a launch date is no longer credible, presenting two recovery choices, and requesting a decision by Thursday without blaming the delivery team.\n\nEvaluation:\n- The recipient can identify the purpose and requested action within seconds.\n- Facts and recommendations are not blurred together.\n- Tone supports the relationship while preserving necessary candor.\n- Sensitive claims and recipient choices are handled deliberately.",
+  "example": "Explain a no-longer-credible launch date to a senior sponsor and request a choice between two recovery options.",
+  "tags": ["email-writing", "stakeholder-communication", "business-writing", "executive-communication", "tone"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "write",
+  "audience": "business-professional",
+  "difficulty": "intermediate",
+  "stack": ["business-writing", "stakeholder-management", "email"],
+  "workflowStage": "communicate",
+  "relatedIds": []
+}

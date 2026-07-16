@@ -1,0 +1,17 @@
+{
+  "id": 42,
+  "title": "Enterprise Policy and Control Assessment",
+  "description": "Test whether policy requirements are translated into well-designed and operating controls",
+  "category": "compliance",
+  "prompt": "Context:\nYou are a risk and controls specialist assessing whether an enterprise policy is complete, implementable, and supported by effective controls. The assessment should distinguish policy-quality issues from control-design and control-operation failures.\n\nInputs:\nProvide the policy and supporting standards; relevant obligations and risk taxonomy; process maps; control inventory; ownership records; procedures; system configurations; samples and evidence; incidents, losses, complaints, exceptions, and audit findings; prior attestations; and the assessment period.\n\nRequirements:\n1. Decompose the policy into mandatory, conditional, and guidance statements.\n2. Map each mandatory requirement to risks, processes, roles, controls, evidence, and assurance activity.\n3. Assess policy clarity, scope, authority, ownership, exceptions, review cycle, and consistency with higher-order requirements.\n4. Evaluate control design for objective, trigger, frequency, performer, reviewer, evidence, population, system dependency, and failure response.\n5. Test operating effectiveness using risk-based samples and record population, period, procedure, result, and limitation.\n6. Identify unmapped requirements, duplicate controls, manual fragility, access conflicts, stale evidence, recurring exceptions, and unsupported attestations.\n7. Rate findings by risk and distinguish immediate containment from sustainable remediation.\n8. Recommend policy, procedure, system, training, governance, and assurance improvements with accountable owners.\n\nConstraints:\n- Do not infer operating effectiveness from design documentation alone.\n- Preserve evidence lineage and avoid collecting personal data beyond the assessment need.\n- Apply the stated rating methodology consistently.\n- Keep management action plans separate from the assessor's finding and evidence.\n\nOutput:\nReturn a requirements-to-controls matrix, policy-quality review, control-design assessment, operating-test results, evidence exceptions, findings register, remediation plan, residual-risk view, and executive assurance conclusion.\n\nExample:\nAssess a third-party risk policy and its onboarding, due-diligence, approval, monitoring, exception, and offboarding controls across a sample of critical suppliers.\n\nEvaluation:\n- Every conclusion identifies the requirement, control, evidence, and test performed.\n- Design and operating-effectiveness conclusions are clearly separated.\n- Findings reflect risk and recurring patterns rather than isolated paperwork defects.\n- Remediation addresses root causes with verifiable completion criteria.",
+  "example": "Assess a third-party risk policy and test onboarding through offboarding controls for critical suppliers.",
+  "tags": ["policy-review", "control-testing", "compliance", "risk-management", "assurance"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "audit",
+  "audience": "risk-controls-specialist",
+  "difficulty": "expert",
+  "stack": ["control-testing", "policy-management", "risk-assurance"],
+  "workflowStage": "review",
+  "relatedIds": [41]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 50,
+  "title": "Workplace Research Synthesis Brief",
+  "description": "Synthesize mixed business research into traceable findings, implications, and decisions",
+  "category": "workplace-research",
+  "prompt": "Context:\nYou are a business research analyst synthesizing multiple sources for a workplace decision. The brief should distinguish reliable evidence from opinion, reconcile disagreement, and translate findings into practical implications without overstating certainty.\n\nInputs:\nProvide the decision question; intended audience; source documents, notes, interviews, datasets, or links; time period and geography; inclusion criteria; known source limitations; organizational context; deadline; and preferred citation style.\n\nRequirements:\n1. Restate the decision question and define the boundaries of the research.\n2. Inventory sources by type, date, provenance, relevance, and reliability.\n3. Extract findings with traceable citations and separate direct evidence from interpretation.\n4. Group evidence into themes while preserving material differences across sources, populations, or time periods.\n5. Identify convergence, contradiction, missing evidence, bias, and claims that cannot be verified.\n6. Assess how strongly each finding answers the decision question.\n7. Translate findings into implications, options, risks, and questions for decision-makers.\n8. Recommend proportionate next research only where uncertainty could change the decision.\n\nConstraints:\n- Do not fabricate citations, statistics, quotations, or source access.\n- Prefer primary and current evidence when source quality differs.\n- Keep correlation, causation, anecdote, and expert judgment distinct.\n- Protect confidential interviewees and sensitive company information.\n\nOutput:\nReturn an executive research brief with decision question, method, source table, thematic findings, evidence-strength ratings, contradictions and gaps, implications, options, recommendation, next research, and a complete source list.\n\nExample:\nSynthesize customer interviews, win-loss notes, usage data, competitor materials, and market reports to decide whether a software company should introduce a lower-priced team plan.\n\nEvaluation:\n- Material findings are traceable to identifiable sources.\n- Source quality and conflicting evidence affect the strength of conclusions.\n- Recommendations do not extend beyond the evidence.\n- Proposed additional research is tied to a decision-relevant uncertainty.",
+  "example": "Synthesize customer, usage, competitor, and market evidence for a decision on a lower-priced software plan.",
+  "tags": ["research", "synthesis", "evidence", "business-analysis", "citations"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "research",
+  "audience": "business-analyst",
+  "difficulty": "advanced",
+  "stack": ["desk-research", "qualitative-analysis", "evidence-synthesis"],
+  "workflowStage": "discover",
+  "relatedIds": [26]
+}

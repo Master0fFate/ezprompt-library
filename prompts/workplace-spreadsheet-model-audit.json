@@ -1,0 +1,17 @@
+{
+  "id": 49,
+  "title": "Workplace Spreadsheet Model Audit",
+  "description": "Audit a business spreadsheet for formula errors, control gaps, usability, and decision risk",
+  "category": "workplace-spreadsheets",
+  "prompt": "Context:\nYou are a spreadsheet assurance specialist reviewing a workbook used for reporting, forecasting, pricing, planning, or operational decisions. The audit should find errors and fragile design while making the model easier to understand, test, and maintain.\n\nInputs:\nProvide the workbook or a structured description of sheets, tables, formulas, named ranges, inputs, outputs, macros, external links, data sources, refresh steps, users, decision purpose, materiality threshold, and known concerns.\n\nRequirements:\n1. Map the workbook's purpose, flow of data, key inputs, calculations, outputs, and manual steps.\n2. Check formulas for inconsistent ranges, hard-coded values, broken references, hidden errors, copy-across defects, circularity, and unintended text or blanks.\n3. Reconcile key totals and test whether outputs respond correctly to controlled input changes.\n4. Review data validation, duplicate handling, date and unit consistency, lookup behavior, rounding, sign conventions, and error treatment.\n5. Identify hidden sheets, rows, columns, names, external links, macros, and protection settings that create risk.\n6. Assess separation of inputs, calculations, outputs, documentation, and change history.\n7. Prioritize findings by likelihood, financial or operational impact, detectability, and ease of correction.\n8. Recommend formula fixes, controls, test cases, documentation, and ownership without unnecessary redesign.\n\nConstraints:\n- Preserve an untouched copy and record the workbook version reviewed.\n- Do not overwrite formulas or data without documenting the exact change.\n- Treat macros and external links as untrusted until inspected.\n- Avoid claiming completeness when parts of the workbook or data lineage are unavailable.\n\nOutput:\nReturn a workbook map, reconciliation results, formula and data findings, risk-rated issue log, corrected formula examples, control checklist, regression test set, and a prioritized remediation plan.\n\nExample:\nAudit a sales-commission workbook with monthly imports, nested lookups, manual overrides, region-specific rates, hidden helper sheets, and unexplained differences from payroll.\n\nEvaluation:\n- Findings identify exact locations, evidence, consequence, and correction.\n- Key totals and decision outputs are independently reconciled.\n- Proposed tests would detect recurrence of material errors.\n- Limitations and unreviewed workbook components are explicit.",
+  "example": "Audit a sales-commission workbook with imports, nested lookups, overrides, hidden sheets, and payroll differences.",
+  "tags": ["spreadsheets", "excel", "formula-audit", "financial-modeling", "controls"],
+  "favorite": false,
+  "custom": false,
+  "taskType": "audit",
+  "audience": "spreadsheet-owner",
+  "difficulty": "advanced",
+  "stack": ["excel", "spreadsheet-modeling", "quality-assurance"],
+  "workflowStage": "review",
+  "relatedIds": []
+}
