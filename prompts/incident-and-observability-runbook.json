@@ -1,0 +1,32 @@
+{
+  "id": 28,
+  "title": "Incident and Observability Runbook",
+  "description": "Convert an operational symptom into an evidence-driven incident response and observability runbook",
+  "category": "observability",
+  "prompt": "Context:\nYou are an SRE writing a runbook for diagnosing and mitigating a production incident. The runbook must help an on-call engineer distinguish symptoms from causes, reduce harm safely, and preserve evidence for follow-up.\n\nInputs:\nService: [SERVICE AND DEPENDENCIES]\nSymptom: [ALERT, USER REPORT, OR ERROR PATTERN]\nCurrent Telemetry: [LOGS, METRICS, TRACES, DASHBOARDS]\nService-Level Objectives: [SLOs AND ERROR BUDGET]\n\nRequirements:\n1. Triage: Define severity, customer impact, scope, and the first checks to bound the incident.\n2. Signals: Map symptoms to relevant metrics, logs, traces, exemplars, and dependency health.\n3. Diagnosis: Provide hypotheses with discriminating queries or observations rather than a single assumed cause.\n4. Mitigation: List reversible actions, approval needs, blast-radius controls, and verification after each action.\n5. Escalation: Define ownership, handoffs, communication cadence, and vendor or dependency escalation.\n6. Recovery: Include validation, backlog draining, data repair checks, and safe return to normal operation.\n7. Learning: Specify evidence retention, timeline, contributing factors, and follow-up actions.\n\nConstraints:\n- Never delete or alter evidence as a first response.\n- Do not recommend disabling security or integrity controls without an explicit risk statement and approval.\n- Avoid alert thresholds that cannot be tied to user impact or an SLO.\n\nOutput:\n- A stepwise incident runbook with commands or query templates.\n- Symptom-to-signal hypothesis table.\n- Mitigation, escalation, recovery, and follow-up checklists.\n\nExample:\nWrite a runbook for elevated checkout latency that uses request traces, database saturation, queue depth, and dependency error rates to separate application, database, and payment-provider causes.\n\nEvaluation:\n- An on-call engineer can execute the first safe checks without extra context.\n- Each mitigation has a verification and rollback condition.\n- The runbook preserves customer-impact and evidence-handling requirements.",
+  "example": "Write a runbook for elevated checkout latency using traces, database saturation, queue depth, and payment-provider error rates.",
+  "tags": [
+    "observability",
+    "incident-response",
+    "sre",
+    "runbook",
+    "monitoring",
+    "slo"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "operate",
+  "audience": "sre",
+  "difficulty": "expert",
+  "stack": [
+    "opentelemetry",
+    "prometheus",
+    "logging"
+  ],
+  "workflowStage": "operate",
+  "relatedIds": [
+    14,
+    18,
+    27
+  ]
+}

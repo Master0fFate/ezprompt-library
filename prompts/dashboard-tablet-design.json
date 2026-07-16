@@ -1,21 +1,34 @@
 {
-    "id": 21,
-    "title": "Full Functional Dashboard with Tablet Design",
-    "description": "Create a complete, responsive dashboard with intuitive menu navigation optimized for tablet devices",
-    "category": "UI/UX Design",
-    "prompt": "Context:\nYou are a UI/UX Designer and Frontend Developer creating a responsive dashboard application. The primary target is tablet devices (iPad, Android tablets), but it must also work on desktop and mobile.\n\nInputs:\nDashboard Type: [e.g., Analytics, Admin, CRM]\nSpecific Features: [LIST FEATURES]\n\nRequirements:\n1. Layout & Structure:\n   - Intuitive navigation menu (sidebar or top bar).\n   - Responsive grid system for widgets/cards.\n   - Collapsible menu for space optimization.\n   - Touch-friendly interface elements (min 44x44px).\n   - Optimized for landscape and portrait orientations.\n2. Menu Navigation:\n   - Clear visual hierarchy with Icon + text labels.\n   - Active state indicators and smooth transitions.\n   - Breadcrumb navigation for deep hierarchies.\n3. Dashboard Features:\n   - Data visualization (charts, graphs using Recharts/Chart.js).\n   - Real-time updates capability.\n   - Search, Filter, and Sort functionality.\n4. Technical Stack:\n   - Framework: [React/Vue/Angular]\n   - Styling: [Tailwind CSS/Material UI]\n   - State Management: [Redux/Context]\n\nConstraints:\n- Ensure 60fps animations.\n- No hover-dependent interactions (touch first).\n- Support high contrast mode for accessibility.\n\nOutput:\n- Complete component code for the dashboard layout and navigation.\n- CSS/Style definitions for responsiveness.\n\nExample:\nCreate a Sales Dashboard with a collapsible sidebar, a top bar with user profile, and a main area showing a revenue chart and recent transactions list.\n\nEvaluation:\n- The layout must adjust seamlessly between 768px and 1024px widths.\n- Navigation must be accessible via touch.\n- Code must be modular and reusable.",
-    "example": "Create a functional dashboard managing every element of your product.",
-    "tags": [
-        "dashboard",
-        "tablet",
-        "ui-design",
-        "responsive",
-        "navigation",
-        "menu",
-        "admin-panel",
-        "frontend",
-        "touch-interface"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 21,
+  "title": "Full Functional Dashboard with Tablet Design",
+  "description": "Create a complete, responsive dashboard with intuitive menu navigation optimized for tablet devices",
+  "category": "design",
+  "prompt": "Context:\nYou are a UI/UX Designer and Frontend Developer creating a responsive dashboard application. The primary target is tablet devices (iPad, Android tablets), but it must also work on desktop and mobile.\n\nInputs:\nDashboard Type: [e.g., Analytics, Admin, CRM]\nSpecific Features: [LIST FEATURES]\n\nRequirements:\n1. Layout & Structure:\n   - Intuitive navigation menu (sidebar or top bar).\n   - Responsive grid system for widgets/cards.\n   - Collapsible menu for space optimization.\n   - Touch-friendly interface elements (min 44x44px).\n   - Optimized for landscape and portrait orientations.\n2. Menu Navigation:\n   - Clear visual hierarchy with Icon + text labels.\n   - Active state indicators and smooth transitions.\n   - Breadcrumb navigation for deep hierarchies.\n3. Dashboard Features:\n   - Data visualization (charts, graphs using Recharts/Chart.js).\n   - Real-time updates capability.\n   - Search, Filter, and Sort functionality.\n4. Technical Stack:\n   - Framework: [React/Vue/Angular]\n   - Styling: [Tailwind CSS/Material UI]\n   - State Management: [Redux/Context]\n\nConstraints:\n- Ensure 60fps animations.\n- No hover-dependent interactions (touch first).\n- Support high contrast mode for accessibility.\n\nOutput:\n- Complete component code for the dashboard layout and navigation.\n- CSS/Style definitions for responsiveness.\n\nExample:\nCreate a Sales Dashboard with a collapsible sidebar, a top bar with user profile, and a main area showing a revenue chart and recent transactions list.\n\nEvaluation:\n- The layout must adjust seamlessly between 768px and 1024px widths.\n- Navigation must be accessible via touch.\n- Code must be modular and reusable.",
+  "example": "Create a sales dashboard with a collapsible sidebar, revenue chart, filterable transactions, and portrait and landscape layouts.",
+  "tags": [
+    "dashboard",
+    "tablet",
+    "ui",
+    "responsive",
+    "navigation",
+    "menu",
+    "admin",
+    "frontend",
+    "touch"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "design",
+  "audience": "product-designer",
+  "difficulty": "advanced",
+  "stack": [
+    "react",
+    "responsive-design"
+  ],
+  "workflowStage": "design",
+  "relatedIds": [
+    11,
+    16,
+    29
+  ]
 }

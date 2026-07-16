@@ -1,16 +1,27 @@
 {
-    "id": 10,
-    "title": "Design Pattern Implementation",
-    "description": "Implement design patterns with real-world examples",
-    "category": "Architecture",
-    "prompt": "Context:\nYou are a Software Architect explaining and implementing a specific design pattern to solve a common software design problem.\n\nInputs:\nPattern Name: [PATTERN NAME] (e.g., Singleton, Factory, Observer)\nUse Case: [DESCRIBE USE CASE]\n\nRequirements:\n1. Implementation: Provide a complete, working implementation of the pattern in [LANGUAGE].\n2. Components: Clearly define the roles (e.g., Context, Strategy, ConcreteStrategy) and their relationships.\n3. UML Representation: Describe the structure using text-based UML or ASCII art.\n4. Usage Example: Show how client code interacts with the pattern.\n5. Analysis: Discuss the benefits (e.g., decoupling, flexibility) and trade-offs (e.g., complexity, overhead).\n6. Best Practices: Mention when to use this pattern and when to avoid it.\n\nConstraints:\n- Adhere to SOLID principles.\n- Keep the example realistic, not just abstract.\n\nOutput:\n- Source code for the pattern.\n- Explanation of the design choices.\n\nExample:\nImplement the Strategy pattern for a payment processing system supporting Credit Card, PayPal, and Crypto.\n\nEvaluation:\n- The implementation must correctly follow the pattern's definition.\n- The code must compile/run.\n- The use case must demonstrate the pattern's utility.",
-    "example": "Implement Strategy pattern for payment processing",
-    "tags": [
-        "design-patterns",
-        "architecture",
-        "oop",
-        "solid"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 10,
+  "title": "Design Pattern Implementation",
+  "description": "Implement design patterns with real-world examples",
+  "category": "architecture",
+  "prompt": "Context:\nYou are a Software Architect explaining and implementing a specific design pattern to solve a common software design problem.\n\nInputs:\nPattern Name: [PATTERN NAME] (e.g., Singleton, Factory, Observer)\nUse Case: [DESCRIBE USE CASE]\n\nRequirements:\n1. Implementation: Provide a complete, working implementation of the pattern in [LANGUAGE].\n2. Components: Clearly define the roles (e.g., Context, Strategy, ConcreteStrategy) and their relationships.\n3. UML Representation: Describe the structure using text-based UML or ASCII art.\n4. Usage Example: Show how client code interacts with the pattern.\n5. Analysis: Discuss the benefits (e.g., decoupling, flexibility) and trade-offs (e.g., complexity, overhead).\n6. Best Practices: Mention when to use this pattern and when to avoid it.\n\nConstraints:\n- Adhere to SOLID principles.\n- Keep the example realistic, not just abstract.\n\nOutput:\n- Source code for the pattern.\n- Explanation of the design choices.\n\nExample:\nImplement the Strategy pattern for a payment processing system supporting Credit Card, PayPal, and Crypto.\n\nEvaluation:\n- The implementation must correctly follow the pattern's definition.\n- The code must compile/run.\n- The use case must demonstrate the pattern's utility.",
+  "example": "Implement Strategy pattern for payment processing",
+  "tags": [
+    "design-patterns",
+    "architecture",
+    "oop",
+    "solid"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "implement",
+  "audience": "software-architect",
+  "difficulty": "advanced",
+  "stack": [
+    "object-oriented-design"
+  ],
+  "workflowStage": "design",
+  "relatedIds": [
+    3,
+    4
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": 26,
+  "title": "Product Discovery Brief",
+  "description": "Turn an uncertain product problem into a testable discovery brief and prioritized plan",
+  "category": "product",
+  "prompt": "Context:\nYou are a product strategist facilitating discovery for a product or workflow with incomplete information. The goal is to clarify the user problem, validate assumptions, and recommend a proportionate next step rather than jump directly to implementation.\n\nInputs:\nBusiness Goal: [GOAL]\nKnown User Evidence: [RESEARCH, SUPPORT DATA, OR OBSERVATIONS]\nConstraints: [TIME, BUDGET, PLATFORM, COMPLIANCE]\nStakeholders: [ROLES AND DECISION MAKERS]\n\nRequirements:\n1. Problem Framing: State the target users, job to be done, current behavior, pain point, and desired outcome.\n2. Evidence: Separate observed facts, assumptions, open questions, and conflicting signals.\n3. Opportunities: Generate a small set of solution opportunities and explain the trade-offs.\n4. Validation: Propose research or experiments with hypotheses, participants, success signals, and stopping rules.\n5. Prioritization: Rank opportunities using an explicit method and show the rationale.\n6. Delivery Plan: Define an MVP boundary, dependencies, risks, measures, and a next decision checkpoint.\n\nConstraints:\n- Do not invent customer evidence or claim validation that has not occurred.\n- Keep the MVP smaller than the full opportunity space.\n- Call out decisions that require stakeholder confirmation.\n\nOutput:\n- A concise discovery brief with problem statement and evidence table.\n- Opportunity options and a prioritized experiment plan.\n- MVP scope, risks, metrics, and decisions needed.\n\nExample:\nCreate a discovery brief for reducing failed onboarding completion in a subscription product using support themes and funnel observations, then propose two experiments before committing to a redesign.\n\nEvaluation:\n- Recommendations trace back to stated evidence or labeled assumptions.\n- Experiments can falsify the key hypotheses.\n- Scope, ownership, and decision criteria are concrete.",
+  "example": "Create a discovery brief to reduce failed onboarding completion, separating funnel evidence from assumptions and proposing two experiments.",
+  "tags": [
+    "product-discovery",
+    "planning",
+    "research",
+    "prioritization",
+    "mvp"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "plan",
+  "audience": "product-manager",
+  "difficulty": "advanced",
+  "stack": [
+    "product-management",
+    "user-research",
+    "experimentation"
+  ],
+  "workflowStage": "discover",
+  "relatedIds": [
+    27,
+    29
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": 24,
+  "title": "Structured Data Extraction",
+  "description": "Extract validated structured records from unstructured text with explicit uncertainty handling",
+  "category": "extraction",
+  "prompt": "Context:\nYou are a data-extraction engineer converting unstructured documents into records consumed by a downstream system. The output must follow a strict schema and distinguish absent, ambiguous, and unsupported values.\n\nInputs:\nSource Text: [TEXT OR DOCUMENT DESCRIPTION]\nTarget Schema: [JSON SCHEMA OR FIELD TABLE]\nExamples: [REPRESENTATIVE LABELED EXAMPLES]\n\nRequirements:\n1. Schema: Define field types, required fields, enums, formats, nullability, and nested objects.\n2. Extraction: Map evidence spans to fields and preserve source text or offsets where practical.\n3. Normalization: Standardize dates, units, names, identifiers, and whitespace without changing meaning.\n4. Uncertainty: Use null or an explicit review state for missing or ambiguous values; never guess.\n5. Validation: Return machine-readable validation errors and identify records requiring human review.\n6. Batch Behavior: Specify handling for malformed documents, duplicate records, and partial extraction failures.\n\nConstraints:\n- Return valid JSON only when JSON output is requested.\n- Do not infer sensitive or legally significant values without evidence.\n- Keep the extraction schema versioned and backward-compatible where possible.\n\nOutput:\n- The schema and extraction prompt or implementation.\n- Two valid output examples and one rejected example.\n- A validation and human-review policy.\n\nExample:\nExtract invoice number, supplier, line items, tax, currency, and due date from invoices; preserve the evidence span for each field and flag unreadable totals for review.\n\nEvaluation:\n- Outputs validate against the target schema.\n- Missing values remain explicit rather than fabricated.\n- Normalization is deterministic and evidence can be audited.",
+  "example": "Extract invoice fields and evidence spans into a versioned JSON schema, flagging unreadable totals for review.",
+  "tags": [
+    "extraction",
+    "structured-output",
+    "json-schema",
+    "validation",
+    "document-processing"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "extract",
+  "audience": "data-engineer",
+  "difficulty": "advanced",
+  "stack": [
+    "json-schema",
+    "nlp",
+    "validation"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    7,
+    30
+  ]
+}

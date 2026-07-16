@@ -1,17 +1,28 @@
 {
-    "id": 20,
-    "title": "Data Pipeline ETL",
-    "description": "Build robust data pipelines",
-    "category": "Code Generation",
-    "prompt": "Context:\nYou are a Data Engineer building a scalable ETL (Extract, Transform, Load) pipeline. The pipeline needs to process large volumes of data reliably and maintain data quality.\n\nInputs:\nTask Description: [TASK]\nSource Data: [JSON/CSV/Database/API]\nTarget System: [Data Warehouse/Data Lake]\n\nRequirements:\n1. Extraction: Connect to source systems and ingest data incrementally or in full batches.\n2. Transformation: Implement cleaning (remove duplicates, handle nulls), validation (schema checks), and enrichment logic.\n3. Loading: efficient loading into the target system (e.g., bulk inserts, upserts).\n4. Orchestration: Use [Airflow/Prefect] to schedule and manage dependencies.\n5. Data Quality: Implement checks for data completeness, accuracy, and consistency.\n6. Error Handling: Add retry logic for transient failures and dead-letter queues for bad records.\n7. Monitoring: Set up alerts for pipeline failures or SLA breaches.\n\nConstraints:\n- Ensure idempotency (running twice produces the same result).\n- Handle PII (Personally Identifiable Information) according to GDPR/CCPA.\n- Optimize for [Cost/Latency/Throughput].\n\nOutput:\n- Complete DAG/Pipeline code.\n- Configuration files for the orchestration tool.\n- SQL scripts or transformation code.\n\nExample:\nBuild an Airflow DAG that ingests customer logs from S3, aggregates daily metrics using Spark, and loads the results into Redshift.\n\nEvaluation:\n- Pipeline must handle schema changes gracefully.\n- No data loss during processing.\n- Performance must meet the defined SLA (e.g., < 1 hour latency).",
-    "example": "Build ETL pipeline for customer data analytics",
-    "tags": [
-        "etl",
-        "data-pipeline",
-        "airflow",
-        "data-engineering",
-        "analytics"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 20,
+  "title": "Data Pipeline ETL",
+  "description": "Build robust data pipelines",
+  "category": "data",
+  "prompt": "Context:\nYou are a Data Engineer building a scalable ETL (Extract, Transform, Load) pipeline. The pipeline needs to process large volumes of data reliably and maintain data quality.\n\nInputs:\nTask Description: [TASK]\nSource Data: [JSON/CSV/Database/API]\nTarget System: [Data Warehouse/Data Lake]\n\nRequirements:\n1. Extraction: Connect to source systems and ingest data incrementally or in full batches.\n2. Transformation: Implement cleaning (remove duplicates, handle nulls), validation (schema checks), and enrichment logic.\n3. Loading: efficient loading into the target system (e.g., bulk inserts, upserts).\n4. Orchestration: Use [Airflow/Prefect] to schedule and manage dependencies.\n5. Data Quality: Implement checks for data completeness, accuracy, and consistency.\n6. Error Handling: Add retry logic for transient failures and dead-letter queues for bad records.\n7. Monitoring: Set up alerts for pipeline failures or SLA breaches.\n\nConstraints:\n- Ensure idempotency (running twice produces the same result).\n- Handle PII (Personally Identifiable Information) according to GDPR/CCPA.\n- Optimize for [Cost/Latency/Throughput].\n\nOutput:\n- Complete DAG/Pipeline code.\n- Configuration files for the orchestration tool.\n- SQL scripts or transformation code.\n\nExample:\nBuild an Airflow DAG that ingests customer logs from S3, aggregates daily metrics using Spark, and loads the results into Redshift.\n\nEvaluation:\n- Pipeline must handle schema changes gracefully.\n- No data loss during processing.\n- Performance must meet the defined SLA (e.g., < 1 hour latency).",
+  "example": "Build ETL pipeline for customer data analytics",
+  "tags": [
+    "etl",
+    "data-pipeline",
+    "airflow",
+    "data-engineering",
+    "analytics"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "implement",
+  "audience": "data-engineer",
+  "difficulty": "advanced",
+  "stack": [
+    "etl",
+    "airflow"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    30
+  ]
 }

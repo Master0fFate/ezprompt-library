@@ -1,17 +1,29 @@
 {
-    "id": 16,
-    "title": "React Native Mobile App",
-    "description": "Build cross-platform mobile apps",
-    "category": "Code Generation",
-    "prompt": "Context:\nYou are a Mobile Developer building a cross-platform mobile application using React Native. The app needs to provide a native-like experience on both iOS and Android.\n\nInputs:\nApp Concept: [DESCRIPTION]\nKey Features: [LIST FEATURES]\n\nRequirements:\n1. Architecture: Set up a project structure using [Expo/CLI]. Use TypeScript.\n2. Navigation: Implement navigation using React Navigation (Stack, Tab, Drawer).\n3. State Management: Use [Context/Redux/Zustand] for global state.\n4. Native Features: Integrate device capabilities (Camera, Geolocation, Push Notifications) using appropriate libraries.\n5. UI/UX: Create responsive layouts using Flexbox. Ensure safe area handling and dark mode support.\n6. Performance: Optimize list rendering (FlatList), image caching, and startup time.\n7. Offline Support: Implement local storage (AsyncStorage/SQLite) and offline-first logic.\n8. Testing: Unit tests with Jest and E2E tests with Detox.\n\nConstraints:\n- Code must run on both iOS and Android.\n- Handle platform-specific differences (Platform.OS).\n\nOutput:\n- Project structure overview.\n- Core component code.\n- Configuration files (app.json, package.json).\n\nExample:\nCreate a Fitness Tracker app that logs workouts and maps runs using GPS.\n\nEvaluation:\n- App must handle permission requests gracefully.\n- Navigation transitions must be smooth (60fps).\n- Offline mode must function for core features.",
-    "example": "Create fitness tracking app with workout logging",
-    "tags": [
-        "react-native",
-        "mobile",
-        "ios",
-        "android",
-        "cross-platform"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 16,
+  "title": "React Native Mobile App",
+  "description": "Build cross-platform mobile apps",
+  "category": "mobile",
+  "prompt": "Context:\nYou are a Mobile Developer building a cross-platform mobile application using React Native. The app needs to provide a native-like experience on both iOS and Android.\n\nInputs:\nApp Concept: [DESCRIPTION]\nKey Features: [LIST FEATURES]\n\nRequirements:\n1. Architecture: Set up a project structure using [Expo/CLI]. Use TypeScript.\n2. Navigation: Implement navigation using React Navigation (Stack, Tab, Drawer).\n3. State Management: Use [Context/Redux/Zustand] for global state.\n4. Native Features: Integrate device capabilities (Camera, Geolocation, Push Notifications) using appropriate libraries.\n5. UI/UX: Create responsive layouts using Flexbox. Ensure safe area handling and dark mode support.\n6. Performance: Optimize list rendering (FlatList), image caching, and startup time.\n7. Offline Support: Implement local storage (AsyncStorage/SQLite) and offline-first logic.\n8. Testing: Unit tests with Jest and E2E tests with Detox.\n\nConstraints:\n- Code must run on both iOS and Android.\n- Handle platform-specific differences (Platform.OS).\n\nOutput:\n- Project structure overview.\n- Core component code.\n- Configuration files (app.json, package.json).\n\nExample:\nCreate a Fitness Tracker app that logs workouts and maps runs using GPS.\n\nEvaluation:\n- App must handle permission requests gracefully.\n- Navigation transitions must be smooth (60fps).\n- Offline mode must function for core features.",
+  "example": "Create fitness tracking app with workout logging",
+  "tags": [
+    "react-native",
+    "mobile",
+    "ios",
+    "android",
+    "cross-platform"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "implement",
+  "audience": "mobile-developer",
+  "difficulty": "advanced",
+  "stack": [
+    "react-native",
+    "typescript"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    21,
+    29
+  ]
 }

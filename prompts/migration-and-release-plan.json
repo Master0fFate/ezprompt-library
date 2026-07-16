@@ -1,0 +1,31 @@
+{
+  "id": 27,
+  "title": "Migration and Release Plan",
+  "description": "Plan a reversible migration and release with compatibility checks, ownership, and rollback triggers",
+  "category": "devops",
+  "prompt": "Context:\nYou are a release engineer planning a production migration that changes data, infrastructure, dependencies, or public behavior. The release must protect users during transition and provide a tested path back when an invariant fails.\n\nInputs:\nCurrent State: [SYSTEM, SCHEMA, OR DEPENDENCY VERSION]\nTarget State: [DESIRED VERSION OR ARCHITECTURE]\nTraffic and Data Profile: [VOLUME, REGIONS, AVAILABILITY NEEDS]\nRelease Constraints: [MAINTENANCE, COMPLIANCE, OR TEAM LIMITS]\n\nRequirements:\n1. Inventory: Identify affected services, data, clients, integrations, owners, and dependencies.\n2. Compatibility: Define expand-and-contract or equivalent steps, version negotiation, feature flags, and dual-read or dual-write behavior when needed.\n3. Execution: Provide prechecks, ordered steps, checkpoints, timing assumptions, and operator commands or pseudocode.\n4. Verification: Define schema, data-integrity, functional, performance, and observability checks after each stage.\n5. Rollback: Specify triggers, safe rollback steps, backup or restore requirements, and limits when data has crossed versions.\n6. Communication: Include change ownership, approval gates, status updates, and post-release follow-up.\n\nConstraints:\n- Prefer backward-compatible changes during mixed-version operation.\n- Do not assume a rollback is safe after destructive data transformation; state the recovery alternative.\n- Keep secrets, credentials, and environment-specific values out of examples.\n\nOutput:\n- A phased migration runbook.\n- Compatibility and rollback matrix.\n- Validation checklist, ownership table, and release communication plan.\n\nExample:\nPlan a zero-downtime migration from a legacy customer-status column to a normalized status table while two application versions are serving traffic.\n\nEvaluation:\n- Every risky step has a precheck and observable success condition.\n- Mixed-version behavior is explicit.\n- Rollback or recovery is actionable and accounts for irreversible changes.",
+  "example": "Plan a zero-downtime migration from a legacy status column to a normalized table while two application versions run concurrently.",
+  "tags": [
+    "migration",
+    "release",
+    "rollback",
+    "compatibility",
+    "deployment"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "migrate",
+  "audience": "release-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "database",
+    "feature-flags",
+    "ci-cd"
+  ],
+  "workflowStage": "deploy",
+  "relatedIds": [
+    14,
+    26,
+    28
+  ]
+}

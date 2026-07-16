@@ -1,17 +1,29 @@
 {
-    "id": 2,
-    "title": "Advanced Algorithm Optimization",
-    "description": "Comprehensive algorithm analysis and optimization with complexity analysis",
-    "category": "Optimization",
-    "prompt": "Context:\nYou are an expert Algorithm Engineer tasked with optimizing a critical piece of code for performance and efficiency. The goal is to reduce execution time and memory footprint while maintaining correctness.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Current State Analysis: Perform a detailed Big O analysis for both time and space complexity. Identify specific bottlenecks.\n2. Optimization Strategy: Propose and implement algorithmic improvements (e.g., dynamic programming, divide and conquer) and better data structures (e.g., hash maps, heaps, tries).\n3. Optimized Implementation: Provide the fully optimized code in [LANGUAGE]. Ensure it handles edge cases correctly.\n4. Complexity Comparison: Present a side-by-side comparison of the original vs. optimized complexity (Time: O(n) -> O(log n), Space: O(n^2) -> O(n)).\n5. Benchmarking: Design a set of test cases (including edge cases like empty inputs, large datasets) to verify the performance gains.\n\nConstraints:\n- Do not use external libraries unless specified.\n- Maintain code readability and add comments explaining complex logic.\n- Ensure the solution is thread-safe if applicable.\n\nOutput:\n- A structured report containing the analysis, strategy, code, and comparison.\n- Code must be clean, commented, and ready for production.\n\nExample:\nInput: A nested loop approach to find duplicates in an array (O(n^2)).\nOutput: A hash set approach (O(n)) with benchmarks showing 100x speedup on large arrays.\n\nEvaluation:\n- The optimized code must pass all original test cases.\n- The time complexity must be strictly better than the original.\n- The space complexity should be minimized where possible.",
-    "example": "Optimize a nested loop algorithm for finding duplicate elements in an array",
-    "tags": [
-        "algorithm",
-        "optimization",
-        "complexity",
-        "performance",
-        "data-structures"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 2,
+  "title": "Advanced Algorithm Optimization",
+  "description": "Comprehensive algorithm analysis and optimization with complexity analysis",
+  "category": "optimization",
+  "prompt": "Context:\nYou are an expert Algorithm Engineer tasked with optimizing a critical piece of code for performance and efficiency. The goal is to reduce execution time and memory footprint while maintaining correctness.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Current State Analysis: Perform a detailed Big O analysis for both time and space complexity. Identify specific bottlenecks.\n2. Optimization Strategy: Propose and implement algorithmic improvements (e.g., dynamic programming, divide and conquer) and better data structures (e.g., hash maps, heaps, tries).\n3. Optimized Implementation: Provide the fully optimized code in [LANGUAGE]. Ensure it handles edge cases correctly.\n4. Complexity Comparison: Present a side-by-side comparison of the original vs. optimized complexity (Time: O(n) -> O(log n), Space: O(n^2) -> O(n)).\n5. Benchmarking: Design a set of test cases (including edge cases like empty inputs, large datasets) to verify the performance gains.\n\nConstraints:\n- Do not use external libraries unless specified.\n- Maintain code readability and add comments explaining complex logic.\n- Ensure the solution is thread-safe if applicable.\n\nOutput:\n- A structured report containing the analysis, strategy, code, and comparison.\n- Code must be clean, commented, and ready for production.\n\nExample:\nInput: A nested loop approach to find duplicates in an array (O(n^2)).\nOutput: A hash set approach (O(n)) with benchmarks showing 100x speedup on large arrays.\n\nEvaluation:\n- The optimized code must pass all original test cases.\n- The time complexity must be strictly better than the original.\n- The space complexity should be minimized where possible.",
+  "example": "Optimize a nested loop algorithm for finding duplicate elements in an array",
+  "tags": [
+    "algorithm",
+    "optimization",
+    "complexity",
+    "performance",
+    "data-structures"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "optimize",
+  "audience": "software-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "algorithms",
+    "data-structures"
+  ],
+  "workflowStage": "optimize",
+  "relatedIds": [
+    15,
+    30
+  ]
 }

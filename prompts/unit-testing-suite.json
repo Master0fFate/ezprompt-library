@@ -1,18 +1,29 @@
 {
-    "id": 5,
-    "title": "Unit Testing Suite",
-    "description": "Generate complete unit tests with mocking and edge cases",
-    "category": "Testing",
-    "prompt": "Context:\nYou are a QA Engineer / Developer tasked with increasing code coverage and ensuring reliability through unit testing.\n\nInputs:\nCode to Test: [PASTE CODE HERE]\nTest Framework: [Jest/Mocha/PyTest/JUnit]\n\nRequirements:\n1. Coverage: Aim for >90% code coverage. Test all public methods.\n2. Happy Path: Verify the expected behavior for valid inputs.\n3. Edge Cases: Test nulls, empty strings, boundary values, and invalid formats.\n4. Mocking: Mock all external dependencies (DB, APIs, File System) to ensure tests are isolated and fast.\n5. Structure: Use the AAA pattern (Arrange, Act, Assert). Use setup/teardown hooks (beforeEach, afterAll).\n6. Clarity: Write descriptive test names (e.g., \"should return 400 when email is invalid\").\n\nConstraints:\n- Tests must be deterministic (no random failures).\n- Do not test implementation details, test behavior.\n\nOutput:\n- Complete test file.\n- Instructions on how to run the tests.\n\nExample:\nGenerate Jest tests for a `UserService` class that handles user registration and login.\n\nEvaluation:\n- All tests must pass.\n- Mocks must strictly define expected calls.\n- No side effects between tests.",
-    "example": "Generate tests for a user authentication service",
-    "tags": [
-        "testing",
-        "unit-tests",
-        "tdd",
-        "mocking",
-        "jest",
-        "quality-assurance"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 5,
+  "title": "Unit Testing Suite",
+  "description": "Generate complete unit tests with mocking and edge cases",
+  "category": "testing",
+  "prompt": "Context:\nYou are a QA Engineer / Developer tasked with increasing code coverage and ensuring reliability through unit testing.\n\nInputs:\nCode to Test: [PASTE CODE HERE]\nTest Framework: [Jest/Mocha/PyTest/JUnit]\n\nRequirements:\n1. Coverage: Aim for >90% code coverage. Test all public methods.\n2. Happy Path: Verify the expected behavior for valid inputs.\n3. Edge Cases: Test nulls, empty strings, boundary values, and invalid formats.\n4. Mocking: Mock all external dependencies (DB, APIs, File System) to ensure tests are isolated and fast.\n5. Structure: Use the AAA pattern (Arrange, Act, Assert). Use setup/teardown hooks (beforeEach, afterAll).\n6. Clarity: Write descriptive test names (e.g., \"should return 400 when email is invalid\").\n\nConstraints:\n- Tests must be deterministic (no random failures).\n- Do not test implementation details, test behavior.\n\nOutput:\n- Complete test file.\n- Instructions on how to run the tests.\n\nExample:\nGenerate Jest tests for a `UserService` class that handles user registration and login.\n\nEvaluation:\n- All tests must pass.\n- Mocks must strictly define expected calls.\n- No side effects between tests.",
+  "example": "Generate tests for a user authentication service",
+  "tags": [
+    "testing",
+    "unit-tests",
+    "tdd",
+    "mocking",
+    "jest",
+    "qa"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "test",
+  "audience": "developer",
+  "difficulty": "advanced",
+  "stack": [
+    "unit-testing"
+  ],
+  "workflowStage": "test",
+  "relatedIds": [
+    3,
+    25
+  ]
 }

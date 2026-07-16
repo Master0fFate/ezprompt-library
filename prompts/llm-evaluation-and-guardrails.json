@@ -1,0 +1,36 @@
+{
+  "id": 25,
+  "title": "LLM Evaluation and Guardrails",
+  "description": "Build an evaluation harness and guardrails for reliable, safe model behavior",
+  "category": "evaluation",
+  "prompt": "Context:\nYou are an AI quality engineer establishing safeguards for a language-model feature before and after release. The system needs measurable quality criteria, adversarial tests, and clear handling for unsafe or low-confidence outputs.\n\nInputs:\nUse Case: [MODEL FEATURE]\nReference Dataset: [PROMPTS, EXPECTED ANSWERS, OR LABELS]\nRisk Profile: [SAFETY, PRIVACY, SECURITY, OR BUSINESS RISKS]\nRuntime: [MODEL, FRAMEWORK, AND DEPLOYMENT]\n\nRequirements:\n1. Test Set: Create representative, edge, adversarial, multilingual, and regression cases with versioned labels.\n2. Metrics: Define task metrics plus groundedness, refusal correctness, toxicity, privacy leakage, latency, and cost measures as applicable.\n3. Grading: Separate deterministic checks, rubric-based review, and model-graded checks; document grader limitations.\n4. Guardrails: Add input screening, output validation, policy checks, tool permissions, and fallback or escalation behavior.\n5. Release Gates: Set thresholds, sampling rules, rollback criteria, and a comparison process for model or prompt changes.\n6. Monitoring: Specify production signals, drift detection, incident review, and retention limits for evaluation data.\n\nConstraints:\n- Do not treat a model-generated score as ground truth without calibration or human review.\n- Do not log secrets or unnecessary personal data.\n- Report uncertainty and false-positive or false-negative trade-offs.\n\nOutput:\n- An evaluation dataset and test-case format.\n- Harness pseudocode or code with a results schema.\n- Guardrail flow, release gates, and monitoring plan.\n\nExample:\nEvaluate a customer-support classifier that routes billing, technical, and safety-sensitive requests, including prompt injection attempts and ambiguous tickets.\n\nEvaluation:\n- Failures are reproducible from versioned inputs and configuration.\n- Guardrails block or escalate unsafe outputs without silently dropping valid requests.\n- Release decisions use defined thresholds and human review for high-impact cases.",
+  "example": "Evaluate a support classifier with adversarial, multilingual, privacy, and refusal-correctness tests before release.",
+  "tags": [
+    "evaluation",
+    "guardrails",
+    "llm",
+    "safety",
+    "red-teaming",
+    "monitoring"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "evaluate",
+  "audience": "ai-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "llm",
+    "testing",
+    "observability"
+  ],
+  "workflowStage": "review",
+  "relatedIds": [
+    3,
+    5,
+    8,
+    17,
+    22,
+    23,
+    31
+  ]
+}

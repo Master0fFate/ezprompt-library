@@ -1,17 +1,29 @@
 {
-    "id": 17,
-    "title": "ML Model Integration",
-    "description": "Integrate ML models into applications",
-    "category": "Code Generation",
-    "prompt": "Context:\nYou are an ML Engineer working with a Software Developer to deploy a machine learning model into a production application. The model needs to serve predictions reliably and efficiently.\n\nInputs:\nApplication: [APPLICATION]\nModel Type: [Classification/Regression/NLP/Vision]\nFramework: [TensorFlow/PyTorch/Scikit-learn]\n\nRequirements:\n1. Model Serving: Set up a serving infrastructure (e.g., TensorFlow Serving, TorchServe, FastAPI wrapper).\n2. API Design: Create a REST/gRPC endpoint for inference. Define input/output schemas.\n3. Preprocessing: Implement data transformation pipelines to match training data format (normalization, tokenization).\n4. Postprocessing: Format raw model outputs into user-friendly responses (e.g., logits to probabilities/labels).\n5. Performance: Optimize inference latency (batching, quantization, caching).\n6. Monitoring: Track model performance (latency, error rate) and data drift over time.\n7. Fallbacks: Implement heuristic fallbacks if the model service is unavailable or returns low confidence.\n\nConstraints:\n- Ensure thread safety for model inference.\n- Handle large payloads if necessary (e.g., images).\n\nOutput:\n- Integration code (API server, client SDK).\n- Dockerfile for the model service.\n- Deployment guide.\n\nExample:\nIntegrate a BERT-based sentiment analysis model into a customer support ticket system to auto-tag urgency.\n\nEvaluation:\n- API must respond within [X] ms.\n- Input validation must reject malformed data before reaching the model.\n- Monitoring must capture inputs and outputs for future retraining.",
-    "example": "Integrate sentiment analysis into feedback system",
-    "tags": [
-        "machine-learning",
-        "ai",
-        "model-deployment",
-        "tensorflow",
-        "api"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 17,
+  "title": "ML Model Integration",
+  "description": "Integrate ML models into applications",
+  "category": "machine-learning",
+  "prompt": "Context:\nYou are an ML Engineer working with a Software Developer to deploy a machine learning model into a production application. The model needs to serve predictions reliably and efficiently.\n\nInputs:\nApplication: [APPLICATION]\nModel Type: [Classification/Regression/NLP/Vision]\nFramework: [TensorFlow/PyTorch/Scikit-learn]\n\nRequirements:\n1. Model Serving: Set up a serving infrastructure (e.g., TensorFlow Serving, TorchServe, FastAPI wrapper).\n2. API Design: Create a REST/gRPC endpoint for inference. Define input/output schemas.\n3. Preprocessing: Implement data transformation pipelines to match training data format (normalization, tokenization).\n4. Postprocessing: Format raw model outputs into user-friendly responses (e.g., logits to probabilities/labels).\n5. Performance: Optimize inference latency (batching, quantization, caching).\n6. Monitoring: Track model performance (latency, error rate) and data drift over time.\n7. Fallbacks: Implement heuristic fallbacks if the model service is unavailable or returns low confidence.\n\nConstraints:\n- Ensure thread safety for model inference.\n- Handle large payloads if necessary (e.g., images).\n\nOutput:\n- Integration code (API server, client SDK).\n- Dockerfile for the model service.\n- Deployment guide.\n\nExample:\nIntegrate a BERT-based sentiment analysis model into a customer support ticket system to auto-tag urgency.\n\nEvaluation:\n- API must respond within [X] ms.\n- Input validation must reject malformed data before reaching the model.\n- Monitoring must capture inputs and outputs for future retraining.",
+  "example": "Integrate sentiment analysis into feedback system",
+  "tags": [
+    "machine-learning",
+    "ai",
+    "model-deployment",
+    "tensorflow",
+    "api"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "integrate",
+  "audience": "ml-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "python",
+    "model-serving"
+  ],
+  "workflowStage": "deploy",
+  "relatedIds": [
+    22,
+    25
+  ]
 }

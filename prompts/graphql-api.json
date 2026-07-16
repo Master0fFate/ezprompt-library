@@ -1,17 +1,30 @@
 {
-    "id": 13,
-    "title": "GraphQL API",
-    "description": "Build complete GraphQL API with resolvers",
-    "category": "API Design",
-    "prompt": "Context:\nYou are a Backend Developer designing a GraphQL API to provide a flexible and efficient data layer for frontend applications.\n\nInputs:\nDomain: [DOMAIN] (e.g., E-commerce, Social Media)\nKey Entities: [LIST ENTITIES]\n\nRequirements:\n1. Schema Design: Define types, interfaces, enums, and unions in SDL (Schema Definition Language).\n2. Queries: Implement queries for fetching data with arguments for filtering, sorting, and pagination (cursor-based preferred).\n3. Mutations: Create mutations for Create, Update, and Delete operations with proper input types.\n4. Subscriptions: Implement real-time updates using WebSockets for relevant events (e.g., new message).\n5. Resolvers: Write efficient resolvers using DataLoader to solve the N+1 problem.\n6. Security: Implement authentication (JWT) and authorization (schema directives or resolver logic).\n\nConstraints:\n- Technology: [Apollo Server/GraphQL Yoga/etc.].\n- Follow GraphQL best practices (nullability, naming conventions).\n- Limit query depth/complexity to prevent DoS attacks.\n\nOutput:\n- Complete schema file (schema.graphql).\n- Resolver code.\n- Documentation for the API.\n\nExample:\nCreate a GraphQL API for a blog platform where users can write posts and comment on them.\n\nEvaluation:\n- Schema must validate against the GraphQL spec.\n- Resolvers must not trigger N+1 queries.\n- Mutations must handle validation errors correctly.",
-    "example": "Create GraphQL API for social media platform",
-    "tags": [
-        "graphql",
-        "api",
-        "apollo",
-        "subscriptions",
-        "backend"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 13,
+  "title": "GraphQL API",
+  "description": "Build complete GraphQL API with resolvers",
+  "category": "api",
+  "prompt": "Context:\nYou are a Backend Developer designing a GraphQL API to provide a flexible and efficient data layer for frontend applications.\n\nInputs:\nDomain: [DOMAIN] (e.g., E-commerce, Social Media)\nKey Entities: [LIST ENTITIES]\n\nRequirements:\n1. Schema Design: Define types, interfaces, enums, and unions in SDL (Schema Definition Language).\n2. Queries: Implement queries for fetching data with arguments for filtering, sorting, and pagination (cursor-based preferred).\n3. Mutations: Create mutations for Create, Update, and Delete operations with proper input types.\n4. Subscriptions: Implement real-time updates using WebSockets for relevant events (e.g., new message).\n5. Resolvers: Write efficient resolvers using DataLoader to solve the N+1 problem.\n6. Security: Implement authentication (JWT) and authorization (schema directives or resolver logic).\n\nConstraints:\n- Technology: [Apollo Server/GraphQL Yoga/etc.].\n- Follow GraphQL best practices (nullability, naming conventions).\n- Limit query depth/complexity to prevent DoS attacks.\n\nOutput:\n- Complete schema file (schema.graphql).\n- Resolver code.\n- Documentation for the API.\n\nExample:\nCreate a GraphQL API for a blog platform where users can write posts and comment on them.\n\nEvaluation:\n- Schema must validate against the GraphQL spec.\n- Resolvers must not trigger N+1 queries.\n- Mutations must handle validation errors correctly.",
+  "example": "Create GraphQL API for social media platform",
+  "tags": [
+    "graphql",
+    "api",
+    "apollo",
+    "subscriptions",
+    "backend"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "implement",
+  "audience": "backend-developer",
+  "difficulty": "advanced",
+  "stack": [
+    "graphql",
+    "websocket"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    1,
+    18,
+    22
+  ]
 }

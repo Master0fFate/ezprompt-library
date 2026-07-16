@@ -1,18 +1,33 @@
 {
-    "id": 3,
-    "title": "Comprehensive Code Review",
-    "description": "Professional code review with SOLID principles and design patterns",
-    "category": "Code Review",
-    "prompt": "Context:\nYou are a Principal Software Engineer conducting a code review for a pull request. Your goal is to ensure code quality, security, and maintainability before merging.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Code Quality: Evaluate readability, naming conventions (camelCase, PascalCase), and comment quality. Identify dead or redundant code.\n2. SOLID Principles: specific checks for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion.\n3. Design Patterns: Identify existing patterns and suggest improvements or more appropriate patterns (e.g., Strategy over Switch statements).\n4. Security: Check for common vulnerabilities (SQLi, XSS, sensitive data exposure, lack of input validation).\n5. Performance: Identify O(n^2) loops, memory leaks, unnecessary object creation, and inefficient database queries.\n6. Testing: Assess test coverage, test case quality, and missing edge case tests.\n7. Refactoring: Provide concrete refactoring suggestions with code snippets.\n\nConstraints:\n- Be constructive and professional.\n- Prioritize critical issues (security, bugs) over style nits.\n- Explain the 'why' behind every suggestion.\n\nOutput:\n- A structured review report categorized by severity (Critical, Major, Minor).\n- Refactored code snippets for the most critical issues.\n\nExample:\n\"The function `processData` violates SRP. It handles parsing, validation, and database storage. Split it into `Parser`, `Validator`, and `Repository` classes.\"\n\nEvaluation:\n- All critical security flaws must be identified.\n- Suggestions must improve code maintainability or performance.",
-    "example": "Review a React component with state management and API calls",
-    "tags": [
-        "code-review",
-        "solid",
-        "design-patterns",
-        "refactoring",
-        "best-practices",
-        "clean-code"
-    ],
-    "favorite": true,
-    "custom": false
+  "id": 3,
+  "title": "Comprehensive Code Review",
+  "description": "Professional code review with SOLID principles and design patterns",
+  "category": "code-review",
+  "prompt": "Context:\nYou are a Principal Software Engineer conducting a code review for a pull request. Your goal is to ensure code quality, security, and maintainability before merging.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Code Quality: Evaluate readability, naming conventions (camelCase, PascalCase), and comment quality. Identify dead or redundant code.\n2. SOLID Principles: specific checks for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion.\n3. Design Patterns: Identify existing patterns and suggest improvements or more appropriate patterns (e.g., Strategy over Switch statements).\n4. Security: Check for common vulnerabilities (SQLi, XSS, sensitive data exposure, lack of input validation).\n5. Performance: Identify O(n^2) loops, memory leaks, unnecessary object creation, and inefficient database queries.\n6. Testing: Assess test coverage, test case quality, and missing edge case tests.\n7. Refactoring: Provide concrete refactoring suggestions with code snippets.\n\nConstraints:\n- Be constructive and professional.\n- Prioritize critical issues (security, bugs) over style nits.\n- Explain the 'why' behind every suggestion.\n\nOutput:\n- A structured review report categorized by severity (Critical, Major, Minor).\n- Refactored code snippets for the most critical issues.\n\nExample:\n\"The function `processData` violates SRP. It handles parsing, validation, and database storage. Split it into `Parser`, `Validator`, and `Repository` classes.\"\n\nEvaluation:\n- All critical security flaws must be identified.\n- Suggestions must improve code maintainability or performance.",
+  "example": "Review a React component with state management and API calls",
+  "tags": [
+    "code-review",
+    "solid",
+    "design-patterns",
+    "refactoring",
+    "best-practices",
+    "clean-code"
+  ],
+  "favorite": true,
+  "custom": false,
+  "taskType": "review",
+  "audience": "software-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "code-review",
+    "solid"
+  ],
+  "workflowStage": "review",
+  "relatedIds": [
+    5,
+    6,
+    8,
+    10,
+    25
+  ]
 }

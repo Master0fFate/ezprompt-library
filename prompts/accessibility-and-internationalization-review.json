@@ -1,0 +1,33 @@
+{
+  "id": 29,
+  "title": "Accessibility and Internationalization Review",
+  "description": "Review a product flow for accessible interaction, localization readiness, and inclusive content",
+  "category": "accessibility",
+  "prompt": "Context:\nYou are an accessibility and internationalization specialist reviewing a user flow before release. The review should identify barriers for keyboard, screen-reader, low-vision, motor, cognitive, and multilingual users and provide fixes that can be verified.\n\nInputs:\nFlow or Components: [SCREENS, COMPONENTS, OR CODE]\nSupported Locales: [LOCALES AND WRITING SYSTEMS]\nContent and Assets: [COPY, ICONS, IMAGES, FORMS]\nTarget Standard: [WCAG LEVEL OR INTERNAL STANDARD]\n\nRequirements:\n1. Semantics: Check landmarks, headings, labels, descriptions, names, roles, states, and status announcements.\n2. Keyboard and Input: Verify focus order, visible focus, keyboard operation, pointer alternatives, touch targets, and error recovery.\n3. Visuals and Motion: Check contrast, non-color cues, text resizing, zoom, reflow, captions, and reduced-motion behavior.\n4. Localization: Check string externalization, pluralization, date/number/currency formats, text expansion, RTL layout, and locale-aware sorting.\n5. Content: Rewrite ambiguous labels, instructions, errors, and empty states so they are specific and translatable.\n6. Verification: Provide manual test steps, automated checks, representative locale cases, and severity-ranked findings.\n\nConstraints:\n- Do not treat automated checks as proof of full accessibility.\n- Do not put user-visible copy in code paths that prevent translation.\n- Preserve meaning when changing language, layout direction, or input method.\n\nOutput:\n- A severity-ranked audit with affected users, evidence, and recommended fixes.\n- Corrected markup or copy examples.\n- A repeatable accessibility and locale test checklist.\n\nExample:\nReview a checkout form for keyboard-only completion, screen-reader announcements, German text expansion, Arabic RTL layout, and locale-aware currency formatting.\n\nEvaluation:\n- Findings identify reproducible barriers and affected interaction modes.\n- Fixes include a verification method.\n- Locale-specific failures are tested rather than inferred from the default language.",
+  "example": "Review checkout for keyboard and screen-reader use, German text expansion, Arabic RTL layout, and locale-aware currency formatting.",
+  "tags": [
+    "accessibility",
+    "i18n",
+    "wcag",
+    "localization",
+    "keyboard",
+    "screen-reader"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "audit",
+  "audience": "accessibility-specialist",
+  "difficulty": "advanced",
+  "stack": [
+    "web",
+    "wcag",
+    "localization"
+  ],
+  "workflowStage": "review",
+  "relatedIds": [
+    11,
+    16,
+    21,
+    26
+  ]
+}

@@ -1,17 +1,31 @@
 {
-    "id": 6,
-    "title": "Security Audit",
-    "description": "Comprehensive security analysis with OWASP Top 10 coverage",
-    "category": "Security",
-    "prompt": "Context:\nYou are a Cybersecurity Expert performing a code audit. Your goal is to identify vulnerabilities that could compromise the confidentiality, integrity, or availability of the system.\n\nInputs:\nCodebase: [PASTE CODE HERE]\nContext: [Application Type, sensitive data handled]\n\nRequirements:\n1. OWASP Top 10 Assessment: systematic check against the top vulnerabilities (Injection, Broken Auth, Data Exposure, etc.).\n2. Input Validation: Check for sanitization flaws leading to XSS, SQLi, or Command Injection.\n3. Authentication & Session: Audit password storage, token handling, and session timeouts.\n4. Logic Flaws: Identify business logic errors that allow bypassing controls (e.g., negative prices).\n5. Dependencies: Check for known CVEs in third-party libraries.\n6. Configuration: Review security headers, CORS settings, and debug flags.\n\nConstraints:\n- Provide Proof of Concept (PoC) for confirmed vulnerabilities.\n- Rate severity using CVSS or High/Medium/Low.\n\nOutput:\n- A security audit report.\n- Patch/Fix recommendations for each finding.\n- Secure code examples.\n\nExample:\nAudit a Node.js Express API that handles credit card payments.\n\nEvaluation:\n- Report must clearly explain the impact of each vulnerability.\n- Fixes must effectively mitigate the risk without breaking functionality.",
-    "example": "Audit a Node.js Express API with authentication",
-    "tags": [
-        "security",
-        "audit",
-        "vulnerabilities",
-        "owasp",
-        "penetration-testing"
-    ],
-    "favorite": true,
-    "custom": false
+  "id": 6,
+  "title": "Security Audit",
+  "description": "Comprehensive security analysis with OWASP Top 10 coverage",
+  "category": "security",
+  "prompt": "Context:\nYou are a Cybersecurity Expert performing a code audit. Your goal is to identify vulnerabilities that could compromise the confidentiality, integrity, or availability of the system.\n\nInputs:\nCodebase: [PASTE CODE HERE]\nContext: [Application Type, sensitive data handled]\n\nRequirements:\n1. OWASP Top 10 Assessment: systematic check against the top vulnerabilities (Injection, Broken Auth, Data Exposure, etc.).\n2. Input Validation: Check for sanitization flaws leading to XSS, SQLi, or Command Injection.\n3. Authentication & Session: Audit password storage, token handling, and session timeouts.\n4. Logic Flaws: Identify business logic errors that allow bypassing controls (e.g., negative prices).\n5. Dependencies: Check for known CVEs in third-party libraries.\n6. Configuration: Review security headers, CORS settings, and debug flags.\n\nConstraints:\n- Provide Proof of Concept (PoC) for confirmed vulnerabilities.\n- Rate severity using CVSS or High/Medium/Low.\n\nOutput:\n- A security audit report.\n- Patch/Fix recommendations for each finding.\n- Secure code examples.\n\nExample:\nAudit a Node.js Express API that handles credit card payments.\n\nEvaluation:\n- Report must clearly explain the impact of each vulnerability.\n- Fixes must effectively mitigate the risk without breaking functionality.",
+  "example": "Audit a Node.js Express API with authentication",
+  "tags": [
+    "security",
+    "audit",
+    "vulnerabilities",
+    "owasp",
+    "penetration-testing"
+  ],
+  "favorite": true,
+  "custom": false,
+  "taskType": "audit",
+  "audience": "security-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "owasp",
+    "web-security"
+  ],
+  "workflowStage": "review",
+  "relatedIds": [
+    1,
+    3,
+    19,
+    31
+  ]
 }

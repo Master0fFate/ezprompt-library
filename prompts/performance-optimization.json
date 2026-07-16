@@ -1,16 +1,27 @@
 {
-    "id": 15,
-    "title": "Performance Optimization",
-    "description": "Comprehensive performance analysis",
-    "category": "Optimization",
-    "prompt": "Context:\nYou are a Performance Engineer tasked with optimizing a sluggish application. You need to identify bottlenecks and apply targeted optimizations to meet performance SLAs.\n\nInputs:\nCode/System: [PASTE CODE OR SYSTEM ARCHITECTURE]\nCurrent Metrics: [e.g., 500ms latency, 1GB memory usage]\nTarget Metrics: [e.g., 100ms latency, 512MB memory usage]\n\nRequirements:\n1. Profiling: Use profiling tools to identify hot paths, memory leaks, and I/O bottlenecks.\n2. Code Optimization: Refactor inefficient algorithms, remove unnecessary computations, and optimize loops.\n3. Database/IO: Optimize queries (indexing), implement caching (Redis/Memcached), and use connection pooling.\n4. Memory Management: Reduce object allocations and fix memory leaks.\n5. Frontend (if applicable): Optimize bundle size, implement lazy loading, and reduce re-renders.\n6. Benchmarking: Measure performance before and after changes to quantify improvements.\n\nConstraints:\n- Do not sacrifice code readability significantly unless necessary for critical paths.\n- Maintain correctness of the application.\n\nOutput:\n- A detailed optimization report.\n- Optimized code snippets.\n- Before/After benchmark results.\n\nExample:\nOptimize a Python API endpoint that processes large CSV files and is currently timing out.\n\nEvaluation:\n- Optimization must meet or exceed target metrics.\n- Changes must pass all regression tests.",
-    "example": "Optimize slow API endpoint processing large datasets",
-    "tags": [
-        "performance",
-        "optimization",
-        "profiling",
-        "benchmarking"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 15,
+  "title": "Performance Optimization",
+  "description": "Comprehensive performance analysis",
+  "category": "optimization",
+  "prompt": "Context:\nYou are a Performance Engineer tasked with optimizing a sluggish application. You need to identify bottlenecks and apply targeted optimizations to meet performance SLAs.\n\nInputs:\nCode/System: [PASTE CODE OR SYSTEM ARCHITECTURE]\nCurrent Metrics: [e.g., 500ms latency, 1GB memory usage]\nTarget Metrics: [e.g., 100ms latency, 512MB memory usage]\n\nRequirements:\n1. Profiling: Use profiling tools to identify hot paths, memory leaks, and I/O bottlenecks.\n2. Code Optimization: Refactor inefficient algorithms, remove unnecessary computations, and optimize loops.\n3. Database/IO: Optimize queries (indexing), implement caching (Redis/Memcached), and use connection pooling.\n4. Memory Management: Reduce object allocations and fix memory leaks.\n5. Frontend (if applicable): Optimize bundle size, implement lazy loading, and reduce re-renders.\n6. Benchmarking: Measure performance before and after changes to quantify improvements.\n\nConstraints:\n- Do not sacrifice code readability significantly unless necessary for critical paths.\n- Maintain correctness of the application.\n\nOutput:\n- A detailed optimization report.\n- Optimized code snippets.\n- Before/After benchmark results.\n\nExample:\nOptimize a Python API endpoint that processes large CSV files and is currently timing out.\n\nEvaluation:\n- Optimization must meet or exceed target metrics.\n- Changes must pass all regression tests.",
+  "example": "Optimize slow API endpoint processing large datasets",
+  "tags": [
+    "performance",
+    "optimization",
+    "profiling",
+    "benchmarking"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "optimize",
+  "audience": "performance-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "profiling",
+    "benchmarking"
+  ],
+  "workflowStage": "optimize",
+  "relatedIds": [
+    2
+  ]
 }

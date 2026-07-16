@@ -1,0 +1,964 @@
+{
+  "version": 2,
+  "prompts": [
+    {
+      "id": 1,
+      "title": "REST API Development with Authentication",
+      "description": "Generate a complete REST API with JWT authentication and best practices",
+      "category": "api",
+      "prompt": "Context:\nYou are a Backend Developer building a secure RESTful API. The API serves as the backend for a web/mobile application and must follow industry standards.\n\nInputs:\nResource Name: [RESOURCE]\nTech Stack: [Language/Framework, Database]\n\nRequirements:\n1. CRUD Operations: Implement Create, Read, Update, Delete endpoints for the resource.\n2. Authentication: Implement JWT-based auth (Login, Register, Refresh Token). Middleware to protect routes.\n3. Authorization: Role-based access control (RBAC) (e.g., Admin vs. User).\n4. Validation: Sanitize and validate all inputs (e.g., using Joi/Zod/Pydantic).\n5. Error Handling: Global error handler returning standard JSON error responses.\n6. Security: Hash passwords (bcrypt), enable CORS, set security headers (Helmet), and rate limit requests.\n7. Logging: structured logging for requests and errors.\n8. Versioning: URL versioning (e.g., /api/v1/).\n\nConstraints:\n- Use proper HTTP status codes (200, 201, 400, 401, 403, 404, 500).\n- Prevent SQL Injection and NoSQL Injection.\n\nOutput:\n- API server code (setup, routes, controllers).\n- Database models/schemas.\n- Middleware code.\n\nExample:\nCreate a REST API for a Blog System (Posts, Comments) using Node.js, Express, and MongoDB.\n\nEvaluation:\n- Endpoints must be secure against unauthorized access.\n- Passwords must never be returned in responses.\n- API must handle invalid JSON gracefully.",
+      "example": "Create a REST API for a blog system using Node.js, Express, and MongoDB with JWT authentication",
+      "tags": [
+        "api",
+        "rest",
+        "authentication",
+        "jwt",
+        "backend",
+        "crud",
+        "security"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "backend-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "rest",
+        "jwt"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        6,
+        13,
+        19
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Advanced Algorithm Optimization",
+      "description": "Comprehensive algorithm analysis and optimization with complexity analysis",
+      "category": "optimization",
+      "prompt": "Context:\nYou are an expert Algorithm Engineer tasked with optimizing a critical piece of code for performance and efficiency. The goal is to reduce execution time and memory footprint while maintaining correctness.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Current State Analysis: Perform a detailed Big O analysis for both time and space complexity. Identify specific bottlenecks.\n2. Optimization Strategy: Propose and implement algorithmic improvements (e.g., dynamic programming, divide and conquer) and better data structures (e.g., hash maps, heaps, tries).\n3. Optimized Implementation: Provide the fully optimized code in [LANGUAGE]. Ensure it handles edge cases correctly.\n4. Complexity Comparison: Present a side-by-side comparison of the original vs. optimized complexity (Time: O(n) -> O(log n), Space: O(n^2) -> O(n)).\n5. Benchmarking: Design a set of test cases (including edge cases like empty inputs, large datasets) to verify the performance gains.\n\nConstraints:\n- Do not use external libraries unless specified.\n- Maintain code readability and add comments explaining complex logic.\n- Ensure the solution is thread-safe if applicable.\n\nOutput:\n- A structured report containing the analysis, strategy, code, and comparison.\n- Code must be clean, commented, and ready for production.\n\nExample:\nInput: A nested loop approach to find duplicates in an array (O(n^2)).\nOutput: A hash set approach (O(n)) with benchmarks showing 100x speedup on large arrays.\n\nEvaluation:\n- The optimized code must pass all original test cases.\n- The time complexity must be strictly better than the original.\n- The space complexity should be minimized where possible.",
+      "example": "Optimize a nested loop algorithm for finding duplicate elements in an array",
+      "tags": [
+        "algorithm",
+        "optimization",
+        "complexity",
+        "performance",
+        "data-structures"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "optimize",
+      "audience": "software-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "algorithms",
+        "data-structures"
+      ],
+      "workflowStage": "optimize",
+      "relatedIds": [
+        15,
+        30
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Comprehensive Code Review",
+      "description": "Professional code review with SOLID principles and design patterns",
+      "category": "code-review",
+      "prompt": "Context:\nYou are a Principal Software Engineer conducting a code review for a pull request. Your goal is to ensure code quality, security, and maintainability before merging.\n\nInputs:\n[PASTE CODE HERE]\n\nRequirements:\n1. Code Quality: Evaluate readability, naming conventions (camelCase, PascalCase), and comment quality. Identify dead or redundant code.\n2. SOLID Principles: specific checks for Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion.\n3. Design Patterns: Identify existing patterns and suggest improvements or more appropriate patterns (e.g., Strategy over Switch statements).\n4. Security: Check for common vulnerabilities (SQLi, XSS, sensitive data exposure, lack of input validation).\n5. Performance: Identify O(n^2) loops, memory leaks, unnecessary object creation, and inefficient database queries.\n6. Testing: Assess test coverage, test case quality, and missing edge case tests.\n7. Refactoring: Provide concrete refactoring suggestions with code snippets.\n\nConstraints:\n- Be constructive and professional.\n- Prioritize critical issues (security, bugs) over style nits.\n- Explain the 'why' behind every suggestion.\n\nOutput:\n- A structured review report categorized by severity (Critical, Major, Minor).\n- Refactored code snippets for the most critical issues.\n\nExample:\n\"The function `processData` violates SRP. It handles parsing, validation, and database storage. Split it into `Parser`, `Validator`, and `Repository` classes.\"\n\nEvaluation:\n- All critical security flaws must be identified.\n- Suggestions must improve code maintainability or performance.",
+      "example": "Review a React component with state management and API calls",
+      "tags": [
+        "code-review",
+        "solid",
+        "design-patterns",
+        "refactoring",
+        "best-practices",
+        "clean-code"
+      ],
+      "favorite": true,
+      "custom": false,
+      "taskType": "review",
+      "audience": "software-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "code-review",
+        "solid"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        5,
+        6,
+        8,
+        10,
+        25
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Database Schema Design",
+      "description": "Design normalized, scalable database schemas with indexing strategy",
+      "category": "architecture",
+      "prompt": "Context:\nYou are a Database Architect designing the data layer for a scalable application. The schema must support high performance, data integrity, and future growth.\n\nInputs:\nApplication Description: [DESCRIPTION]\nBusiness Requirements: [LIST REQUIREMENTS]\n\nRequirements:\n1. Entity-Relationship Diagram (ERD): Define entities, attributes, and relationships (1:1, 1:N, M:N).\n2. Schema Definition: Provide complete CREATE TABLE statements with appropriate data types and constraints (NOT NULL, UNIQUE, DEFAULT).\n3. Keys: Define Primary Keys (PK) and Foreign Keys (FK) to enforce referential integrity.\n4. Indexing Strategy: Analyze query patterns and propose indexes (B-Tree, Hash, GIN) to optimize performance. Explain the rationale.\n5. Normalization: Ensure the schema is normalized to at least 3NF, or justify denormalization for performance.\n6. Scalability: Discuss partitioning, sharding, or read replicas if high scale is expected.\n\nConstraints:\n- Target Database: [PostgreSQL/MySQL/SQL Server].\n- Follow naming conventions (snake_case for SQL).\n- Avoid circular dependencies.\n\nOutput:\n- SQL scripts for schema creation.\n- A markdown report explaining the design decisions and trade-offs.\n\nExample:\nDesign a schema for an e-commerce platform handling Users, Products, Orders, and Payments.\n\nEvaluation:\n- Schema must satisfy all business requirements.\n- Indexes must cover common query predicates.\n- No redundant data unless justified.",
+      "example": "Design a database schema for an e-commerce platform",
+      "tags": [
+        "database",
+        "schema",
+        "sql",
+        "design",
+        "normalization",
+        "indexing"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "database-architect",
+      "difficulty": "expert",
+      "stack": [
+        "sql",
+        "postgresql"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Unit Testing Suite",
+      "description": "Generate complete unit tests with mocking and edge cases",
+      "category": "testing",
+      "prompt": "Context:\nYou are a QA Engineer / Developer tasked with increasing code coverage and ensuring reliability through unit testing.\n\nInputs:\nCode to Test: [PASTE CODE HERE]\nTest Framework: [Jest/Mocha/PyTest/JUnit]\n\nRequirements:\n1. Coverage: Aim for >90% code coverage. Test all public methods.\n2. Happy Path: Verify the expected behavior for valid inputs.\n3. Edge Cases: Test nulls, empty strings, boundary values, and invalid formats.\n4. Mocking: Mock all external dependencies (DB, APIs, File System) to ensure tests are isolated and fast.\n5. Structure: Use the AAA pattern (Arrange, Act, Assert). Use setup/teardown hooks (beforeEach, afterAll).\n6. Clarity: Write descriptive test names (e.g., \"should return 400 when email is invalid\").\n\nConstraints:\n- Tests must be deterministic (no random failures).\n- Do not test implementation details, test behavior.\n\nOutput:\n- Complete test file.\n- Instructions on how to run the tests.\n\nExample:\nGenerate Jest tests for a `UserService` class that handles user registration and login.\n\nEvaluation:\n- All tests must pass.\n- Mocks must strictly define expected calls.\n- No side effects between tests.",
+      "example": "Generate tests for a user authentication service",
+      "tags": [
+        "testing",
+        "unit-tests",
+        "tdd",
+        "mocking",
+        "jest",
+        "qa"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "test",
+      "audience": "developer",
+      "difficulty": "advanced",
+      "stack": [
+        "unit-testing"
+      ],
+      "workflowStage": "test",
+      "relatedIds": [
+        3,
+        25
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Security Audit",
+      "description": "Comprehensive security analysis with OWASP Top 10 coverage",
+      "category": "security",
+      "prompt": "Context:\nYou are a Cybersecurity Expert performing a code audit. Your goal is to identify vulnerabilities that could compromise the confidentiality, integrity, or availability of the system.\n\nInputs:\nCodebase: [PASTE CODE HERE]\nContext: [Application Type, sensitive data handled]\n\nRequirements:\n1. OWASP Top 10 Assessment: systematic check against the top vulnerabilities (Injection, Broken Auth, Data Exposure, etc.).\n2. Input Validation: Check for sanitization flaws leading to XSS, SQLi, or Command Injection.\n3. Authentication & Session: Audit password storage, token handling, and session timeouts.\n4. Logic Flaws: Identify business logic errors that allow bypassing controls (e.g., negative prices).\n5. Dependencies: Check for known CVEs in third-party libraries.\n6. Configuration: Review security headers, CORS settings, and debug flags.\n\nConstraints:\n- Provide Proof of Concept (PoC) for confirmed vulnerabilities.\n- Rate severity using CVSS or High/Medium/Low.\n\nOutput:\n- A security audit report.\n- Patch/Fix recommendations for each finding.\n- Secure code examples.\n\nExample:\nAudit a Node.js Express API that handles credit card payments.\n\nEvaluation:\n- Report must clearly explain the impact of each vulnerability.\n- Fixes must effectively mitigate the risk without breaking functionality.",
+      "example": "Audit a Node.js Express API with authentication",
+      "tags": [
+        "security",
+        "audit",
+        "vulnerabilities",
+        "owasp",
+        "penetration-testing"
+      ],
+      "favorite": true,
+      "custom": false,
+      "taskType": "audit",
+      "audience": "security-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "owasp",
+        "web-security"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        1,
+        3,
+        19,
+        31
+      ]
+    },
+    {
+      "id": 7,
+      "title": "API Documentation",
+      "description": "Generate comprehensive API documentation with examples",
+      "category": "documentation",
+      "prompt": "Context:\nYou are a Technical Writer documenting a RESTful API for developers. The documentation must be clear, accurate, and easy to use, facilitating quick integration.\n\nInputs:\n[PASTE CODE OR API SPEC HERE]\n\nRequirements:\n1. Overview: Provide a high-level summary of the API's purpose, base URL, versioning strategy (e.g., v1), and authentication method.\n2. Endpoints: detailed documentation for each endpoint including HTTP method, path, path parameters, query parameters, and request body schema.\n3. Data Models: Define all data objects/resources with field descriptions, data types, and nullability.\n4. Authentication: Explain the authentication flow (e.g., OAuth2, JWT), including token format and required headers (Authorization: Bearer <token>).\n5. Error Handling: List standard error codes (4xx, 5xx) with troubleshooting steps and error response formats.\n6. Code Examples: Provide request/response examples in multiple languages (e.g., curl, JavaScript, Python).\n7. Changelog: Document version history and breaking changes.\n\nConstraints:\n- Use [OpenAPI 3.0 / Markdown / Swagger] format.\n- Ensure all examples are valid and copy-pasteable.\n- Avoid internal jargon; use industry-standard terminology.\n\nOutput:\n- A complete documentation file (e.g., api-docs.md or openapi.yaml).\n\nExample:\nEndpoint: POST /users\nDescription: Creates a new user.\nParams: { \"username\": \"string\", \"email\": \"string\" }\nResponse: 201 Created { \"id\": \"123\", ... }\n\nEvaluation:\n- Documentation must cover all provided endpoints.\n- Examples must be syntactically correct.\n- All parameters must be fully described.",
+      "example": "Document a RESTful API for a task management system",
+      "tags": [
+        "documentation",
+        "api",
+        "swagger",
+        "openapi",
+        "technical-writing"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "document",
+      "audience": "technical-writer",
+      "difficulty": "advanced",
+      "stack": [
+        "openapi",
+        "markdown"
+      ],
+      "workflowStage": "document",
+      "relatedIds": [
+        24
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Debugging Assistant",
+      "description": "Systematic debugging with root cause analysis",
+      "category": "debugging",
+      "prompt": "Context:\nYou are a Senior Developer troubleshooting a critical issue. Your goal is to systematically identify the root cause, fix the bug, and prevent recurrence.\n\nInputs:\nCode Snippet: [PASTE CODE HERE]\nError Message/Behavior: [DESCRIBE ERROR]\nExpected Behavior: [DESCRIBE EXPECTED]\nEnvironment: [Language/Framework, Version, OS]\n\nRequirements:\n1. Root Cause Analysis: Trace the execution flow to pinpoint exactly where and why the failure occurs.\n2. Debugging Steps: Outline the step-by-step process used to isolate the issue (e.g., log analysis, breakpoints).\n3. The Fix: Provide the corrected code with an explanation of the changes.\n4. Prevention: Suggest strategies (e.g., better type checking, validation, unit tests) to prevent similar bugs.\n5. Verification: Provide test cases or reproduction steps to verify the fix.\n\nConstraints:\n- Do not introduce regressions.\n- Keep the fix minimal and localized if possible.\n\nOutput:\n- A debugging report including the analysis, fix, and prevention plan.\n- Corrected code block.\n\nExample:\nDebug a React component causing infinite re-renders due to a missing dependency in useEffect.\n\nEvaluation:\n- The fix must resolve the reported error.\n- The explanation must be logical and supported by evidence.\n- The prevention strategy must be actionable.",
+      "example": "Debug a React component causing infinite re-renders",
+      "tags": [
+        "debugging",
+        "troubleshooting",
+        "error-handling",
+        "root-cause-analysis"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "debug",
+      "audience": "software-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "debugging"
+      ],
+      "workflowStage": "debug",
+      "relatedIds": [
+        3,
+        25
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Async Programming",
+      "description": "Implement robust async patterns with error handling",
+      "category": "code-generation",
+      "prompt": "Context:\nYou are a Senior Backend Engineer implementing a high-concurrency module. The system needs to handle multiple asynchronous operations efficiently without blocking the main thread.\n\nInputs:\nTask Description: [TASK]\nLanguage: [SPECIFY]\n\nRequirements:\n1. Concurrency Management: Handle concurrent operations using appropriate patterns (Promises, Async/Await, Coroutines, Channels).\n2. Error Handling: Implement robust error handling (try-catch, error propagation) to ensure the system doesn't crash on failure.\n3. Timeout & Cancellation: Add timeout mechanisms and support for operation cancellation to prevent resource leaks.\n4. Resilience: Implement retry logic with exponential backoff and the Circuit Breaker pattern for external service calls.\n5. Performance: Optimize for throughput and latency. Minimize context switching and lock contention.\n6. Monitoring: Add logging and metrics for operation duration, success rates, and error types.\n\nConstraints:\n- Use standard libraries where possible.\n- Ensure thread safety if using shared mutable state.\n- Avoid callback hell; use modern async primitives.\n\nOutput:\n- Production-ready code for the async module.\n- Detailed comments explaining the concurrency model and error handling strategy.\n\nExample:\nImplement a parallel image downloader that retries failed downloads up to 3 times and times out after 5 seconds.\n\nEvaluation:\n- Code must handle network failures gracefully.\n- No unhandled promise rejections or race conditions.\n- Performance tests should show improved throughput over synchronous execution.",
+      "example": "Implement parallel API calls with retry logic",
+      "tags": [
+        "async",
+        "concurrent",
+        "promises",
+        "parallel",
+        "performance"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "backend-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "async-await",
+        "concurrency"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        18
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Design Pattern Implementation",
+      "description": "Implement design patterns with real-world examples",
+      "category": "architecture",
+      "prompt": "Context:\nYou are a Software Architect explaining and implementing a specific design pattern to solve a common software design problem.\n\nInputs:\nPattern Name: [PATTERN NAME] (e.g., Singleton, Factory, Observer)\nUse Case: [DESCRIBE USE CASE]\n\nRequirements:\n1. Implementation: Provide a complete, working implementation of the pattern in [LANGUAGE].\n2. Components: Clearly define the roles (e.g., Context, Strategy, ConcreteStrategy) and their relationships.\n3. UML Representation: Describe the structure using text-based UML or ASCII art.\n4. Usage Example: Show how client code interacts with the pattern.\n5. Analysis: Discuss the benefits (e.g., decoupling, flexibility) and trade-offs (e.g., complexity, overhead).\n6. Best Practices: Mention when to use this pattern and when to avoid it.\n\nConstraints:\n- Adhere to SOLID principles.\n- Keep the example realistic, not just abstract.\n\nOutput:\n- Source code for the pattern.\n- Explanation of the design choices.\n\nExample:\nImplement the Strategy pattern for a payment processing system supporting Credit Card, PayPal, and Crypto.\n\nEvaluation:\n- The implementation must correctly follow the pattern's definition.\n- The code must compile/run.\n- The use case must demonstrate the pattern's utility.",
+      "example": "Implement Strategy pattern for payment processing",
+      "tags": [
+        "design-patterns",
+        "architecture",
+        "oop",
+        "solid"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "software-architect",
+      "difficulty": "advanced",
+      "stack": [
+        "object-oriented-design"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": 11,
+      "title": "React Component",
+      "description": "Build scalable React components with hooks",
+      "category": "frontend",
+      "prompt": "Context:\nYou are a Senior Frontend Developer building a reusable, accessible, and performant React component for a design system.\n\nInputs:\nComponent Name: [NAME]\nProps: [LIST PROPS]\nFeatures: [LIST FEATURES]\n\nRequirements:\n1. Implementation: Functional component using React Hooks (useState, useEffect, custom hooks).\n2. TypeScript: Define strict interfaces for props and state. Avoid `any`.\n3. Styling: Use [CSS Modules/Styled Components/Tailwind] for styling. Ensure responsiveness.\n4. Accessibility: Follow WAI-ARIA guidelines (role, aria-label, keyboard navigation).\n5. Performance: Use `React.memo`, `useCallback`, and `useMemo` where appropriate to prevent unnecessary re-renders.\n6. Testing: Provide unit tests using React Testing Library checking for rendering and interactions.\n7. Documentation: Add TSDoc comments for the component and its props.\n\nConstraints:\n- No class components.\n- Ensure compatibility with [React Version].\n- Handle loading and error states.\n\nOutput:\n- Component source code (tsx).\n- CSS/Style file (if separate).\n- Test file (test.tsx).\n\nExample:\nCreate a `DataTable` component with sorting, pagination, and row selection.\n\nEvaluation:\n- Component must pass all accessibility checks (e.g., axe).\n- Types must be strictly defined.\n- Tests must cover 100% of user interactions.",
+      "example": "Create a data table with sorting and pagination",
+      "tags": [
+        "react",
+        "components",
+        "hooks",
+        "typescript",
+        "frontend"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "frontend-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        21,
+        29
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Microservices Architecture",
+      "description": "Design scalable microservices",
+      "category": "architecture",
+      "prompt": "Context:\nYou are a System Architect designing a microservices-based system to replace a monolithic application. The goal is to improve scalability, fault isolation, and development velocity.\n\nInputs:\nSystem Description: [SYSTEM]\nFunctional Requirements: [LIST REQUIREMENTS]\n\nRequirements:\n1. Service Decomposition: Identify service boundaries based on Domain-Driven Design (DDD) contexts. List the services and their responsibilities.\n2. Communication Patterns: Define how services interact (Sync: REST/gRPC vs. Async: RabbitMQ/Kafka/SQS).\n3. Data Management: Define the Database-per-Service strategy and how to handle distributed transactions (Saga Pattern).\n4. Service Discovery & Load Balancing: Explain how services find each other and distribute traffic (e.g., Consul, K8s Services).\n5. Resilience: Incorporate patterns like Circuit Breaker, Retry, and Bulkhead to prevent cascading failures.\n6. Observability: Strategy for distributed tracing (OpenTelemetry), centralized logging (ELK/Splunk), and metrics (Prometheus/Grafana).\n7. Security: Plan for inter-service authentication (mTLS) and user authentication (OAuth2/OIDC).\n\nConstraints:\n- Prioritize loose coupling and high cohesion.\n- Consider operational complexity.\n\nOutput:\n- High-level architecture diagram (Mermaid/ASCII).\n- Detailed design document for each core service.\n- Technology stack recommendations.\n\nExample:\nDesign a microservices architecture for an Uber-like ride-sharing app including User, Ride, Driver, and Payment services.\n\nEvaluation:\n- Architecture must avoid single points of failure.\n- Data consistency strategy must be viable.\n- Service boundaries must minimize chatty communication.",
+      "example": "Design microservices for an e-commerce platform with catalog, order, payment, and fulfillment services",
+      "tags": [
+        "microservices",
+        "architecture",
+        "distributed-systems",
+        "scalability"
+      ],
+      "favorite": true,
+      "custom": false,
+      "taskType": "design",
+      "audience": "software-architect",
+      "difficulty": "expert",
+      "stack": [
+        "microservices",
+        "distributed-systems"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        4
+      ]
+    },
+    {
+      "id": 13,
+      "title": "GraphQL API",
+      "description": "Build complete GraphQL API with resolvers",
+      "category": "api",
+      "prompt": "Context:\nYou are a Backend Developer designing a GraphQL API to provide a flexible and efficient data layer for frontend applications.\n\nInputs:\nDomain: [DOMAIN] (e.g., E-commerce, Social Media)\nKey Entities: [LIST ENTITIES]\n\nRequirements:\n1. Schema Design: Define types, interfaces, enums, and unions in SDL (Schema Definition Language).\n2. Queries: Implement queries for fetching data with arguments for filtering, sorting, and pagination (cursor-based preferred).\n3. Mutations: Create mutations for Create, Update, and Delete operations with proper input types.\n4. Subscriptions: Implement real-time updates using WebSockets for relevant events (e.g., new message).\n5. Resolvers: Write efficient resolvers using DataLoader to solve the N+1 problem.\n6. Security: Implement authentication (JWT) and authorization (schema directives or resolver logic).\n\nConstraints:\n- Technology: [Apollo Server/GraphQL Yoga/etc.].\n- Follow GraphQL best practices (nullability, naming conventions).\n- Limit query depth/complexity to prevent DoS attacks.\n\nOutput:\n- Complete schema file (schema.graphql).\n- Resolver code.\n- Documentation for the API.\n\nExample:\nCreate a GraphQL API for a blog platform where users can write posts and comment on them.\n\nEvaluation:\n- Schema must validate against the GraphQL spec.\n- Resolvers must not trigger N+1 queries.\n- Mutations must handle validation errors correctly.",
+      "example": "Create GraphQL API for social media platform",
+      "tags": [
+        "graphql",
+        "api",
+        "apollo",
+        "subscriptions",
+        "backend"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "backend-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "graphql",
+        "websocket"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        1,
+        18,
+        22
+      ]
+    },
+    {
+      "id": 14,
+      "title": "CI/CD Pipeline",
+      "description": "Set up complete CI/CD pipeline",
+      "category": "devops",
+      "prompt": "Context:\nYou are a DevOps Engineer setting up a robust CI/CD pipeline for a modern application. The pipeline must automate the build, test, and deployment processes to ensure rapid and reliable delivery.\n\nInputs:\nProject Type: [PROJECT TYPE]\nRepository: [GitHub/GitLab]\nPlatform: [GitHub Actions/GitLab CI/Jenkins]\nDeployment Target: [AWS/GCP/Azure/Kubernetes]\n\nRequirements:\n1. Build Stage: Automate dependency installation, code compilation, and artifact generation (e.g., Docker images).\n2. Test Stage: Run linting, unit tests, and integration tests. Fail the pipeline if tests fail.\n3. Quality Gates: Enforce code coverage thresholds (e.g., >80%) and run security scans (SAST/DAST).\n4. Deployment Stage: Implement automated deployment to Dev/Staging environments and manual approval for Production.\n5. Post-Deployment: Run smoke tests and health checks to verify the deployment.\n6. Caching: Configure caching for dependencies to speed up build times.\n\nConstraints:\n- Use YAML configuration syntax.\n- Follow security best practices (secrets management, least privilege).\n- Ensure the pipeline is idempotent.\n\nOutput:\n- Complete pipeline configuration files (e.g., .github/workflows/main.yml).\n- Documentation on how to set up secrets and environment variables.\n\nExample:\nPipeline for a Node.js API that builds a Docker image, pushes to ECR, and deploys to ECS on push to main branch.\n\nEvaluation:\n- Pipeline must successfully build and test the application.\n- Secrets must not be exposed in logs.\n- Deployment steps must be correct for the target platform.",
+      "example": "CI/CD for Node.js API with AWS deployment",
+      "tags": [
+        "ci-cd",
+        "devops",
+        "automation",
+        "docker",
+        "deployment"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "deploy",
+      "audience": "devops-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "ci-cd",
+        "docker"
+      ],
+      "workflowStage": "deploy",
+      "relatedIds": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Performance Optimization",
+      "description": "Comprehensive performance analysis",
+      "category": "optimization",
+      "prompt": "Context:\nYou are a Performance Engineer tasked with optimizing a sluggish application. You need to identify bottlenecks and apply targeted optimizations to meet performance SLAs.\n\nInputs:\nCode/System: [PASTE CODE OR SYSTEM ARCHITECTURE]\nCurrent Metrics: [e.g., 500ms latency, 1GB memory usage]\nTarget Metrics: [e.g., 100ms latency, 512MB memory usage]\n\nRequirements:\n1. Profiling: Use profiling tools to identify hot paths, memory leaks, and I/O bottlenecks.\n2. Code Optimization: Refactor inefficient algorithms, remove unnecessary computations, and optimize loops.\n3. Database/IO: Optimize queries (indexing), implement caching (Redis/Memcached), and use connection pooling.\n4. Memory Management: Reduce object allocations and fix memory leaks.\n5. Frontend (if applicable): Optimize bundle size, implement lazy loading, and reduce re-renders.\n6. Benchmarking: Measure performance before and after changes to quantify improvements.\n\nConstraints:\n- Do not sacrifice code readability significantly unless necessary for critical paths.\n- Maintain correctness of the application.\n\nOutput:\n- A detailed optimization report.\n- Optimized code snippets.\n- Before/After benchmark results.\n\nExample:\nOptimize a Python API endpoint that processes large CSV files and is currently timing out.\n\nEvaluation:\n- Optimization must meet or exceed target metrics.\n- Changes must pass all regression tests.",
+      "example": "Optimize slow API endpoint processing large datasets",
+      "tags": [
+        "performance",
+        "optimization",
+        "profiling",
+        "benchmarking"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "optimize",
+      "audience": "performance-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "profiling",
+        "benchmarking"
+      ],
+      "workflowStage": "optimize",
+      "relatedIds": [
+        2
+      ]
+    },
+    {
+      "id": 16,
+      "title": "React Native Mobile App",
+      "description": "Build cross-platform mobile apps",
+      "category": "mobile",
+      "prompt": "Context:\nYou are a Mobile Developer building a cross-platform mobile application using React Native. The app needs to provide a native-like experience on both iOS and Android.\n\nInputs:\nApp Concept: [DESCRIPTION]\nKey Features: [LIST FEATURES]\n\nRequirements:\n1. Architecture: Set up a project structure using [Expo/CLI]. Use TypeScript.\n2. Navigation: Implement navigation using React Navigation (Stack, Tab, Drawer).\n3. State Management: Use [Context/Redux/Zustand] for global state.\n4. Native Features: Integrate device capabilities (Camera, Geolocation, Push Notifications) using appropriate libraries.\n5. UI/UX: Create responsive layouts using Flexbox. Ensure safe area handling and dark mode support.\n6. Performance: Optimize list rendering (FlatList), image caching, and startup time.\n7. Offline Support: Implement local storage (AsyncStorage/SQLite) and offline-first logic.\n8. Testing: Unit tests with Jest and E2E tests with Detox.\n\nConstraints:\n- Code must run on both iOS and Android.\n- Handle platform-specific differences (Platform.OS).\n\nOutput:\n- Project structure overview.\n- Core component code.\n- Configuration files (app.json, package.json).\n\nExample:\nCreate a Fitness Tracker app that logs workouts and maps runs using GPS.\n\nEvaluation:\n- App must handle permission requests gracefully.\n- Navigation transitions must be smooth (60fps).\n- Offline mode must function for core features.",
+      "example": "Create fitness tracking app with workout logging",
+      "tags": [
+        "react-native",
+        "mobile",
+        "ios",
+        "android",
+        "cross-platform"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "mobile-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "react-native",
+        "typescript"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        21,
+        29
+      ]
+    },
+    {
+      "id": 17,
+      "title": "ML Model Integration",
+      "description": "Integrate ML models into applications",
+      "category": "machine-learning",
+      "prompt": "Context:\nYou are an ML Engineer working with a Software Developer to deploy a machine learning model into a production application. The model needs to serve predictions reliably and efficiently.\n\nInputs:\nApplication: [APPLICATION]\nModel Type: [Classification/Regression/NLP/Vision]\nFramework: [TensorFlow/PyTorch/Scikit-learn]\n\nRequirements:\n1. Model Serving: Set up a serving infrastructure (e.g., TensorFlow Serving, TorchServe, FastAPI wrapper).\n2. API Design: Create a REST/gRPC endpoint for inference. Define input/output schemas.\n3. Preprocessing: Implement data transformation pipelines to match training data format (normalization, tokenization).\n4. Postprocessing: Format raw model outputs into user-friendly responses (e.g., logits to probabilities/labels).\n5. Performance: Optimize inference latency (batching, quantization, caching).\n6. Monitoring: Track model performance (latency, error rate) and data drift over time.\n7. Fallbacks: Implement heuristic fallbacks if the model service is unavailable or returns low confidence.\n\nConstraints:\n- Ensure thread safety for model inference.\n- Handle large payloads if necessary (e.g., images).\n\nOutput:\n- Integration code (API server, client SDK).\n- Dockerfile for the model service.\n- Deployment guide.\n\nExample:\nIntegrate a BERT-based sentiment analysis model into a customer support ticket system to auto-tag urgency.\n\nEvaluation:\n- API must respond within [X] ms.\n- Input validation must reject malformed data before reaching the model.\n- Monitoring must capture inputs and outputs for future retraining.",
+      "example": "Integrate sentiment analysis into feedback system",
+      "tags": [
+        "machine-learning",
+        "ai",
+        "model-deployment",
+        "tensorflow",
+        "api"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "integrate",
+      "audience": "ml-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "python",
+        "model-serving"
+      ],
+      "workflowStage": "deploy",
+      "relatedIds": [
+        22,
+        25
+      ]
+    },
+    {
+      "id": 18,
+      "title": "WebSocket Real-Time",
+      "description": "Implement real-time features with WebSocket",
+      "category": "realtime",
+      "prompt": "Context:\nYou are a Full Stack Developer building a real-time feature for a web application. You need to ensure low latency and reliable message delivery.\n\nInputs:\nFeature: [Chat/Notifications/Live Feed]\nTech Stack: [Node.js/Socket.io, Python/FastAPI, Go]\n\nRequirements:\n1. Server Setup: Initialize the WebSocket server and handle connection upgrades.\n2. Connection Management: Handle client connections, disconnections, and reconnection logic (heartbeats/ping-pong).\n3. Messaging: Implement event-based communication (emit/listen). Support rooms/channels for broadcasting.\n4. Scalability: Use a Pub/Sub adapter (Redis) to support multiple server instances.\n5. Security: Authenticate connections (pass tokens in handshake). Validate message payloads.\n6. Client Integration: Provide client-side code to connect and handle events.\n7. Error Handling: Manage network interruptions and message failures.\n\nConstraints:\n- Minimize latency.\n- Ensure message ordering where possible.\n\nOutput:\n- Server-side code.\n- Client-side code snippet.\n\nExample:\nImplement a real-time chat server with rooms and typing indicators using Socket.io and Redis.\n\nEvaluation:\n- Messages must be delivered to all subscribers in the room.\n- Server must handle 10k concurrent connections (simulated).\n- Reconnection must happen automatically on network loss.",
+      "example": "Implement real-time chat with typing indicators",
+      "tags": [
+        "websocket",
+        "realtime",
+        "socketio",
+        "chat",
+        "messaging"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "full-stack-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "websocket",
+        "redis"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        9,
+        13,
+        28
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Serverless Functions",
+      "description": "Build serverless functions",
+      "category": "api",
+      "prompt": "Context:\nYou are a Cloud Architect developing a serverless application. You need to write stateless functions that scale automatically in response to events.\n\nInputs:\nUse Case: [USE CASE]\nPlatform: [AWS Lambda/Azure Functions/Google Cloud Functions]\nTrigger: [HTTP/S3/DynamoDB/Cron]\n\nRequirements:\n1. Implementation: Write the function handler with proper event parsing and context handling.\n2. Infrastructure as Code (IaC): Define the resources using [Serverless Framework/SAM/Terraform].\n3. Cold Start Optimization: Minimize dependency size and use efficient initialization logic.\n4. Error Handling: Implement try-catch blocks and configure Dead Letter Queues (DLQ) for failed events.\n5. Security: Follow least privilege principles for IAM roles. Validate all inputs.\n6. Observability: Add structured logging and tracing (e.g., X-Ray).\n7. Testing: Provide unit tests (mocking context) and integration tests.\n\nConstraints:\n- Adhere to memory and timeout limits.\n- Ensure idempotency.\n\nOutput:\n- Function code.\n- Infrastructure configuration file (yaml/json).\n- Deployment instructions.\n\nExample:\nCreate an AWS Lambda function triggered by S3 uploads that generates a thumbnail and saves it to another bucket.\n\nEvaluation:\n- Function must process events correctly.\n- IaC must deploy successfully.\n- Logs must provide visibility into execution flow.",
+      "example": "Create image processing function for uploads",
+      "tags": [
+        "serverless",
+        "lambda",
+        "cloud",
+        "faas",
+        "aws"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "backend-developer",
+      "difficulty": "advanced",
+      "stack": [
+        "rest",
+        "jwt"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        1,
+        6
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Data Pipeline ETL",
+      "description": "Build robust data pipelines",
+      "category": "data",
+      "prompt": "Context:\nYou are a Data Engineer building a scalable ETL (Extract, Transform, Load) pipeline. The pipeline needs to process large volumes of data reliably and maintain data quality.\n\nInputs:\nTask Description: [TASK]\nSource Data: [JSON/CSV/Database/API]\nTarget System: [Data Warehouse/Data Lake]\n\nRequirements:\n1. Extraction: Connect to source systems and ingest data incrementally or in full batches.\n2. Transformation: Implement cleaning (remove duplicates, handle nulls), validation (schema checks), and enrichment logic.\n3. Loading: efficient loading into the target system (e.g., bulk inserts, upserts).\n4. Orchestration: Use [Airflow/Prefect] to schedule and manage dependencies.\n5. Data Quality: Implement checks for data completeness, accuracy, and consistency.\n6. Error Handling: Add retry logic for transient failures and dead-letter queues for bad records.\n7. Monitoring: Set up alerts for pipeline failures or SLA breaches.\n\nConstraints:\n- Ensure idempotency (running twice produces the same result).\n- Handle PII (Personally Identifiable Information) according to GDPR/CCPA.\n- Optimize for [Cost/Latency/Throughput].\n\nOutput:\n- Complete DAG/Pipeline code.\n- Configuration files for the orchestration tool.\n- SQL scripts or transformation code.\n\nExample:\nBuild an Airflow DAG that ingests customer logs from S3, aggregates daily metrics using Spark, and loads the results into Redshift.\n\nEvaluation:\n- Pipeline must handle schema changes gracefully.\n- No data loss during processing.\n- Performance must meet the defined SLA (e.g., < 1 hour latency).",
+      "example": "Build ETL pipeline for customer data analytics",
+      "tags": [
+        "etl",
+        "data-pipeline",
+        "airflow",
+        "data-engineering",
+        "analytics"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "implement",
+      "audience": "data-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "etl",
+        "airflow"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        30
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Full Functional Dashboard with Tablet Design",
+      "description": "Create a complete, responsive dashboard with intuitive menu navigation optimized for tablet devices",
+      "category": "design",
+      "prompt": "Context:\nYou are a UI/UX Designer and Frontend Developer creating a responsive dashboard application. The primary target is tablet devices (iPad, Android tablets), but it must also work on desktop and mobile.\n\nInputs:\nDashboard Type: [e.g., Analytics, Admin, CRM]\nSpecific Features: [LIST FEATURES]\n\nRequirements:\n1. Layout & Structure:\n   - Intuitive navigation menu (sidebar or top bar).\n   - Responsive grid system for widgets/cards.\n   - Collapsible menu for space optimization.\n   - Touch-friendly interface elements (min 44x44px).\n   - Optimized for landscape and portrait orientations.\n2. Menu Navigation:\n   - Clear visual hierarchy with Icon + text labels.\n   - Active state indicators and smooth transitions.\n   - Breadcrumb navigation for deep hierarchies.\n3. Dashboard Features:\n   - Data visualization (charts, graphs using Recharts/Chart.js).\n   - Real-time updates capability.\n   - Search, Filter, and Sort functionality.\n4. Technical Stack:\n   - Framework: [React/Vue/Angular]\n   - Styling: [Tailwind CSS/Material UI]\n   - State Management: [Redux/Context]\n\nConstraints:\n- Ensure 60fps animations.\n- No hover-dependent interactions (touch first).\n- Support high contrast mode for accessibility.\n\nOutput:\n- Complete component code for the dashboard layout and navigation.\n- CSS/Style definitions for responsiveness.\n\nExample:\nCreate a Sales Dashboard with a collapsible sidebar, a top bar with user profile, and a main area showing a revenue chart and recent transactions list.\n\nEvaluation:\n- The layout must adjust seamlessly between 768px and 1024px widths.\n- Navigation must be accessible via touch.\n- Code must be modular and reusable.",
+      "example": "Create a sales dashboard with a collapsible sidebar, revenue chart, filterable transactions, and portrait and landscape layouts.",
+      "tags": [
+        "dashboard",
+        "tablet",
+        "ui",
+        "responsive",
+        "navigation",
+        "menu",
+        "admin",
+        "frontend",
+        "touch"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "product-designer",
+      "difficulty": "advanced",
+      "stack": [
+        "react",
+        "responsive-design"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        11,
+        16,
+        29
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Retrieval-Augmented Generation Pipeline",
+      "description": "Design a grounded retrieval workflow that turns a document collection into cited, testable answers",
+      "category": "retrieval",
+      "prompt": "Context:\nYou are an AI engineer designing a retrieval-augmented generation (RAG) workflow for a knowledge assistant. The system must retrieve relevant source passages, ground its answer in those passages, and make unsupported claims easy to detect.\n\nInputs:\nKnowledge Sources: [DOCUMENT TYPES AND LOCATIONS]\nUser Questions: [QUESTION TYPES]\nStack: [EMBEDDING MODEL, VECTOR STORE, ORCHESTRATOR, LLM]\n\nRequirements:\n1. Ingestion: Define parsing, cleaning, chunking, metadata, and document versioning steps.\n2. Retrieval: Choose sparse, dense, or hybrid retrieval and specify filters, top-k, reranking, and score thresholds.\n3. Grounding: Require citations or source identifiers for factual claims and define behavior when evidence is insufficient.\n4. Answering: Provide the prompt and response contract for concise, context-bound answers.\n5. Evaluation: Define retrieval and answer-quality datasets with measures such as recall, precision, faithfulness, and citation correctness.\n6. Operations: Cover indexing updates, latency budgets, access control, logging, and deletion requests.\n\nConstraints:\n- Do not invent facts that are absent from retrieved sources.\n- Preserve document-level permissions through retrieval and generation.\n- State assumptions when source material is incomplete or conflicting.\n\nOutput:\n- An architecture diagram in Mermaid or ASCII.\n- Ingestion, retrieval, and answer-generation pseudocode or code.\n- A response schema and an evaluation plan.\n\nExample:\nBuild a support assistant that searches versioned product manuals, cites section identifiers, refuses unsupported configuration advice, and evaluates retrieval on a set of annotated support questions.\n\nEvaluation:\n- Answers are traceable to retrieved passages.\n- Permission filters are applied before context reaches the model.\n- The evaluation plan can distinguish retrieval failures from generation failures.",
+      "example": "Design a RAG support assistant for versioned product manuals with citations and refusal behavior.",
+      "tags": [
+        "rag",
+        "retrieval",
+        "embeddings",
+        "vector-search",
+        "grounding",
+        "evaluation"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "ai-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "embeddings",
+        "vector-database",
+        "llm"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        13,
+        17,
+        25,
+        31
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Tool-Using Agent Workflow",
+      "description": "Specify a bounded agent workflow with typed tools, approval gates, and recoverable failures",
+      "category": "workflow",
+      "prompt": "Context:\nYou are an agent-systems engineer designing a tool-using workflow for a task that requires multiple controlled actions. The agent should reason over available tool results without exceeding its authority or hiding failures.\n\nInputs:\nGoal: [TASK GOAL]\nTools: [TOOL NAMES, SCHEMAS, AND SIDE EFFECTS]\nApproval Policy: [ACTIONS REQUIRING HUMAN APPROVAL]\nRuntime: [LANGUAGE, SDK, OR ORCHESTRATOR]\n\nRequirements:\n1. Workflow: Define the states, transitions, stopping conditions, and maximum iteration or token budget.\n2. Tool Contracts: Specify typed inputs, validated outputs, idempotency, timeouts, and error responses for each tool.\n3. Planning: Explain how the agent selects tools and how it handles missing, conflicting, or stale results.\n4. Safety: Add authorization checks, confirmation gates for side effects, and a deny-by-default policy for unknown actions.\n5. Recovery: Define retries, compensation, partial completion, and escalation behavior.\n6. Observability: Record decisions, tool calls, approvals, latency, and terminal outcomes without logging secrets.\n\nConstraints:\n- Never claim a tool action succeeded without a successful tool result.\n- Keep irreversible actions behind explicit approval.\n- Prevent infinite loops and repeated non-idempotent actions.\n\nOutput:\n- A state-machine or sequence diagram.\n- Tool schemas and orchestration pseudocode.\n- Failure-mode and approval matrices.\n\nExample:\nDesign an agent that triages an incoming support ticket, searches the knowledge base, drafts a reply, and requests approval before sending or changing account data.\n\nEvaluation:\n- Every terminal state is reachable and observable.\n- Unauthorized or ambiguous actions are blocked.\n- Recovery behavior is explicit for tool timeout, validation failure, and partial success.",
+      "example": "Design a support-ticket agent that searches documentation, drafts replies, and requires approval before sending messages.",
+      "tags": [
+        "agents",
+        "tool-use",
+        "workflow",
+        "orchestration",
+        "approvals",
+        "safety"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "design",
+      "audience": "ai-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "tool-use",
+        "state-machine",
+        "observability"
+      ],
+      "workflowStage": "design",
+      "relatedIds": [
+        25,
+        31
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Structured Data Extraction",
+      "description": "Extract validated structured records from unstructured text with explicit uncertainty handling",
+      "category": "extraction",
+      "prompt": "Context:\nYou are a data-extraction engineer converting unstructured documents into records consumed by a downstream system. The output must follow a strict schema and distinguish absent, ambiguous, and unsupported values.\n\nInputs:\nSource Text: [TEXT OR DOCUMENT DESCRIPTION]\nTarget Schema: [JSON SCHEMA OR FIELD TABLE]\nExamples: [REPRESENTATIVE LABELED EXAMPLES]\n\nRequirements:\n1. Schema: Define field types, required fields, enums, formats, nullability, and nested objects.\n2. Extraction: Map evidence spans to fields and preserve source text or offsets where practical.\n3. Normalization: Standardize dates, units, names, identifiers, and whitespace without changing meaning.\n4. Uncertainty: Use null or an explicit review state for missing or ambiguous values; never guess.\n5. Validation: Return machine-readable validation errors and identify records requiring human review.\n6. Batch Behavior: Specify handling for malformed documents, duplicate records, and partial extraction failures.\n\nConstraints:\n- Return valid JSON only when JSON output is requested.\n- Do not infer sensitive or legally significant values without evidence.\n- Keep the extraction schema versioned and backward-compatible where possible.\n\nOutput:\n- The schema and extraction prompt or implementation.\n- Two valid output examples and one rejected example.\n- A validation and human-review policy.\n\nExample:\nExtract invoice number, supplier, line items, tax, currency, and due date from invoices; preserve the evidence span for each field and flag unreadable totals for review.\n\nEvaluation:\n- Outputs validate against the target schema.\n- Missing values remain explicit rather than fabricated.\n- Normalization is deterministic and evidence can be audited.",
+      "example": "Extract invoice fields and evidence spans into a versioned JSON schema, flagging unreadable totals for review.",
+      "tags": [
+        "extraction",
+        "structured-output",
+        "json-schema",
+        "validation",
+        "document-processing"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "extract",
+      "audience": "data-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "json-schema",
+        "nlp",
+        "validation"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        7,
+        30
+      ]
+    },
+    {
+      "id": 25,
+      "title": "LLM Evaluation and Guardrails",
+      "description": "Build an evaluation harness and guardrails for reliable, safe model behavior",
+      "category": "evaluation",
+      "prompt": "Context:\nYou are an AI quality engineer establishing safeguards for a language-model feature before and after release. The system needs measurable quality criteria, adversarial tests, and clear handling for unsafe or low-confidence outputs.\n\nInputs:\nUse Case: [MODEL FEATURE]\nReference Dataset: [PROMPTS, EXPECTED ANSWERS, OR LABELS]\nRisk Profile: [SAFETY, PRIVACY, SECURITY, OR BUSINESS RISKS]\nRuntime: [MODEL, FRAMEWORK, AND DEPLOYMENT]\n\nRequirements:\n1. Test Set: Create representative, edge, adversarial, multilingual, and regression cases with versioned labels.\n2. Metrics: Define task metrics plus groundedness, refusal correctness, toxicity, privacy leakage, latency, and cost measures as applicable.\n3. Grading: Separate deterministic checks, rubric-based review, and model-graded checks; document grader limitations.\n4. Guardrails: Add input screening, output validation, policy checks, tool permissions, and fallback or escalation behavior.\n5. Release Gates: Set thresholds, sampling rules, rollback criteria, and a comparison process for model or prompt changes.\n6. Monitoring: Specify production signals, drift detection, incident review, and retention limits for evaluation data.\n\nConstraints:\n- Do not treat a model-generated score as ground truth without calibration or human review.\n- Do not log secrets or unnecessary personal data.\n- Report uncertainty and false-positive or false-negative trade-offs.\n\nOutput:\n- An evaluation dataset and test-case format.\n- Harness pseudocode or code with a results schema.\n- Guardrail flow, release gates, and monitoring plan.\n\nExample:\nEvaluate a customer-support classifier that routes billing, technical, and safety-sensitive requests, including prompt injection attempts and ambiguous tickets.\n\nEvaluation:\n- Failures are reproducible from versioned inputs and configuration.\n- Guardrails block or escalate unsafe outputs without silently dropping valid requests.\n- Release decisions use defined thresholds and human review for high-impact cases.",
+      "example": "Evaluate a support classifier with adversarial, multilingual, privacy, and refusal-correctness tests before release.",
+      "tags": [
+        "evaluation",
+        "guardrails",
+        "llm",
+        "safety",
+        "red-teaming",
+        "monitoring"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "evaluate",
+      "audience": "ai-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "llm",
+        "testing",
+        "observability"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        3,
+        5,
+        8,
+        17,
+        22,
+        23,
+        31
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Product Discovery Brief",
+      "description": "Turn an uncertain product problem into a testable discovery brief and prioritized plan",
+      "category": "product",
+      "prompt": "Context:\nYou are a product strategist facilitating discovery for a product or workflow with incomplete information. The goal is to clarify the user problem, validate assumptions, and recommend a proportionate next step rather than jump directly to implementation.\n\nInputs:\nBusiness Goal: [GOAL]\nKnown User Evidence: [RESEARCH, SUPPORT DATA, OR OBSERVATIONS]\nConstraints: [TIME, BUDGET, PLATFORM, COMPLIANCE]\nStakeholders: [ROLES AND DECISION MAKERS]\n\nRequirements:\n1. Problem Framing: State the target users, job to be done, current behavior, pain point, and desired outcome.\n2. Evidence: Separate observed facts, assumptions, open questions, and conflicting signals.\n3. Opportunities: Generate a small set of solution opportunities and explain the trade-offs.\n4. Validation: Propose research or experiments with hypotheses, participants, success signals, and stopping rules.\n5. Prioritization: Rank opportunities using an explicit method and show the rationale.\n6. Delivery Plan: Define an MVP boundary, dependencies, risks, measures, and a next decision checkpoint.\n\nConstraints:\n- Do not invent customer evidence or claim validation that has not occurred.\n- Keep the MVP smaller than the full opportunity space.\n- Call out decisions that require stakeholder confirmation.\n\nOutput:\n- A concise discovery brief with problem statement and evidence table.\n- Opportunity options and a prioritized experiment plan.\n- MVP scope, risks, metrics, and decisions needed.\n\nExample:\nCreate a discovery brief for reducing failed onboarding completion in a subscription product using support themes and funnel observations, then propose two experiments before committing to a redesign.\n\nEvaluation:\n- Recommendations trace back to stated evidence or labeled assumptions.\n- Experiments can falsify the key hypotheses.\n- Scope, ownership, and decision criteria are concrete.",
+      "example": "Create a discovery brief to reduce failed onboarding completion, separating funnel evidence from assumptions and proposing two experiments.",
+      "tags": [
+        "product-discovery",
+        "planning",
+        "research",
+        "prioritization",
+        "mvp"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "plan",
+      "audience": "product-manager",
+      "difficulty": "advanced",
+      "stack": [
+        "product-management",
+        "user-research",
+        "experimentation"
+      ],
+      "workflowStage": "discover",
+      "relatedIds": [
+        27,
+        29
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Migration and Release Plan",
+      "description": "Plan a reversible migration and release with compatibility checks, ownership, and rollback triggers",
+      "category": "devops",
+      "prompt": "Context:\nYou are a release engineer planning a production migration that changes data, infrastructure, dependencies, or public behavior. The release must protect users during transition and provide a tested path back when an invariant fails.\n\nInputs:\nCurrent State: [SYSTEM, SCHEMA, OR DEPENDENCY VERSION]\nTarget State: [DESIRED VERSION OR ARCHITECTURE]\nTraffic and Data Profile: [VOLUME, REGIONS, AVAILABILITY NEEDS]\nRelease Constraints: [MAINTENANCE, COMPLIANCE, OR TEAM LIMITS]\n\nRequirements:\n1. Inventory: Identify affected services, data, clients, integrations, owners, and dependencies.\n2. Compatibility: Define expand-and-contract or equivalent steps, version negotiation, feature flags, and dual-read or dual-write behavior when needed.\n3. Execution: Provide prechecks, ordered steps, checkpoints, timing assumptions, and operator commands or pseudocode.\n4. Verification: Define schema, data-integrity, functional, performance, and observability checks after each stage.\n5. Rollback: Specify triggers, safe rollback steps, backup or restore requirements, and limits when data has crossed versions.\n6. Communication: Include change ownership, approval gates, status updates, and post-release follow-up.\n\nConstraints:\n- Prefer backward-compatible changes during mixed-version operation.\n- Do not assume a rollback is safe after destructive data transformation; state the recovery alternative.\n- Keep secrets, credentials, and environment-specific values out of examples.\n\nOutput:\n- A phased migration runbook.\n- Compatibility and rollback matrix.\n- Validation checklist, ownership table, and release communication plan.\n\nExample:\nPlan a zero-downtime migration from a legacy customer-status column to a normalized status table while two application versions are serving traffic.\n\nEvaluation:\n- Every risky step has a precheck and observable success condition.\n- Mixed-version behavior is explicit.\n- Rollback or recovery is actionable and accounts for irreversible changes.",
+      "example": "Plan a zero-downtime migration from a legacy status column to a normalized table while two application versions run concurrently.",
+      "tags": [
+        "migration",
+        "release",
+        "rollback",
+        "compatibility",
+        "deployment"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "migrate",
+      "audience": "release-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "database",
+        "feature-flags",
+        "ci-cd"
+      ],
+      "workflowStage": "deploy",
+      "relatedIds": [
+        14,
+        26,
+        28
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Incident and Observability Runbook",
+      "description": "Convert an operational symptom into an evidence-driven incident response and observability runbook",
+      "category": "observability",
+      "prompt": "Context:\nYou are an SRE writing a runbook for diagnosing and mitigating a production incident. The runbook must help an on-call engineer distinguish symptoms from causes, reduce harm safely, and preserve evidence for follow-up.\n\nInputs:\nService: [SERVICE AND DEPENDENCIES]\nSymptom: [ALERT, USER REPORT, OR ERROR PATTERN]\nCurrent Telemetry: [LOGS, METRICS, TRACES, DASHBOARDS]\nService-Level Objectives: [SLOs AND ERROR BUDGET]\n\nRequirements:\n1. Triage: Define severity, customer impact, scope, and the first checks to bound the incident.\n2. Signals: Map symptoms to relevant metrics, logs, traces, exemplars, and dependency health.\n3. Diagnosis: Provide hypotheses with discriminating queries or observations rather than a single assumed cause.\n4. Mitigation: List reversible actions, approval needs, blast-radius controls, and verification after each action.\n5. Escalation: Define ownership, handoffs, communication cadence, and vendor or dependency escalation.\n6. Recovery: Include validation, backlog draining, data repair checks, and safe return to normal operation.\n7. Learning: Specify evidence retention, timeline, contributing factors, and follow-up actions.\n\nConstraints:\n- Never delete or alter evidence as a first response.\n- Do not recommend disabling security or integrity controls without an explicit risk statement and approval.\n- Avoid alert thresholds that cannot be tied to user impact or an SLO.\n\nOutput:\n- A stepwise incident runbook with commands or query templates.\n- Symptom-to-signal hypothesis table.\n- Mitigation, escalation, recovery, and follow-up checklists.\n\nExample:\nWrite a runbook for elevated checkout latency that uses request traces, database saturation, queue depth, and dependency error rates to separate application, database, and payment-provider causes.\n\nEvaluation:\n- An on-call engineer can execute the first safe checks without extra context.\n- Each mitigation has a verification and rollback condition.\n- The runbook preserves customer-impact and evidence-handling requirements.",
+      "example": "Write a runbook for elevated checkout latency using traces, database saturation, queue depth, and payment-provider error rates.",
+      "tags": [
+        "observability",
+        "incident-response",
+        "sre",
+        "runbook",
+        "monitoring",
+        "slo"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "operate",
+      "audience": "sre",
+      "difficulty": "expert",
+      "stack": [
+        "opentelemetry",
+        "prometheus",
+        "logging"
+      ],
+      "workflowStage": "operate",
+      "relatedIds": [
+        14,
+        18,
+        27
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Accessibility and Internationalization Review",
+      "description": "Review a product flow for accessible interaction, localization readiness, and inclusive content",
+      "category": "accessibility",
+      "prompt": "Context:\nYou are an accessibility and internationalization specialist reviewing a user flow before release. The review should identify barriers for keyboard, screen-reader, low-vision, motor, cognitive, and multilingual users and provide fixes that can be verified.\n\nInputs:\nFlow or Components: [SCREENS, COMPONENTS, OR CODE]\nSupported Locales: [LOCALES AND WRITING SYSTEMS]\nContent and Assets: [COPY, ICONS, IMAGES, FORMS]\nTarget Standard: [WCAG LEVEL OR INTERNAL STANDARD]\n\nRequirements:\n1. Semantics: Check landmarks, headings, labels, descriptions, names, roles, states, and status announcements.\n2. Keyboard and Input: Verify focus order, visible focus, keyboard operation, pointer alternatives, touch targets, and error recovery.\n3. Visuals and Motion: Check contrast, non-color cues, text resizing, zoom, reflow, captions, and reduced-motion behavior.\n4. Localization: Check string externalization, pluralization, date/number/currency formats, text expansion, RTL layout, and locale-aware sorting.\n5. Content: Rewrite ambiguous labels, instructions, errors, and empty states so they are specific and translatable.\n6. Verification: Provide manual test steps, automated checks, representative locale cases, and severity-ranked findings.\n\nConstraints:\n- Do not treat automated checks as proof of full accessibility.\n- Do not put user-visible copy in code paths that prevent translation.\n- Preserve meaning when changing language, layout direction, or input method.\n\nOutput:\n- A severity-ranked audit with affected users, evidence, and recommended fixes.\n- Corrected markup or copy examples.\n- A repeatable accessibility and locale test checklist.\n\nExample:\nReview a checkout form for keyboard-only completion, screen-reader announcements, German text expansion, Arabic RTL layout, and locale-aware currency formatting.\n\nEvaluation:\n- Findings identify reproducible barriers and affected interaction modes.\n- Fixes include a verification method.\n- Locale-specific failures are tested rather than inferred from the default language.",
+      "example": "Review checkout for keyboard and screen-reader use, German text expansion, Arabic RTL layout, and locale-aware currency formatting.",
+      "tags": [
+        "accessibility",
+        "i18n",
+        "wcag",
+        "localization",
+        "keyboard",
+        "screen-reader"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "audit",
+      "audience": "accessibility-specialist",
+      "difficulty": "advanced",
+      "stack": [
+        "web",
+        "wcag",
+        "localization"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        11,
+        16,
+        21,
+        26
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Data Query and CLI Helper",
+      "description": "Turn a data question into a safe, explainable query and a focused command-line workflow",
+      "category": "data",
+      "prompt": "Context:\nYou are a data engineer helping an operator answer a focused question from a database or command-line dataset. The solution must be reproducible, safe to run, and transparent about assumptions and result limits.\n\nInputs:\nQuestion: [PLAIN-LANGUAGE DATA QUESTION]\nSchema or Sample: [TABLES, COLUMNS, OR SAMPLE ROWS]\nEnvironment: [DATABASE, CLI, OS, AND AVAILABLE TOOLS]\n\nRequirements:\n1. Clarify: Restate the question, grain, time window, filters, and meaning of missing or duplicate records.\n2. Query: Produce parameterized SQL or a shell pipeline with explicit ordering, grouping, joins, and null handling.\n3. Safety: Make the operation read-only unless mutation is explicitly requested; avoid shell injection and unbounded scans.\n4. Explain: Describe each clause or command and state assumptions about keys, time zones, units, and permissions.\n5. Verification: Include a small sanity check, expected shape, and an alternate check for suspicious results.\n6. Operations: Show how to save, format, paginate, or export results without exposing secrets or unnecessary personal data.\n\nConstraints:\n- Never invent table names, columns, or values; mark missing schema details as questions.\n- Use placeholders for credentials and environment-specific paths.\n- Do not return sensitive fields when they are not needed for the stated question.\n\nOutput:\n- The query or CLI command.\n- A concise explanation of assumptions and safety considerations.\n- Verification queries or sample checks and expected output shape.\n\nExample:\nWrite a read-only PostgreSQL query and psql command to find weekly failed payments by region, excluding test accounts and using the event timestamp in UTC.\n\nEvaluation:\n- The query answers the stated question at the correct grain.\n- Results are reproducible and bounded.\n- Assumptions, permissions, and sensitive-field handling are explicit.",
+      "example": "Write a bounded read-only PostgreSQL query and psql command for weekly failed payments by region in UTC, excluding test accounts.",
+      "tags": [
+        "sql",
+        "cli",
+        "data-query",
+        "postgresql",
+        "analytics",
+        "safety"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "query",
+      "audience": "data-engineer",
+      "difficulty": "intermediate",
+      "stack": [
+        "sql",
+        "postgresql",
+        "cli"
+      ],
+      "workflowStage": "implement",
+      "relatedIds": [
+        2,
+        20,
+        24
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Prompt Injection Threat Model",
+      "description": "Assess prompt injection and data-exfiltration paths in an LLM feature with tools or private context",
+      "category": "security",
+      "prompt": "Context:\nYou are an application security engineer threat-modeling an LLM feature that processes untrusted content and may access private context or tools. The goal is to identify realistic attack paths and design layered mitigations without assuming the model can enforce authorization.\n\nInputs:\nSystem Flow: [COMPONENTS AND DATA FLOWS]\nUntrusted Inputs: [USER CONTENT, DOCUMENTS, WEB PAGES, TOOL RESULTS]\nSensitive Assets: [DATA, ACTIONS, CREDENTIALS]\nTools and Permissions: [TOOL SCHEMAS AND ACCESS BOUNDARIES]\n\nRequirements:\n1. Assets and Trust Boundaries: Map users, model calls, retrieval stores, tools, operators, and external systems.\n2. Attack Paths: Analyze direct and indirect prompt injection, instruction hijacking, data exfiltration, tool abuse, cross-tenant leakage, and denial of service.\n3. Impact: Describe affected assets, preconditions, likelihood, and business impact for each path.\n4. Mitigations: Recommend least-privilege tools, data filtering, isolation, validation, confirmation gates, output handling, and monitoring.\n5. Abuse Tests: Create safe test cases with expected blocked, escalated, or allowed outcomes.\n6. Residual Risk: State what the model cannot guarantee and define ownership, rollout, and incident response.\n\nConstraints:\n- Treat model instructions as untrusted for authorization decisions.\n- Do not include real credentials, private data, or harmful exploit payloads.\n- Preserve tenant and user boundaries at the tool and data layers.\n\nOutput:\n- A data-flow and trust-boundary diagram.\n- Threat register with severity, mitigations, and residual risk.\n- Safe red-team test plan and monitoring requirements.\n\nExample:\nThreat-model a document assistant that retrieves private files and can create calendar events, including malicious instructions embedded in an uploaded document.\n\nEvaluation:\n- Authorization is enforced outside the model.\n- Threats connect to concrete controls and tests.\n- Residual risks and operational owners are explicit.",
+      "example": "Threat-model a document assistant with private retrieval and calendar tools against malicious instructions embedded in uploaded files.",
+      "tags": [
+        "security",
+        "prompt-injection",
+        "threat-model",
+        "llm",
+        "privacy",
+        "tool-use"
+      ],
+      "favorite": false,
+      "custom": false,
+      "taskType": "audit",
+      "audience": "security-engineer",
+      "difficulty": "expert",
+      "stack": [
+        "llm",
+        "threat-modeling",
+        "access-control"
+      ],
+      "workflowStage": "review",
+      "relatedIds": [
+        6,
+        22,
+        23,
+        25
+      ]
+    },
+    {
+      "id": 99,
+      "title": "Universal Prompt Builder",
+      "description": "Create a structured prompt from a task, audience, inputs, constraints, and success criteria",
+      "category": "meta",
+      "prompt": "Context:\nYou are a Prompt Engineer creating high-quality prompts for an AI assistant. The goal is to ensure the AI understands the task, context, and constraints perfectly to deliver the best possible result.\n\nInputs:\nTask: [TASK DESCRIPTION]\nRole: [ROLE]\n\nRequirements:\n1. Context Section: Define the persona and the high-level goal.\n2. Inputs Section: Clearly list what information or code will be provided.\n3. Requirements Section: Numbered list of specific things the AI must do or include.\n4. Constraints Section: Limitations, things to avoid, and specific technologies to use.\n5. Output Section: Define the exact format and content of the response.\n6. Examples Section: Provide a brief example to clarify expectations.\n7. Evaluation Section: Criteria for what constitutes a successful response.\n\nConstraints:\n- Use clear, direct language.\n- Avoid vague terms.\n- Structure with Markdown headers.\n\nOutput:\n- A fully formatted prompt following the EZPrompt Studio standards.\n\nExample:\nCreate a prompt for generating SQL queries from natural language.\n\nEvaluation:\n- The generated prompt must score 100% on the Prompt Checker algorithm.",
+      "example": "Create a prompt for generating unit tests",
+      "tags": [
+        "meta",
+        "prompt-engineering",
+        "template"
+      ],
+      "favorite": false,
+      "custom": true,
+      "taskType": "create",
+      "audience": "prompt-engineer",
+      "difficulty": "advanced",
+      "stack": [
+        "prompt-engineering"
+      ],
+      "workflowStage": "discover",
+      "relatedIds": []
+    }
+  ]
+}

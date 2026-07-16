@@ -1,0 +1,31 @@
+{
+  "id": 23,
+  "title": "Tool-Using Agent Workflow",
+  "description": "Specify a bounded agent workflow with typed tools, approval gates, and recoverable failures",
+  "category": "workflow",
+  "prompt": "Context:\nYou are an agent-systems engineer designing a tool-using workflow for a task that requires multiple controlled actions. The agent should reason over available tool results without exceeding its authority or hiding failures.\n\nInputs:\nGoal: [TASK GOAL]\nTools: [TOOL NAMES, SCHEMAS, AND SIDE EFFECTS]\nApproval Policy: [ACTIONS REQUIRING HUMAN APPROVAL]\nRuntime: [LANGUAGE, SDK, OR ORCHESTRATOR]\n\nRequirements:\n1. Workflow: Define the states, transitions, stopping conditions, and maximum iteration or token budget.\n2. Tool Contracts: Specify typed inputs, validated outputs, idempotency, timeouts, and error responses for each tool.\n3. Planning: Explain how the agent selects tools and how it handles missing, conflicting, or stale results.\n4. Safety: Add authorization checks, confirmation gates for side effects, and a deny-by-default policy for unknown actions.\n5. Recovery: Define retries, compensation, partial completion, and escalation behavior.\n6. Observability: Record decisions, tool calls, approvals, latency, and terminal outcomes without logging secrets.\n\nConstraints:\n- Never claim a tool action succeeded without a successful tool result.\n- Keep irreversible actions behind explicit approval.\n- Prevent infinite loops and repeated non-idempotent actions.\n\nOutput:\n- A state-machine or sequence diagram.\n- Tool schemas and orchestration pseudocode.\n- Failure-mode and approval matrices.\n\nExample:\nDesign an agent that triages an incoming support ticket, searches the knowledge base, drafts a reply, and requests approval before sending or changing account data.\n\nEvaluation:\n- Every terminal state is reachable and observable.\n- Unauthorized or ambiguous actions are blocked.\n- Recovery behavior is explicit for tool timeout, validation failure, and partial success.",
+  "example": "Design a support-ticket agent that searches documentation, drafts replies, and requires approval before sending messages.",
+  "tags": [
+    "agents",
+    "tool-use",
+    "workflow",
+    "orchestration",
+    "approvals",
+    "safety"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "design",
+  "audience": "ai-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "tool-use",
+    "state-machine",
+    "observability"
+  ],
+  "workflowStage": "design",
+  "relatedIds": [
+    25,
+    31
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": 31,
+  "title": "Prompt Injection Threat Model",
+  "description": "Assess prompt injection and data-exfiltration paths in an LLM feature with tools or private context",
+  "category": "security",
+  "prompt": "Context:\nYou are an application security engineer threat-modeling an LLM feature that processes untrusted content and may access private context or tools. The goal is to identify realistic attack paths and design layered mitigations without assuming the model can enforce authorization.\n\nInputs:\nSystem Flow: [COMPONENTS AND DATA FLOWS]\nUntrusted Inputs: [USER CONTENT, DOCUMENTS, WEB PAGES, TOOL RESULTS]\nSensitive Assets: [DATA, ACTIONS, CREDENTIALS]\nTools and Permissions: [TOOL SCHEMAS AND ACCESS BOUNDARIES]\n\nRequirements:\n1. Assets and Trust Boundaries: Map users, model calls, retrieval stores, tools, operators, and external systems.\n2. Attack Paths: Analyze direct and indirect prompt injection, instruction hijacking, data exfiltration, tool abuse, cross-tenant leakage, and denial of service.\n3. Impact: Describe affected assets, preconditions, likelihood, and business impact for each path.\n4. Mitigations: Recommend least-privilege tools, data filtering, isolation, validation, confirmation gates, output handling, and monitoring.\n5. Abuse Tests: Create safe test cases with expected blocked, escalated, or allowed outcomes.\n6. Residual Risk: State what the model cannot guarantee and define ownership, rollout, and incident response.\n\nConstraints:\n- Treat model instructions as untrusted for authorization decisions.\n- Do not include real credentials, private data, or harmful exploit payloads.\n- Preserve tenant and user boundaries at the tool and data layers.\n\nOutput:\n- A data-flow and trust-boundary diagram.\n- Threat register with severity, mitigations, and residual risk.\n- Safe red-team test plan and monitoring requirements.\n\nExample:\nThreat-model a document assistant that retrieves private files and can create calendar events, including malicious instructions embedded in an uploaded document.\n\nEvaluation:\n- Authorization is enforced outside the model.\n- Threats connect to concrete controls and tests.\n- Residual risks and operational owners are explicit.",
+  "example": "Threat-model a document assistant with private retrieval and calendar tools against malicious instructions embedded in uploaded files.",
+  "tags": [
+    "security",
+    "prompt-injection",
+    "threat-model",
+    "llm",
+    "privacy",
+    "tool-use"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "audit",
+  "audience": "security-engineer",
+  "difficulty": "expert",
+  "stack": [
+    "llm",
+    "threat-modeling",
+    "access-control"
+  ],
+  "workflowStage": "review",
+  "relatedIds": [
+    6,
+    22,
+    23,
+    25
+  ]
+}

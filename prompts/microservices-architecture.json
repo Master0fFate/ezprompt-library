@@ -1,16 +1,27 @@
 {
-    "id": 12,
-    "title": "Microservices Architecture",
-    "description": "Design scalable microservices",
-    "category": "Architecture",
-    "prompt": "Context:\nYou are a System Architect designing a microservices-based system to replace a monolithic application. The goal is to improve scalability, fault isolation, and development velocity.\n\nInputs:\nSystem Description: [SYSTEM]\nFunctional Requirements: [LIST REQUIREMENTS]\n\nRequirements:\n1. Service Decomposition: Identify service boundaries based on Domain-Driven Design (DDD) contexts. List the services and their responsibilities.\n2. Communication Patterns: Define how services interact (Sync: REST/gRPC vs. Async: RabbitMQ/Kafka/SQS).\n3. Data Management: Define the Database-per-Service strategy and how to handle distributed transactions (Saga Pattern).\n4. Service Discovery & Load Balancing: Explain how services find each other and distribute traffic (e.g., Consul, K8s Services).\n5. Resilience: Incorporate patterns like Circuit Breaker, Retry, and Bulkhead to prevent cascading failures.\n6. Observability: Strategy for distributed tracing (OpenTelemetry), centralized logging (ELK/Splunk), and metrics (Prometheus/Grafana).\n7. Security: Plan for inter-service authentication (mTLS) and user authentication (OAuth2/OIDC).\n\nConstraints:\n- Prioritize loose coupling and high cohesion.\n- Consider operational complexity.\n\nOutput:\n- High-level architecture diagram (Mermaid/ASCII).\n- Detailed design document for each core service.\n- Technology stack recommendations.\n\nExample:\nDesign a microservices architecture for an Uber-like ride-sharing app including User, Ride, Driver, and Payment services.\n\nEvaluation:\n- Architecture must avoid single points of failure.\n- Data consistency strategy must be viable.\n- Service boundaries must minimize chatty communication.",
-    "example": "Design microservices for e-commerce platform",
-    "tags": [
-        "microservices",
-        "architecture",
-        "distributed-systems",
-        "scalability"
-    ],
-    "favorite": true,
-    "custom": false
+  "id": 12,
+  "title": "Microservices Architecture",
+  "description": "Design scalable microservices",
+  "category": "architecture",
+  "prompt": "Context:\nYou are a System Architect designing a microservices-based system to replace a monolithic application. The goal is to improve scalability, fault isolation, and development velocity.\n\nInputs:\nSystem Description: [SYSTEM]\nFunctional Requirements: [LIST REQUIREMENTS]\n\nRequirements:\n1. Service Decomposition: Identify service boundaries based on Domain-Driven Design (DDD) contexts. List the services and their responsibilities.\n2. Communication Patterns: Define how services interact (Sync: REST/gRPC vs. Async: RabbitMQ/Kafka/SQS).\n3. Data Management: Define the Database-per-Service strategy and how to handle distributed transactions (Saga Pattern).\n4. Service Discovery & Load Balancing: Explain how services find each other and distribute traffic (e.g., Consul, K8s Services).\n5. Resilience: Incorporate patterns like Circuit Breaker, Retry, and Bulkhead to prevent cascading failures.\n6. Observability: Strategy for distributed tracing (OpenTelemetry), centralized logging (ELK/Splunk), and metrics (Prometheus/Grafana).\n7. Security: Plan for inter-service authentication (mTLS) and user authentication (OAuth2/OIDC).\n\nConstraints:\n- Prioritize loose coupling and high cohesion.\n- Consider operational complexity.\n\nOutput:\n- High-level architecture diagram (Mermaid/ASCII).\n- Detailed design document for each core service.\n- Technology stack recommendations.\n\nExample:\nDesign a microservices architecture for an Uber-like ride-sharing app including User, Ride, Driver, and Payment services.\n\nEvaluation:\n- Architecture must avoid single points of failure.\n- Data consistency strategy must be viable.\n- Service boundaries must minimize chatty communication.",
+  "example": "Design microservices for an e-commerce platform with catalog, order, payment, and fulfillment services",
+  "tags": [
+    "microservices",
+    "architecture",
+    "distributed-systems",
+    "scalability"
+  ],
+  "favorite": true,
+  "custom": false,
+  "taskType": "design",
+  "audience": "software-architect",
+  "difficulty": "expert",
+  "stack": [
+    "microservices",
+    "distributed-systems"
+  ],
+  "workflowStage": "design",
+  "relatedIds": [
+    4
+  ]
 }

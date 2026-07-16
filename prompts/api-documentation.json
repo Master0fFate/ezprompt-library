@@ -1,17 +1,28 @@
 {
-    "id": 7,
-    "title": "API Documentation",
-    "description": "Generate comprehensive API documentation with examples",
-    "category": "Documentation",
-    "prompt": "Context:\nYou are a Technical Writer documenting a RESTful API for developers. The documentation must be clear, accurate, and easy to use, facilitating quick integration.\n\nInputs:\n[PASTE CODE OR API SPEC HERE]\n\nRequirements:\n1. Overview: Provide a high-level summary of the API's purpose, base URL, versioning strategy (e.g., v1), and authentication method.\n2. Endpoints: detailed documentation for each endpoint including HTTP method, path, path parameters, query parameters, and request body schema.\n3. Data Models: Define all data objects/resources with field descriptions, data types, and nullability.\n4. Authentication: Explain the authentication flow (e.g., OAuth2, JWT), including token format and required headers (Authorization: Bearer <token>).\n5. Error Handling: List standard error codes (4xx, 5xx) with troubleshooting steps and error response formats.\n6. Code Examples: Provide request/response examples in multiple languages (e.g., curl, JavaScript, Python).\n7. Changelog: Document version history and breaking changes.\n\nConstraints:\n- Use [OpenAPI 3.0 / Markdown / Swagger] format.\n- Ensure all examples are valid and copy-pasteable.\n- Avoid internal jargon; use industry-standard terminology.\n\nOutput:\n- A complete documentation file (e.g., api-docs.md or openapi.yaml).\n\nExample:\nEndpoint: POST /users\nDescription: Creates a new user.\nParams: { \"username\": \"string\", \"email\": \"string\" }\nResponse: 201 Created { \"id\": \"123\", ... }\n\nEvaluation:\n- Documentation must cover all provided endpoints.\n- Examples must be syntactically correct.\n- All parameters must be fully described.",
-    "example": "Document a RESTful API for a task management system",
-    "tags": [
-        "documentation",
-        "api",
-        "swagger",
-        "openapi",
-        "technical-writing"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 7,
+  "title": "API Documentation",
+  "description": "Generate comprehensive API documentation with examples",
+  "category": "documentation",
+  "prompt": "Context:\nYou are a Technical Writer documenting a RESTful API for developers. The documentation must be clear, accurate, and easy to use, facilitating quick integration.\n\nInputs:\n[PASTE CODE OR API SPEC HERE]\n\nRequirements:\n1. Overview: Provide a high-level summary of the API's purpose, base URL, versioning strategy (e.g., v1), and authentication method.\n2. Endpoints: detailed documentation for each endpoint including HTTP method, path, path parameters, query parameters, and request body schema.\n3. Data Models: Define all data objects/resources with field descriptions, data types, and nullability.\n4. Authentication: Explain the authentication flow (e.g., OAuth2, JWT), including token format and required headers (Authorization: Bearer <token>).\n5. Error Handling: List standard error codes (4xx, 5xx) with troubleshooting steps and error response formats.\n6. Code Examples: Provide request/response examples in multiple languages (e.g., curl, JavaScript, Python).\n7. Changelog: Document version history and breaking changes.\n\nConstraints:\n- Use [OpenAPI 3.0 / Markdown / Swagger] format.\n- Ensure all examples are valid and copy-pasteable.\n- Avoid internal jargon; use industry-standard terminology.\n\nOutput:\n- A complete documentation file (e.g., api-docs.md or openapi.yaml).\n\nExample:\nEndpoint: POST /users\nDescription: Creates a new user.\nParams: { \"username\": \"string\", \"email\": \"string\" }\nResponse: 201 Created { \"id\": \"123\", ... }\n\nEvaluation:\n- Documentation must cover all provided endpoints.\n- Examples must be syntactically correct.\n- All parameters must be fully described.",
+  "example": "Document a RESTful API for a task management system",
+  "tags": [
+    "documentation",
+    "api",
+    "swagger",
+    "openapi",
+    "technical-writing"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "document",
+  "audience": "technical-writer",
+  "difficulty": "advanced",
+  "stack": [
+    "openapi",
+    "markdown"
+  ],
+  "workflowStage": "document",
+  "relatedIds": [
+    24
+  ]
 }

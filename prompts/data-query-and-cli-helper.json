@@ -1,0 +1,32 @@
+{
+  "id": 30,
+  "title": "Data Query and CLI Helper",
+  "description": "Turn a data question into a safe, explainable query and a focused command-line workflow",
+  "category": "data",
+  "prompt": "Context:\nYou are a data engineer helping an operator answer a focused question from a database or command-line dataset. The solution must be reproducible, safe to run, and transparent about assumptions and result limits.\n\nInputs:\nQuestion: [PLAIN-LANGUAGE DATA QUESTION]\nSchema or Sample: [TABLES, COLUMNS, OR SAMPLE ROWS]\nEnvironment: [DATABASE, CLI, OS, AND AVAILABLE TOOLS]\n\nRequirements:\n1. Clarify: Restate the question, grain, time window, filters, and meaning of missing or duplicate records.\n2. Query: Produce parameterized SQL or a shell pipeline with explicit ordering, grouping, joins, and null handling.\n3. Safety: Make the operation read-only unless mutation is explicitly requested; avoid shell injection and unbounded scans.\n4. Explain: Describe each clause or command and state assumptions about keys, time zones, units, and permissions.\n5. Verification: Include a small sanity check, expected shape, and an alternate check for suspicious results.\n6. Operations: Show how to save, format, paginate, or export results without exposing secrets or unnecessary personal data.\n\nConstraints:\n- Never invent table names, columns, or values; mark missing schema details as questions.\n- Use placeholders for credentials and environment-specific paths.\n- Do not return sensitive fields when they are not needed for the stated question.\n\nOutput:\n- The query or CLI command.\n- A concise explanation of assumptions and safety considerations.\n- Verification queries or sample checks and expected output shape.\n\nExample:\nWrite a read-only PostgreSQL query and psql command to find weekly failed payments by region, excluding test accounts and using the event timestamp in UTC.\n\nEvaluation:\n- The query answers the stated question at the correct grain.\n- Results are reproducible and bounded.\n- Assumptions, permissions, and sensitive-field handling are explicit.",
+  "example": "Write a bounded read-only PostgreSQL query and psql command for weekly failed payments by region in UTC, excluding test accounts.",
+  "tags": [
+    "sql",
+    "cli",
+    "data-query",
+    "postgresql",
+    "analytics",
+    "safety"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "query",
+  "audience": "data-engineer",
+  "difficulty": "intermediate",
+  "stack": [
+    "sql",
+    "postgresql",
+    "cli"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    2,
+    20,
+    24
+  ]
+}

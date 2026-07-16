@@ -1,17 +1,28 @@
 {
-    "id": 9,
-    "title": "Async Programming",
-    "description": "Implement robust async patterns with error handling",
-    "category": "Code Generation",
-    "prompt": "Context:\nYou are a Senior Backend Engineer implementing a high-concurrency module. The system needs to handle multiple asynchronous operations efficiently without blocking the main thread.\n\nInputs:\nTask Description: [TASK]\nLanguage: [SPECIFY]\n\nRequirements:\n1. Concurrency Management: Handle concurrent operations using appropriate patterns (Promises, Async/Await, Coroutines, Channels).\n2. Error Handling: Implement robust error handling (try-catch, error propagation) to ensure the system doesn't crash on failure.\n3. Timeout & Cancellation: Add timeout mechanisms and support for operation cancellation to prevent resource leaks.\n4. Resilience: Implement retry logic with exponential backoff and the Circuit Breaker pattern for external service calls.\n5. Performance: Optimize for throughput and latency. Minimize context switching and lock contention.\n6. Monitoring: Add logging and metrics for operation duration, success rates, and error types.\n\nConstraints:\n- Use standard libraries where possible.\n- Ensure thread safety if using shared mutable state.\n- Avoid callback hell; use modern async primitives.\n\nOutput:\n- Production-ready code for the async module.\n- Detailed comments explaining the concurrency model and error handling strategy.\n\nExample:\nImplement a parallel image downloader that retries failed downloads up to 3 times and times out after 5 seconds.\n\nEvaluation:\n- Code must handle network failures gracefully.\n- No unhandled promise rejections or race conditions.\n- Performance tests should show improved throughput over synchronous execution.",
-    "example": "Implement parallel API calls with retry logic",
-    "tags": [
-        "async",
-        "concurrent",
-        "promises",
-        "parallel",
-        "performance"
-    ],
-    "favorite": false,
-    "custom": false
+  "id": 9,
+  "title": "Async Programming",
+  "description": "Implement robust async patterns with error handling",
+  "category": "code-generation",
+  "prompt": "Context:\nYou are a Senior Backend Engineer implementing a high-concurrency module. The system needs to handle multiple asynchronous operations efficiently without blocking the main thread.\n\nInputs:\nTask Description: [TASK]\nLanguage: [SPECIFY]\n\nRequirements:\n1. Concurrency Management: Handle concurrent operations using appropriate patterns (Promises, Async/Await, Coroutines, Channels).\n2. Error Handling: Implement robust error handling (try-catch, error propagation) to ensure the system doesn't crash on failure.\n3. Timeout & Cancellation: Add timeout mechanisms and support for operation cancellation to prevent resource leaks.\n4. Resilience: Implement retry logic with exponential backoff and the Circuit Breaker pattern for external service calls.\n5. Performance: Optimize for throughput and latency. Minimize context switching and lock contention.\n6. Monitoring: Add logging and metrics for operation duration, success rates, and error types.\n\nConstraints:\n- Use standard libraries where possible.\n- Ensure thread safety if using shared mutable state.\n- Avoid callback hell; use modern async primitives.\n\nOutput:\n- Production-ready code for the async module.\n- Detailed comments explaining the concurrency model and error handling strategy.\n\nExample:\nImplement a parallel image downloader that retries failed downloads up to 3 times and times out after 5 seconds.\n\nEvaluation:\n- Code must handle network failures gracefully.\n- No unhandled promise rejections or race conditions.\n- Performance tests should show improved throughput over synchronous execution.",
+  "example": "Implement parallel API calls with retry logic",
+  "tags": [
+    "async",
+    "concurrent",
+    "promises",
+    "parallel",
+    "performance"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "implement",
+  "audience": "backend-developer",
+  "difficulty": "advanced",
+  "stack": [
+    "async-await",
+    "concurrency"
+  ],
+  "workflowStage": "implement",
+  "relatedIds": [
+    18
+  ]
 }

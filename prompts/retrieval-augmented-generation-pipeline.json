@@ -1,0 +1,33 @@
+{
+  "id": 22,
+  "title": "Retrieval-Augmented Generation Pipeline",
+  "description": "Design a grounded retrieval workflow that turns a document collection into cited, testable answers",
+  "category": "retrieval",
+  "prompt": "Context:\nYou are an AI engineer designing a retrieval-augmented generation (RAG) workflow for a knowledge assistant. The system must retrieve relevant source passages, ground its answer in those passages, and make unsupported claims easy to detect.\n\nInputs:\nKnowledge Sources: [DOCUMENT TYPES AND LOCATIONS]\nUser Questions: [QUESTION TYPES]\nStack: [EMBEDDING MODEL, VECTOR STORE, ORCHESTRATOR, LLM]\n\nRequirements:\n1. Ingestion: Define parsing, cleaning, chunking, metadata, and document versioning steps.\n2. Retrieval: Choose sparse, dense, or hybrid retrieval and specify filters, top-k, reranking, and score thresholds.\n3. Grounding: Require citations or source identifiers for factual claims and define behavior when evidence is insufficient.\n4. Answering: Provide the prompt and response contract for concise, context-bound answers.\n5. Evaluation: Define retrieval and answer-quality datasets with measures such as recall, precision, faithfulness, and citation correctness.\n6. Operations: Cover indexing updates, latency budgets, access control, logging, and deletion requests.\n\nConstraints:\n- Do not invent facts that are absent from retrieved sources.\n- Preserve document-level permissions through retrieval and generation.\n- State assumptions when source material is incomplete or conflicting.\n\nOutput:\n- An architecture diagram in Mermaid or ASCII.\n- Ingestion, retrieval, and answer-generation pseudocode or code.\n- A response schema and an evaluation plan.\n\nExample:\nBuild a support assistant that searches versioned product manuals, cites section identifiers, refuses unsupported configuration advice, and evaluates retrieval on a set of annotated support questions.\n\nEvaluation:\n- Answers are traceable to retrieved passages.\n- Permission filters are applied before context reaches the model.\n- The evaluation plan can distinguish retrieval failures from generation failures.",
+  "example": "Design a RAG support assistant for versioned product manuals with citations and refusal behavior.",
+  "tags": [
+    "rag",
+    "retrieval",
+    "embeddings",
+    "vector-search",
+    "grounding",
+    "evaluation"
+  ],
+  "favorite": false,
+  "custom": false,
+  "taskType": "design",
+  "audience": "ai-engineer",
+  "difficulty": "advanced",
+  "stack": [
+    "embeddings",
+    "vector-database",
+    "llm"
+  ],
+  "workflowStage": "design",
+  "relatedIds": [
+    13,
+    17,
+    25,
+    31
+  ]
+}
